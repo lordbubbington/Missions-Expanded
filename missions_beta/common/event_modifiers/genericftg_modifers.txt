@@ -1,0 +1,6 @@
+#Generic FTG Missions 
+
+nations_global_unrest = {
+	global_unrest = -1
+	}
+	

@@ -1,0 +1,172 @@
+anti_tur_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = POL
+		}
+		has_country_shield = yes
+		
+		fall_of_byzantium = {
+		icon = mission_assemble_an_army
+			required_missions = { }
+			trigger = {
+			151 = {
+				country_or_non_sovereign_subject_holds = TUR
+			}
+			}
+			effect = {
+			add_country_modifier = {
+				name = "anti_ottoman_spirit"
+				duration = 7000
+				}
+				}
+				}
+				
+			the_fall_of_wallachia = {
+		icon = mission_conquer_50_development
+			required_missions = { fall_of_byzantium }
+			trigger = {
+			wallachia_area = {
+			country_or_non_sovereign_subject_holds = TUR
+			}
+			}
+			effect = {
+			add_country_modifier = {
+				name = "anti_ottoman_spirit"
+				duration = 7000
+				}
+				}
+				}
+				
+			the_fall_of_transylvania = {
+			icon = mission_unite_home_region
+			required_missions = { the_fall_of_wallachia }
+			trigger = {
+			northern_transylvania_area = {
+			country_or_non_sovereign_subject_holds = TUR
+			}
+			southern_transylvania_area = {
+			country_or_non_sovereign_subject_holds = TUR
+			}
+			}
+			effect = {
+			add_country_modifier = {
+			name = "anti_ottoman_spirit"
+			duration = 7000
+			}
+			}
+			}
+				
+				
+			the_holy_league = {
+			icon = mission_alliances
+			required_missions = { the_fall_of_transylvania }
+			trigger = {
+			army_size_percentage = 1
+			current_age = age_of_absolutism
+			}
+			effect = {
+			country_event = { id = holy_league.1 }
+					}
+					}
+					
+					
+			liberation_of_hungary = {
+			icon = mission_cannons_firing
+			required_missions = { the_holy_league }
+			trigger = {
+			if = {
+				limit = {
+					exists = TUR
+				}
+					northern_transylvania_area = {
+						OR = {
+							controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
+					southern_transylvania_area = {
+						OR = {
+							controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
+					wallachia_area = {
+						OR = {
+							controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
+				}
+				}
+				
+				effect = {
+				add_country_modifier = {
+				name = "liberation"
+				duration = 7000
+				}
+				}
+				}
+				
+				liberation_of_bulgaria = {
+				icon = mission_cannons_firing
+			required_missions = { liberation_of_hungary }
+			trigger = {
+			if = {
+				limit = {
+					exists = TUR
+				}
+				1765 = {
+						OR = {
+							controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
+					}
+					}
+					
+					effect = {
+					add_manpower = 15
+					}
+					}
+					
+					the_byzantine_empire = {
+					icon = mission_conquer_50_development
+					required_missions { liberation_of_bulgaria }
+					trigger = {
+				if = {
+				limit = {
+					exists = TUR
+				}
+					151 = {
+						OR = {
+							controlled_by = ROOT
+							controller = {
+								is_subject_of = ROOT
+								alliance_with = ROOT
+							}
+						}
+					}
+					}
+					}
+					
+					effect = {
+			add_country_modifier = {
+			name = drove_back_the_turk
+			duration = 7800
+			}
+			}
+			}

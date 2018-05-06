@@ -1,0 +1,9 @@
+riga_missions_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = RIG
+	}
+	has_country_shield = yes
+	
