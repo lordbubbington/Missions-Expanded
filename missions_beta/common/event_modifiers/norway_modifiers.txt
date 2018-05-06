@@ -1,3 +1,0 @@
-highland_steel = {
-	infantry_power = 0.1
-	}

@@ -1,3 +1,0 @@
-Booming_trade = {
-    trade_efficiency = 0.2
-    }
