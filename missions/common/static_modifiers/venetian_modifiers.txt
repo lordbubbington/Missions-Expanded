@@ -104,7 +104,7 @@ ven_shipbuilding = {
     global_ship_repair = 0.05
 }
 ven_naval_supremacy = {
-    navy_tradition_decay = -0.1
+    navy_tradition_decay = -0.01
     naval_tradition_from_battle = 0.2
 }
 ven_venitian_gibraltar_trade = {

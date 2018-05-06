@@ -101,7 +101,7 @@ norse_religion_codified = {
     legitimacy = 0.1
     republican_tradition = 0.1
     devotion = 0.5
-    army_tradition_decay = -0.1	
+    army_tradition_decay = -0.01	
 }
 norse_viking_worship_encouraged = {
     manpower_recovery_speed = 0.1
