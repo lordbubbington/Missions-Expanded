@@ -1,0 +1,100 @@
+italian_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = ITA
+	}
+	has_country_shield = yes
+	italy_control_renaissance_origin = {
+		icon = mission_war_chest
+		required_missions = { }
+		trigger = {
+            all_province = {
+                limit = {
+                is_institution_origin = renaissance
+                }
+                owned_by = ROOT
+            }
+		}
+		effect = {
+			add_country_modifier = {
+				name = italy_controls_renaissance
+				duration = 7300
+			}											
+		}
+	}
+  	italy_conquer_corsica_and_sardinia = {
+		icon = mission_war_chest
+		required_missions = {  }
+		provinces_to_highlight = {
+    OR = {
+			area = corsica_sardinia_area 
+      province_id = 333
+      }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			corsica_sardinia_area  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			333  = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}      
+		}
+		effect = {
+			333  = {
+				add_province_modifier = {
+					name = ita_italian_integration
+					duration = 3650
+				}
+			}
+			corsica_sardinia_area = {
+				if = {
+					limit = {
+						owned_by = ROOT          
+						NOT = {
+							is_core = ROOT
+						}
+					}
+					add_territorial_core = ROOT
+				}
+			}						                                                									
+		}
+	}
+ 	ita_develop_naples = {
+		icon = mission_war_chest
+		required_missions = { }
+		trigger = {
+			121 = {
+                development = 40
+            }
+        }
+		effect = {
+            121 = {
+                add_province_modifier = {
+                    name = ita_major_city_developed
+                    duration = -1
+                }
+            }                                  									
+		}
+	}  
+ 	ita_build_a_town_hall_in_naples = {
+		icon = mission_war_chest
+		required_missions = { ita_develop_naples }
+		trigger = {
+			121 = {
+                has_building = town_hall
+            }
+        }
+		effect = {
+            121 = {
+                add_province_modifier = {
+                    name = ita_naples_town_hall
+                    duration = -1
+                }
+            }                                  									
+		}
+	}    
