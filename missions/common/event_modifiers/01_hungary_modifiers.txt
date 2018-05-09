@@ -4,17 +4,17 @@ hungary_ottomans_war_1 = {
 }
 	
 hungary_ottomans_war_2 = {
-	land_morale = 0.1
+	land_morale = 0.12
 	recover_army_morale_speed = 0.1
 }
 
 hungary_poland_war = {
-	land_morale = 0.12
+	land_morale = 0.1
 	recover_army_morale_speed = 0.1
 }
 
 hungary_austria_war = {
-	land_morale = 0.12
+	land_morale = 0.1
 	recover_army_morale_speed = 0.2
 }
 
