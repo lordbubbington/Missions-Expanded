@@ -44,12 +44,10 @@ country_event = {
 		tag = LUX
 		is_in_war = {					## If you want to check if certain conditions are met during a war, put them in brackets like this.	
 			attacker_leader = ROOT			
-			casus_belli = cb_restoration_of_union
-			NOT = { war_score = 50 }
+			casus_belli = cb_restore_personal_union
 		}
-		NOT = { has_global_flag = support_recieved }
+		NOT = { has_country_modifier = lux_support_received }
 	}
-	
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -60,13 +58,12 @@ country_event = {
 			factor = 100
 		}
 		add_treasury = 50				## Fixed a typo
-		add_global_flag = { 			## If you want to create a new global flag, put its name and how long it will last for (in days) in brackets. If you want the flag to last for 1 year, put duration = 365. For 10 years, duration = 3650.
-			name = support_recieved
+		add_country_modifier = {
+			name = lux_support_received
 			duration = 180
 		}
 	}
 }
-	
 country_event = {
 	id = luxemburg.3
 	title = luxemburg.3.t
@@ -76,11 +73,10 @@ country_event = {
 	trigger = {
 		tag = LUX
 		is_in_war = {
-			NOT = { war_score = 50 }
 			attacker_leader = ROOT
-			casus_belli = cb_restoration_of_union
+			casus_belli = cb_restore_personal_union
 		}
-		NOT = { has_global_flag = support_recieved }
+		NOT = { has_country_modifier = lux_support_received }
 	}
 	
 	mean_time_to_happen = {
@@ -93,9 +89,9 @@ country_event = {
 			factor = 100
 		}
 		add_manpower = 2
-		add_global_flag = {
-			name = support_recieved
-			duration = 6
+		add_country_modifier = {
+			name = lux_support_received
+			duration = 180
 		}
 	}
 }
@@ -110,11 +106,10 @@ country_event = {
 	trigger = {
 		tag = LUX
 		is_in_war = {
-			NOT = { war_score = 50 }
 			attacker_leader = ROOT
-			casus_belli = cb_restoration_of_union
+			casus_belli = cb_restore_personal_union
 		}
-		NOT = { has_global_flag = support_recieved }
+		NOT = { has_country_modifier = lux_support_received }
 	}
 	
 	mean_time_to_happen = {
@@ -132,9 +127,9 @@ country_event = {
 			manuever = 3
 			siege = 2
 		}
-		add_global_flag = {
-			name = support_recieved
-			duration = 6
+		add_country_modifier = {
+			name = lux_support_received
+			duration = 180
 		}
 	}
 }
