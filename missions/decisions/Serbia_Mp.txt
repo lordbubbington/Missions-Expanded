@@ -1,31 +1,7 @@
 country_decisions = {
-	WAL_fortify = {
+	SER_manpower = {
 		potential = {
-			tag = WAL
-			NOT = {
-				has_country_flag = wallachia_Defences
-			}
-		}
-		allow = {
-			tag = WAL
-			treasury = 100
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		effect = {
-			set_country_flag = wallachia_Defences
-			wallachia_area = {
-				add_province_modifier = {
-					name = Wallachia_defence_local
-					duration = 73000
-				}
-			}
-		}
-	}
-	WAL_manpower = {
-		potential = {
-			tag = WAL
+			tag = SER
 			has_dlc = "The Cossacks"
 			is_at_war = yes
 			NOT = {
@@ -34,7 +10,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			tag = WAL
+			tag = SER
 			estate_loyalty = {
     				estate = estate_nobles
    				loyalty = 20
@@ -61,4 +37,3 @@ country_decisions = {
 		}
 	}
 }
-			
