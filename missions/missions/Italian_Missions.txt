@@ -98,3 +98,231 @@ italian_missions_1 = {
             }                                  									
 		}
 	}    
+	italy_conquer_southern_iberian_coast = {
+		icon = mission_war_chest
+		required_missions = {  }
+		provinces_to_highlight = {
+            OR = {
+		area = upper_andalusia_area
+                province_id = 221
+            }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			upper_andalusia_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			221 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}            
+		}
+		effect = {
+			upper_andalusia_area = {
+				add_province_modifier = {
+					name = ita_italian_integration
+					duration = 7300
+				}
+			}
+			221 = {
+				add_province_modifier = {
+					name = ita_italian_integration
+					duration = 7300
+				}
+			}
+			northern_morocco_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			algiers_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}                                    									
+		}
+	}  
+	italy_conquer_southern_iberian_coast = {
+		icon = mission_war_chest
+		required_missions = {  }
+		provinces_to_highlight = {
+            OR = {
+		area = northern_morocco_area
+                area = algiers_area
+            }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_morocco_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			algiers_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}            
+		}
+		effect = {
+			northern_morocco_area = {
+				add_province_modifier = {
+					name = ita_italian_integration
+					duration = 7300
+				}
+			}
+			algiers_area = {
+				add_province_modifier = {
+					name = ita_italian_integration
+					duration = 7300
+				}
+			}                                   									
+		}
+	}  
+ 	ita_free_italy_from_the_hre = {
+		icon = mission_war_chest
+		required_missions = { ita_develop_naples }
+		trigger = {
+		all_provinces = {
+		    region = italy_region
+		    is_part_of_hre = no
+		    }
+		ROOT = {
+			is_part_of_hre = no
+		}
+        }
+		effect = {
+            add_country_modifier = {
+		name = ita_freedom_from_germany
+		duration = 10950
+            }                                  									
+	}
+    }    
+ 	ita_develop_rome = {
+		icon = mission_war_chest
+		required_missions = { }
+		trigger = {
+			118 = {
+                development = 40
+            }
+        }
+		effect = {
+            118 = {
+                add_province_modifier = {
+                    name = ita_major_city_developed
+                    duration = -1
+                }
+            }                                  									
+		}
+	}  
+ 	ita_build_a_cathedral_in_rome = {
+		icon = mission_war_chest
+		required_missions = { ita_develop_naples }
+		trigger = {
+			118 = {
+                has_building = cathedral
+            }
+        }
+		effect = {
+            118 = {
+                add_province_modifier = {
+                    name = ita_roma_cathedral
+                    duration = -1
+                }
+            }                                  									
+	}
+    }    
+ 	ita_grand_ports_of_venice_and_genoa = {
+		icon = mission_war_chest
+		required_missions = { ita_develop_naples }
+		trigger = {
+			101 = {
+                has_building = grand_shipyard
+		has_building = drydocks
+            }
+			112 = {
+                has_building = grand_shipyard
+		has_building = drydocks
+            }	    
+        }
+		effect = {
+        	    add_country_modifier = {
+			name = ita_freedom_from_germany
+			duration = 10950
+            	}                                   									
+	    }
+        }   
+	ita_colonize_caribbean = {
+	icon = mission_colonial
+	required_missions = { ita_discover_new_world }
+			trigger = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 5
+						colonial_region = colonial_the_caribbean
+						is_city = yes
+
+					}			
+					}
+		effect = {
+				add_country_modifier = {
+					name = ita_colonization_boom
+					duration = 7300
+					}		
+				}
+			}
+	ita_colonize_manhattan = {
+	icon = mission_colonial
+	required_missions = { ita_discover_new_world }
+			trigger = {
+					965 = {
+						owned_by = ROOT
+						is_city = yes
+					}			
+				}
+		effect = {
+			965 = {
+				add_province_modifier = {
+					name = ita_a_center_of_trade
+					duration = -1
+					}		
+				}
+				add_country_modifier = {
+					name = ita_colonization_boom
+					duration = 1825
+					}				
+			}
+		}	
+	ita_colonize_massachusetts = {
+	icon = mission_colonial
+	required_missions = { ita_discover_new_world }
+			trigger = {
+					968 = {
+						owned_by = ROOT
+						is_city = yes
+					}			
+				}
+		effect = {
+			968 = {
+				add_province_modifier = {
+					name = ita_a_model_colony
+					duration = 7300
+					}		
+				}
+				add_country_modifier = {
+					name = ita_colonization_boom
+					duration = 1825
+					}				
+			}
+		}	
+			
