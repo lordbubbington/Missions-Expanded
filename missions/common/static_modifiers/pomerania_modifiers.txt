@@ -32,8 +32,6 @@ pom_ready_to_fight = {
 }
 pom_king_of_norway = {
     diplomatic_upkeep = 1
-    diplomatic_reputation = 
-    reduced_liberty_desire = 10	    
 }
 pom_holy_roman_emperor = {
     diplomatic_reputation = 2
