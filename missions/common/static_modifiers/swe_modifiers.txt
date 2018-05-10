@@ -1,6 +1,6 @@
 frihet = {
 global_unrest = -2
-yearly_legitimacy = 1
+legitimacy = 1
 }
 
 
