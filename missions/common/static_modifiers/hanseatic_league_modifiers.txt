@@ -28,7 +28,6 @@ queen_city = {
 	}
 	
 queen_city_influnce = {
-	justify_trade_conflict_time = -0.10  
 	ae_impact = -0.025
 	envoy_travel_time = -0.30
 	diplomatic_reputation = 1

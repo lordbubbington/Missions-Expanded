@@ -25,7 +25,7 @@ amsterdams_canal_system = {
 
 amsterdams_trading_port = { 
 	local_development_cost = -0.05
-	local_trade_power = 0.20
+	province_trade_power_value = 0.20
 	local_ship_cost = -0.25
 	local_ship_repair = 0.25
 	ship_recruit_speed = -0.20
