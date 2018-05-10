@@ -262,7 +262,7 @@ Prussia_German_Expansion = {
 		country_or_non_sovereign_subject_holds = ROOT
 		}
 		}
-	nortern_saxony_area = {
+	northern_saxony_area = {
 	type = all
 	country_or_non_sovereign_subject_holds = ROOT
 		}
@@ -274,7 +274,7 @@ Prussia_German_Expansion = {
 				}
 				add_permanent_claim = ROOT
 			}
-			brausnchweig_area = {
+			braunschweig_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -362,7 +362,7 @@ Prussia_German_Expansion = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-			westphalia_area_area = {
+			westphalia_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
