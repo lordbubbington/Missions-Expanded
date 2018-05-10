@@ -4,13 +4,13 @@ yearly_legitimacy = 1
 }
 
 
-erövring = {
+erovring = {
 army_tradition = 0.5
 yearly_army_professionalism = 0.01
 }
 
 
-handel_herravälde = {
+handel_herravalde = {
 trade_efficiency = 0.1
 }
 
@@ -23,12 +23,12 @@ leader_land_shock = 1
 leader_land_manuever = 1
 }
 
-tålmodig_ledare = {
+talmodig_ledare = {
 leader_land_fire = 1
 leader_siege = 1
 }
 
-baltisk_äregirighet = {
+baltisk_aregirighet = {
 trade_efficiency = 0.1
 global_unrest = -1
 }
