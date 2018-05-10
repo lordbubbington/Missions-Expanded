@@ -47,11 +47,9 @@ danish_missions_1 = {
 				owned_by = ROOT
 			}
 			16 = {
-				type = all
 				owned_by = ROOT
 			}
 			315 = {
-				type = all
 				owned_by = ROOT
 			}						
 		}
@@ -167,7 +165,7 @@ danish_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			north_karelia_area = {
+			north_karelia = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -183,7 +181,7 @@ danish_missions_1 = {
 			OR = {
 				area = finland_area
 				area = bothnia_area
-				area = north_karelia_area
+				area = north_karelia
 				area = pomor_area
 			}
 			NOT = {
@@ -197,7 +195,7 @@ danish_missions_1 = {
 			bothnia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			north_karelia_area = {
+			north_karelia = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			pomor_area = {
@@ -217,7 +215,7 @@ danish_missions_1 = {
 					duration = 7300
 				}
 			}
-			north_karelia_area = {
+			north_karelia = {
 				add_province_modifier = {
 					name = dan_danish_integration
 					duration = 7300
@@ -750,7 +748,7 @@ danish_missions_2 = {
 				province_id = 315				
 			}
 			NOT = {
-				country_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		trigger = {
@@ -1206,7 +1204,7 @@ danish_missions_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			hinterpommern_area = {
+			hinter_pommern_area = {
 				if = {
 					limit = {
 						NOT = {
@@ -1225,7 +1223,7 @@ danish_missions_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = vorpommern_area
-				area = hinterpommern_area
+				area = hinter_pommern_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -1235,7 +1233,7 @@ danish_missions_3 = {
 			vorpommern_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			hinterpommern_area = {
+			hinter_pommern_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}			
 		}
@@ -1515,11 +1513,9 @@ danish_missions_4 = {
 		}
 		trigger = {
 			13 = {
-				type = all
 				owned_by = ROOT
 			}
 			1775 = {
-				type = all
 				owned_by = ROOT
 			}						
 		}
@@ -1696,9 +1692,9 @@ dan_missions_5 = {
 		
 		trigger = {
             OR = {
-				continent_south_america = { has_discovered = ROOT }
-                continent_north_america = { has_discovered = ROOT }
-                continent_new_world = {has_discovered = ROOT}
+				south_america = { has_discovered = ROOT }
+                north_america = { has_discovered = ROOT }
+                new_world = { has_discovered = ROOT}
             }
 		}
 		
