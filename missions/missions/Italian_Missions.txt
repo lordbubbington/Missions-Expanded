@@ -24,13 +24,13 @@ italian_missions_1 = {
 			}											
 		}
 	}
-  	italy_conquer_corsica_and_sardinia = {
+  	italy_conquer_corsica_and_sardinia_and_baleares = {
 		icon = mission_war_chest
 		required_missions = {  }
 		provinces_to_highlight = {
     OR = {
 			area = corsica_sardinia_area 
-      province_id = 333
+      			province_id = 333
       }
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -155,7 +155,7 @@ italian_missions_1 = {
 			}                                    									
 		}
 	}  
-	italy_conquer_southern_iberian_coast = {
+	italy_conquer_moroccan_coast = {
 		icon = mission_war_chest
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -326,3 +326,109 @@ italian_missions_1 = {
 			}
 		}	
 			
+italian_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ITA
+	}
+	has_country_shield = yes
+	italy_conquer_southern_iberian_coast = {
+		icon = mission_war_chest
+		required_missions = {  }
+		provinces_to_highlight = {
+            OR = {
+		area = emilia_romagna_area
+		area = liguria_area
+		area = lombardy_area
+		area = piedmont_area
+		area = tuscany_area
+                province_id = 2977		
+            }
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			emilia_romagna_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liguria_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lombardy_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			piedmont_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}			
+			2977 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}            
+		}
+		effect = {
+			add_country_modifier = {
+				name = ita_northern_italy_controlled
+				duration = 10950
+				}
+			provence_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			corsica_sardinia_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			333 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}				
+			} 
+			east_adriatic_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}				
+			} 
+			croatia_area = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}				
+			} 			
+		}
+	}  	
