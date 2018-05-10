@@ -66,7 +66,7 @@ SWE_scandinavia = {
 		}
 	effect = {
 	add_country_modifier = {
-	name = "erövring"
+	name = "erovring"
 	duration = 7300
 	}
 	}
@@ -89,7 +89,7 @@ SWE_scandinavia = {
 		}
 	effect = {
 	add_country_modifier = {
-	name = "handel_herravälde"
+	name = "handel_herravalde"
 	duration = -1
 }
 			northern_norway_area = {
@@ -142,7 +142,7 @@ required_missions = { swe_gotland }
 			}
 	effect = {
 	add_country_modifier = {
-	name = "erövring"
+	name = "erovring"
 	duration = 7300
 	}
 		denmark_area = {
@@ -445,7 +445,7 @@ swe_baltic = {
 			}
 			effect = {
 			add_country_modifier = {
-			name = "baltisk_äregirighet"
+			name = "baltisk_aregirighet"
 			duration = 7300
 			}
 			east_prussia_area = {
