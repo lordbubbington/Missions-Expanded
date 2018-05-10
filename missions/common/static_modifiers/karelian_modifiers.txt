@@ -29,7 +29,7 @@ karelia_valaam_monastery_expanded = {
 }
 krl_ready_for_conquest = {
     discipline = 0.1
-    land_maintaince_modifier = 0.1
+    land_maintenance_modifier = -0.1
 }
 krl_control_of_karelians = {
     legitimacy = 0.2
