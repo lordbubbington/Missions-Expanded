@@ -1,7 +1,7 @@
 fla_conquest = {
 
 	slot = 1
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		tag = FLA
@@ -85,7 +85,7 @@ fla_conquest = {
 fla_growth = {
 		
 	slot = 5
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		tag = FLA
@@ -112,7 +112,7 @@ fla_growth = {
 			has_institution = renaissance
 		}
 		effect = {
-			change_manpower = 10
+			add_manpower = 10
 			add_dip_power = 100
 			add_adm_power = 100
 			add_mil_power = 100
