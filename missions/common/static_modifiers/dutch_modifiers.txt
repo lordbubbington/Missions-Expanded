@@ -20,7 +20,7 @@ netherlands_tolerance = {
 
 dutch_scholars = {
 	technology_cost = -0.05
-	global_instiution_spread = 0.1
+	global_institution_spread = 0.1
 	}
 	
 dutch_maritime = {
@@ -30,7 +30,6 @@ dutch_maritime = {
 	global_ship_trade_power = 0.25
 	global_naval_engagement_modifier = 0.5
 	leader_naval_manuever = 2
-	justify_trade_conflict_time = -0.10
 	}
 
 dutch_golden_age = {
