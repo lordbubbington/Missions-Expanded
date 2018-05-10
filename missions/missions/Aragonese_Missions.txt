@@ -467,15 +467,11 @@ Aragonese_slot_5 = {
 		required_missions = { ara_trade_ships }
 		trigger = {
 			220 = {
-				limit = {
-					owned_by = ROOT
-				}
+				owned_by = ROOT
 				has_building = marketplace
 			}
 			2988 = {
-				limit = {
-					owned_by = ROOT
-				}
+				owned_by = ROOT
 				has_building = marketplace
 			}
 		}
