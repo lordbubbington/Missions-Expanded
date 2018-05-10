@@ -261,11 +261,11 @@ Prussia_German_Expansion = {
 		type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
-		}
 	northern_saxony_area = {
 	type = all
 	country_or_non_sovereign_subject_holds = ROOT
 		}
+				}
 		effect = {
 		mecklenburg_area = {
 				limit = {
