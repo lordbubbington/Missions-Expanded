@@ -1,7 +1,7 @@
 est_conquest = {
 	
 	slot = 1
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 			OR = {
@@ -19,7 +19,7 @@ est_conquest = {
 		}
 		effect = {
 		add_country_modifier = {
-		name = handel_herravälde
+		name = handel_herravalde
 		duration = 9125
 	}
 	}
@@ -102,7 +102,7 @@ est_conquest = {
 			}
 		add_permanent_claim = ROOT
 			}
-			curonia_area_area = {
+			curonia_area = {
 			limit = {
 		NOT = { is_core = ROOT }
 		NOT = { owned_by = ROOT }
@@ -159,7 +159,7 @@ est_conquest = {
 est_fleet_baltic = {
 	
 	slot = 2
-	generic = 0
+	generic = no
 	ai = yes
 	potential = { 
 		OR = {
