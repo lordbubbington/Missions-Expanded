@@ -256,7 +256,6 @@ country_decisions = {
 				}
 				inherit = ARA
 			}
-			}
 			if = {
 				limit = {
 					SAR = {	junior_union_with = ROOT	}					
@@ -265,7 +264,6 @@ country_decisions = {
 					}
 				}
 				inherit = SAR
-			}
 			}
 			if = {
 				limit = {
