@@ -1,7 +1,7 @@
 SWE_scandinavia = {
 
 	slot = 1
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		OR = {
@@ -92,21 +92,21 @@ SWE_scandinavia = {
 	name = "handel_herravalde"
 	duration = -1
 }
-			northern_norway_area = {
+			northern_norway = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			eastern_norway_area = {
+			eastern_norway = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			western_norway_area = {
+			western_norway = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -193,7 +193,7 @@ provinces_to_highlight = {
 SWE_mil_reforms = {
 
 	slot = 5
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		OR = {
@@ -294,7 +294,7 @@ SWE_mil_reforms = {
 	}
 swe_baltic = {
 	slot = 2
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		OR = {
@@ -315,16 +315,14 @@ swe_baltic = {
 				}
 				trigger = {
 				33 = {
-				type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 				34 = {
-				type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			}
 			effect = {
-						estonia_area = {
+						estonia_ingria_area = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -352,13 +350,13 @@ swe_baltic = {
 	required_missions = { swe_cold_port_narwa }
 	provinces_to_highlight = {
 				OR = {
-				area = estonia_area
+				area = estonia_ingria_area
 				area = curonia_area
 				area = livonia_area
 				}
 				}
 				trigger = {
-				estonia_area = {
+				estonia_ingria_area = {
 				type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -373,11 +371,15 @@ swe_baltic = {
 			}
 			effect = {
 			45 = {
-	limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 		}
@@ -389,7 +391,6 @@ swe_baltic = {
 		}
 		trigger = {
 		45 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			}
