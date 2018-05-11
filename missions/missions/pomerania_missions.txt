@@ -34,7 +34,7 @@ pomerania_missions_1 = {
       trigger = {
           if = {
               OR = {
-                ALL = {
+				AND = {
                 NOR = {
                     junior_union_with = ROOT
                     }
@@ -45,7 +45,8 @@ pomerania_missions_1 = {
                     junior_union_with = ROOT
                     }                                        
                 }
-                ALL = {
+				}
+				AND = {
                 NOR = {
                     vassal_of = ROOT
                     }
@@ -55,23 +56,20 @@ pomerania_missions_1 = {
                 DAN = {
                     vassal_of = ROOT
                     }                                        
-                }                
-                }                   
-            ALL =  { 
+                }                  
                 scandinavia_region  = {
                 type = all
                 owned_by = ROOT                
                 }
                 }
               }
-            }
         effect = {
             add_country_modifier = {
                 name = pom_king_of_norway
                 duration = 10950
                 }
-            prestige = 20
-            legitimacy = 10    
+            add_prestige = 20
+            add_legitimacy = 10    
 			add_casus_belli = {
 				target = SWE
 				type = cb_restore_personal_union 
@@ -135,17 +133,21 @@ pomerania_missions_1 = {
                 add_province_modifier = {
                     name = pom_integrate_into_pomerania
                     duration = 7300
-                }                
-            35  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
-                    }
                 }
+			}
+            35  = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
             }
         }
+	}
     pom_conquer_osel = {
       icon = mission_invade_island
       required_missions = { pom_conquer_east_prussia }
@@ -157,7 +159,6 @@ pomerania_missions_1 = {
       trigger = {
           if = {
 			35  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
           }
@@ -169,10 +170,10 @@ pomerania_missions_1 = {
                     duration = 7300
                     }
                 add_base_tax = 1                   
-                }
             }
         }                    
-    }                
+    }
+}	
 
 pomerania_missions_2 = {
     slot = 2
@@ -213,17 +214,17 @@ pomerania_missions_2 = {
 				add_casus_belli = {
 					target = DAN
 					type = cb_restore_personal_union 
-                    duration = -1
+                    months = -1
 				} 
 				add_casus_belli = {
 					target = NOR
 					type = cb_restore_personal_union 
-                    duration = -1
+                    months = -1
 				} 
 				add_casus_belli = {
 					target = SWE
 					type = cb_restore_personal_union 
-                    duration = -1
+                    months = -1
 				}                                                                            
         }
     }
@@ -268,21 +269,29 @@ pomerania_missions_2 = {
                         add_permanent_claim = ROOT
                 } 
             46  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
-                }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
             2996  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
-                }                                                                         
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}                                                                        
         }
     }
+	}
     pom_conquer_mecklenburg = {
       icon = mission_unite_home_region
       required_missions = { pom_control_pomerania }
@@ -297,11 +306,9 @@ pomerania_missions_2 = {
       trigger = {
           if = {
 			46  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			2996  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
           }
@@ -318,16 +325,20 @@ pomerania_missions_2 = {
                     duration = 7300
                 }                
             45  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
-                    }
-                }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
             }
         }    
     }
+	}
+	}
     pom_conquer_lubeck = {
       icon = mission_establish_high_seas_navy
       required_missions = { pom_conquer_mecklenburg }
@@ -339,7 +350,6 @@ pomerania_missions_2 = {
       trigger = {
           if = {
 			45  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
           }
@@ -425,10 +435,9 @@ pomerania_missions_2 = {
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			35  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-			vestlandet_area  = {
+			western_norway  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -440,11 +449,11 @@ pomerania_missions_2 = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-			trondelag_area  = {
+			northern_norway  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-			ostlandet_area  = {
+			eastern_norway  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
             }
@@ -482,9 +491,9 @@ pom_colonization_missions = {
 		
 		trigger = {
             OR = {
-				continent_north_america = { has_discovered = ROOT }
-                continent_south_america = { has_discovered = ROOT }
-                continent_new_world = {has_discovered = ROOT}
+				north_america = { has_discovered = ROOT }
+                south_america = { has_discovered = ROOT }
+                new_world = {has_discovered = ROOT}
             }
 		}
 		
