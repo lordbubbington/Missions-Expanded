@@ -228,7 +228,6 @@ oserva = {
 				}
 			}
 		}
-	}
 	establish_in_guinea = {
 		icon = mission_invade_island
 		required_missions = { take_tunis }
