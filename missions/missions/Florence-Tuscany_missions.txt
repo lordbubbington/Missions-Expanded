@@ -220,6 +220,7 @@ oserva = {
 				value = -100 
 			}
 		}
+		}
 		effect = {
 			add_country_modifier = {
 				name = "florentian_secular_state"
@@ -314,7 +315,7 @@ non_farmi_perdere_tempo = {
 			mil = 5
 		}
 		effect = {
-			central_lombardy_area = {
+			lombardy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -517,11 +518,15 @@ great_influence = {
 		}	
 		effect = {
 			118 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		} 
 	}
