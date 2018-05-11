@@ -115,7 +115,7 @@ fin_conquest_missions = {
                 duration = 7300
             }
           }          
-     north_karelia_area = {
+     north_karelia = {
         limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -143,7 +143,7 @@ fin_conquest_missions = {
       required_missions = { fin_conquer_lappland }
         provinces_to_highlight = {
             OR = {
-				area = north_karelia_area
+				area = north_karelia
 				area = karelia_area
 				area = pomor_area
             }
@@ -153,7 +153,7 @@ fin_conquest_missions = {
       position = 4
       trigger = {
           if = {
-			north_karelia_area  = {
+			north_karelia  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -168,7 +168,7 @@ fin_conquest_missions = {
       }
       }
       effect = {
-          north_karelia_area  = {
+          north_karelia  = {
             add_province_modifier = {
                 name = fin_integration
                 duration = 7300
@@ -186,40 +186,56 @@ fin_conquest_missions = {
                 duration = 7300
             }
           }          
-     estonia_area = {
-        limit = {
+     estonia_ingria_area = {
+       limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
                 add_permanent_claim = ROOT
         }
      35  = {
-        limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-                add_permanent_claim = ROOT
         }
      37  = {
-        limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-                add_permanent_claim = ROOT
         }
      274  = {
-        limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-                add_permanent_claim = ROOT
         }
      1930  = {
-        limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-                add_permanent_claim = ROOT
         }                                          
       }
   }    
@@ -235,7 +251,7 @@ fin_conquest_missions = {
 				area = north_karelia_area
 				area = karelia_area
 				area = pomor_area                          
-				area = estonia_area
+				area = estonia_ingria_area
 				province_id = 35
 				province_id = 37
 				province_id = 274
@@ -247,24 +263,20 @@ fin_conquest_missions = {
       position = 5
       trigger = {
           if = {
-			estonia_area  = {
+			estonia_ingria_area  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			35  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}              
 			37  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}   
 			274  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}              
 			1930  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}     
 			bothnia_area  = {
@@ -283,7 +295,7 @@ fin_conquest_missions = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}              
-			north_karelia_area  = {
+			north_karelia  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}  
@@ -307,7 +319,7 @@ fin_conquest_missions = {
               add_base_manpower = 1
               add_base_production = 1              
           }
-          estonia_area  = {
+          estonia_ingria_area = {
             add_province_modifier = {
                 name = fin_integration
                 duration = 7300
