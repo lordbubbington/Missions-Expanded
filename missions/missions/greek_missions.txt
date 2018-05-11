@@ -100,7 +100,7 @@ gre_slot_1 = {
 		icon = mission_assemble_an_army
 		required_missions = { gre_allies }
 		trigger = {
-		num_of_vassals = 3
+		num_of_subjects = 1
 		}
 		effect = {
 		add_country_modifier = {
@@ -301,10 +301,10 @@ gre_slot_3 = {
 		icon = mission_assemble_an_army
 		required_missions = { gre_league_3 }
 		trigger = {
-		tresury = 200
-		adm_points = 20
-		mil_points = 20
-		dip_points = 20
+		treasury = 200
+		adm_power = 20
+		mil_power = 20
+		dip_power = 20
 		}
 		effect = {
 		random_owned_province = {
