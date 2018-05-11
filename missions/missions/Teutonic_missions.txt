@@ -237,8 +237,6 @@ baltic_might = {
 			}	
 		
 		effect = {
-			310 = {
-				add_trade_power = 2
 			45 = {
 				add_trade_modifier = {
 					who = ROOT
