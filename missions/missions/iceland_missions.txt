@@ -15,7 +15,7 @@ ice_colonization_missions = {
             OR = {
 				greenland_area = { has_discovered = ROOT }
                 colonial_canada = { has_discovered = ROOT }
-                continent_new_world = {has_discovered = ROOT}
+                new_world = { has_discovered = ROOT}
             }
 		}
 		
@@ -171,14 +171,18 @@ ice_conquest_missions = {
                 add_permanent_claim = ROOT
         }
      369 = {
-        limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-                add_permanent_claim = ROOT
-        }                  
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}                 
       }
   }
+}
   ice_conquer_the_isles = {
       icon = mission_invade_island
       required_missions = { ice_conquer_faroes }
@@ -198,7 +202,6 @@ ice_conquest_missions = {
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			369 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            
       }
