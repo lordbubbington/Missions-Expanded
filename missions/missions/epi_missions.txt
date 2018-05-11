@@ -41,39 +41,59 @@ epi_mission_1 = {
 				add_permanent_claim = ROOT
             }
             145 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             1773 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             146 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+  				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             147 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             1853 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+   				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
@@ -83,34 +103,46 @@ epi_mission_1 = {
         required_missions = { epi_no_subject }
         position = 3
         trigger = {
-            add_army_tradition = 10
-            add_army_professionalism = 0.05
             147 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
         }
         effect = {
+		    add_army_tradition = 10
+            add_army_professionalism = 0.05
             add_prestige = 25
             142 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+   				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             148 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             149 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+   				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
@@ -143,24 +175,32 @@ epi_mission_1 = {
                 }
             }
             163 = {
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+            }
+            calabria_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { owned_by = ROOT }
                 }
             }
-            calabria_area = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-            }
             122 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
@@ -186,9 +226,6 @@ epi_mission_1 = {
                 owned_by = ROOT
             }
         }
-        hidden_effect = {
-            complete_mission = { epi_morea }
-        }
         effect = {
             capital_scope = {
                 add_base_tax =1
@@ -200,11 +237,15 @@ epi_mission_1 = {
                 duration = 9125
             }
             151 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
@@ -218,8 +259,10 @@ epi_mission_1 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
         }
-        hidden_effect = {
-            151 = { change_province_name = Constantinople rename_capital = Constantinople }  
+        effect = {
+            add_prestige = 25
+            set_capital = 151
+			            151 = { change_province_name = Constantinople rename_capital = Constantinople }  
             151 = {
                 change_culture = greek
             }
@@ -233,11 +276,7 @@ epi_mission_1 = {
 					add_base_manpower = 3
 				}
 				set_global_flag = constantinople_restored
-			}      
-        }
-        effect = {
-            add_prestige = 25
-            set_capital = 151
+			}
             hudavendigar_area = {
                 limit = {
                     NOT = { is_core = ROOT }
@@ -260,11 +299,15 @@ epi_mission_1 = {
 				add_permanent_claim = ROOT
             }
             3001 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
@@ -350,25 +393,37 @@ epi_mission_2 = {
 				add_permanent_claim = ROOT
             }
             2983 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             121 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             120 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+  				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
