@@ -252,7 +252,6 @@ baltic_might = {
 			}	
 		}
 	}
-}
 
 newgovernement = {
 	slot = 3  
@@ -285,7 +284,7 @@ newgovernement = {
 					add_country_modifier = {
 					name = "governmental_reforms"
 					duration = -1
-						}
 					}
 				}	
+			}
 			}
