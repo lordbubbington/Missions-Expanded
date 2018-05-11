@@ -23,15 +23,12 @@ livonian_mission_group = {
 			is_at_war = no
 			is_subject = no
 			37 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4241 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			273 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -104,7 +101,6 @@ livonian_mission_group = {
 					dip_power = 50
 				}
 				38 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -182,7 +178,6 @@ livonian_mission_group_2 = {
 		position = 3
 		trigger = {
 			35 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -337,11 +332,9 @@ livonian_mission_group_3 = {
 		position = 2
 		trigger = {
 			1935 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			39 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -516,7 +509,6 @@ livonian_mission_group_4 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			42 = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

@@ -38,14 +38,14 @@ mal_resist_european_colonization = {
 			same_continent = CAPITAL
 			}
 			}		
-		year = 1700
+		is_year = 1700
+	}
 	effect = {
 			add_country_modifier = {
 				name = mal_resisted_europeans
 				duration = -1
 			}
 				}
-}
 }
   mal_reclaim_massina_and_baghena = {
   icon = mission_cannons_firing
@@ -524,7 +524,6 @@ mal_university_of_timbuktu = {
     }
   }
     effect = {
-      innovativeness = 2
       1132 = {
         add_province_modifier = {
           name = university_of_timbuktu
