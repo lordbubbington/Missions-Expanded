@@ -187,17 +187,15 @@ karelia_missions_2 = {
       
     trigger = {
         any_province = {
-			limit  = {
                 culture = karelian
         }
         owned_by = ROOT
       }
       effect = {
         add_country_modifier = {
-            name = krl_control_of_karelians
+            name = "krl_control_of_karelians"
             duration = 7300
             }
-        }
      pomor_area = {
         limit = {
 					NOT = { owned_by = ROOT	}
@@ -269,20 +267,18 @@ karelia_missions_2 = {
       effect = {
           finland_area  = {
             add_province_modifier = {
-                name = krl_integration
+                name = "krl_integration"
                 duration = 7300
-                add_base_tax = 1
             }
           }
           bothnia_area  = {
             add_province_modifier = {
                 name = krl_integration
                 duration = 7300
-                add_base_manpower = 1
             }
           }
           add_accepted_culture = finnish          
-     estonia_area = {
+     estonia_ingria_area = {
         limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -295,7 +291,7 @@ karelia_missions_2 = {
       icon = mission_assemble_an_army
       required_missions = { karelia_conquer_finland }
       provinces_to_highlight = {
-			area = estonia_area
+			area = estonia_ingria_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
       }  
@@ -303,7 +299,7 @@ karelia_missions_2 = {
       
       trigger = {
           if = {
-			estonia_area  = {
+			estonia_ingria_area  = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -317,39 +313,59 @@ karelia_missions_2 = {
                 }
             }
             35 = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 }
             37 = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 }
             274 = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 } 
             1930 = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 } 
             1958 = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 }                                                  
     }
   }
@@ -372,23 +388,18 @@ karelia_missions_2 = {
       trigger = {
           if = {
 			35  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			37  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			274  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			1930  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}  
 			1958  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}                                    
         }

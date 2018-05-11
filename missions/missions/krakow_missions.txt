@@ -1,7 +1,7 @@
 KRA_missions = {
 
 	slot = 1
-	generic = 0
+	generic = no
 	ai = yes
 	potential = {
 		OR = {
