@@ -3,6 +3,10 @@ norse_allow_pagan_worship = {
     religious_unity = 0.1
     tolerance_own = -1
 }
+dan_spirit_of_viking_explorers = {
+    range = 0.5
+    colonists = 1	
+    galley_power = 0.2
 norse_stopped_persecution = {
     stability_cost_modifier = -0.1
 }
