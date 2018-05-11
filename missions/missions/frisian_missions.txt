@@ -26,34 +26,33 @@ fri_west_frisia = {
   trigger = {
     if = {
 			97 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             4381 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			100 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             4382 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            
   }
 }
   effect = {
     97 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
                 add_province_modifier = {
                 name = fri_integration
                 duration = 7300
-                } 
+                }
+					}
     }
     4381 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -62,16 +61,20 @@ fri_west_frisia = {
                 duration = 7300
                 }     
           }
+		  }
     100 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
                 add_province_modifier = {
                 name = fri_integration
                 duration = 7300
-                } 
+                }
+}				
     }
     4382 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -79,7 +82,8 @@ fri_west_frisia = {
                 name = fri_integration
                 duration = 7300
                 }     
-          }          
+          }   
+}		  
     }
   }
 }
@@ -105,53 +109,81 @@ fri_main_missions = {
 		
 		effect = {
 			100 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			97 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			4382 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			4381 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}            
 			1931 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			55 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			4141 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -168,19 +200,17 @@ fri_conquer_east_frisia = {
 			has_discovered = ROOT
 		}
   trigger = {
-    if = {
 			55 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             1931 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
   }
-}
+
   effect = {
     55 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -188,8 +218,10 @@ fri_conquer_east_frisia = {
                 name = fri_integration
                 duration = 7300
                 } 
+				}
     }
     1931 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -198,6 +230,7 @@ fri_conquer_east_frisia = {
                 duration = 7300
                 }     
           }
+		  }
     }
   }
 fri_frisia_united = {
@@ -218,73 +251,84 @@ fri_frisia_united = {
 			has_discovered = ROOT
 		}
   trigger = {
-    if = {
 			55 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             97 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			4381 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             100 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			1931 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             4141 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			} 
             4382 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}                                    
   }
-}
   effect = {
-            prestige = 20
+            add_prestige = 20
 			95 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			98 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			99 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}  
 			4383 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			1874 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}                                              
     }
   }
@@ -304,29 +348,22 @@ fri_magna_frisia = {
 			has_discovered = ROOT
 		}
   trigger = {
-    if = {
 			95 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             98 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			1874 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
             99 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			4383 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}                                 
   }
-}
   effect = {
         capital_scope = {
             add_base_manpower = 1
@@ -355,13 +392,12 @@ fri_unite_the_low_countries = {
 			has_discovered = ROOT
 		}
   trigger = {
-    if = {
 			low_countries_region = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}                          
   }
-}
+
   effect = {
         capital_scope = {
             add_base_manpower = 1
@@ -380,25 +416,37 @@ fri_unite_the_low_countries = {
 				add_permanent_claim = ROOT
 			}          
 			44 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+					if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			54 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}  
 			181 = { 
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}                
-				add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}                                                                                       
     }
   }    
@@ -424,15 +472,14 @@ fri_conquer_north_frisia = {
 			has_discovered = ROOT
 		}
   trigger = {
-    if = {
-			4141 = {
-			type = all
+	4141 = {
 			country_or_non_sovereign_subject_holds = ROOT
 			}
   }
-}
+
   effect = {
     4141 = {
+	if = {
         limit = {
 					NOT = { is_core = ROOT	}
 				}
@@ -440,7 +487,8 @@ fri_conquer_north_frisia = {
                 name = fri_integration
                 duration = 7300
                 } 
-    }
+				}
+    } 
     }
   }
-}
+  }
