@@ -828,7 +828,7 @@ lithuanian_missions_slot_5 = {
 		position = 6
 		provinces_to_highlight = {
 			OR = {
-				area = zaporozhia_area
+				area = zaporizhia_area
 				area = yedisan_area
 				area = crimea_area
 			}
@@ -837,7 +837,7 @@ lithuanian_missions_slot_5 = {
 			}
 		}
 		trigger = {
-			zaporozhia_area = {
+			zaporizhia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -863,7 +863,7 @@ lithuanian_missions_slot_5 = {
 					duration = 7300
 				}
 			}
-			zaporozhia_area = {
+			zaporizhia_area = {
 				add_province_modifier = {
 					name = "Lit_efficient_integrating"
 					duration = 7300

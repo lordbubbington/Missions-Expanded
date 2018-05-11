@@ -76,7 +76,6 @@ new_russian_center = {
 
 		trigger = {
 			capital_scope = {
-			type = all
 			religion = catholic
 			owner = {
 			religion = catholic
@@ -110,7 +109,6 @@ protestant_liege = {
 
 		trigger = {
 			capital_scope = {
-			type = all
 			religion = protestant
 			owner = {
 			religion = protestant			
