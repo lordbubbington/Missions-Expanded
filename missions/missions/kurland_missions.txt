@@ -258,11 +258,9 @@ kur_conquer_pskov = {
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 		33 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 		34 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            			
 			}
@@ -347,7 +345,7 @@ kur_a_dozen_colonial_nations = {
   required_missions = { kur_colonize_canada kur_colonize_la_plata kur_colonize_australia kur_colonize_alaska }
 		position = 6	
 		trigger = {
-            num_of_colonial_subjects = 12	
+            colony = 12	
 				}
 	effect = {
 			add_country_modifier = {
@@ -370,7 +368,7 @@ kur_control_latvia_and_estonia = {
 		required_missions = { }
           provinces_to_highlight = {
               OR = {
-				area = estonia_area
+				area = estonia_ingria_area
 				area = livonia_area
 				area = curonia_area
               }
@@ -380,7 +378,7 @@ kur_control_latvia_and_estonia = {
 		position = 1
 		
 	trigger = {
-		estonia_area = {
+		estonia_ingria_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -408,27 +406,35 @@ kur_control_latvia_and_estonia = {
 				add_permanent_claim = ROOT
 			}
 		33 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		34 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}  
-		vilna_area = {
+		lithuania_area = {
 			limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-		samogita_area = {
+		samogitia_area = {
 			limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -436,25 +442,37 @@ kur_control_latvia_and_estonia = {
 				add_permanent_claim = ROOT
 			} 
 		25 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}  
 		1930 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		1981 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}                                                                      
 		}	
 	}
@@ -463,8 +481,8 @@ kur_conquer_lithuania = {
 		required_missions = {kur_control_latvia_and_estonia }
           provinces_to_highlight = {
               OR = {
-				area = vilna_area
-				area = samogita_area
+				area = lithuania_area
+				area = samogitia_area
               }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
@@ -472,24 +490,24 @@ kur_conquer_lithuania = {
 		position = 2
 		
 	trigger = {
-		vilna_area = {
+		lithuania_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-		samogita_area = {
+		samogitia_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            			
 			}
 		
 		effect = {
-		vilna_area = {
+		lithuania_area = {
                 add_province_modifier = {
                     name = kur_integration
                     duration = 7300
                 }
 			}
-		samogita_area = {
+		samogitia_area = {
                 add_province_modifier = {
                     name = kur_integration
                     duration = 7300
@@ -573,7 +591,7 @@ kur_conquer_prussia = {
 				}
 				add_permanent_claim = ROOT
 			}  
-		hinterpommern_area = {
+		hinter_pommern_area = {
 			limit = {
 					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -581,11 +599,15 @@ kur_conquer_prussia = {
 				add_permanent_claim = ROOT
 			}
 		49 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}                                                                       
 		}	
 	}
@@ -662,7 +684,7 @@ kur_the_sun_never_sets = {
   required_missions = { kur_a_dozen_colonial_nations kur_colonize_east_indies kur_colonize_south_africa}
 		position = 7	
 		trigger = {
-            num_of_colonial_subjects = 12	
+                      colony = 12
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 3
 					region = moluccas_region
@@ -804,15 +826,12 @@ kur_conquer_the_baltic_islands = {
 		
 	trigger = {
 		25 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 		1930 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 		1981 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            			
 			}
@@ -842,12 +861,16 @@ kur_conquer_the_baltic_islands = {
                 }
 			}             
 		45 = {
-			limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}                                                                      
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}   
+			}
 		}	
 	}
 kur_conquer_lubeck = {
@@ -862,7 +885,6 @@ kur_conquer_lubeck = {
 		
 	trigger = {
 		45 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}            			
 			}
@@ -887,7 +909,7 @@ kur_conquer_pomerania = {
               OR = {
 				area = mecklenburg_area
 				area = vorpommern_area
-				area = hinterpommern_area
+				area = hinter_pommern_area
                 province_id = 49
               }
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -904,12 +926,11 @@ kur_conquer_pomerania = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			} 
-		hinterpommern_area = {
+		hinter_pommern_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 		49 = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}                                    			
 			}
@@ -927,7 +948,7 @@ kur_conquer_pomerania = {
                     duration = 7300
                 }
 			}
-		hinterpommern_area = {
+		hinter_pommern_area = {
                 add_province_modifier = {
                     name = kur_integration
                     duration = 7300
