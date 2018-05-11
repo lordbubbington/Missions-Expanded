@@ -21,25 +21,37 @@ gotland_missions = {
                 duration = 7300
             }
             35  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 } 
             1930  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 } 
             1981  = {
-                limit = {
-                            NOT = { owned_by = ROOT	}
-                            NOT = { is_core = ROOT	}
-                        }
-                        add_permanent_claim = ROOT
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
                 }                                            
         }
     }
@@ -57,20 +69,15 @@ gotland_missions = {
         }
       }      
       trigger = {
-          if = {
 			35  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			1930  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
 			1981  = {
-			type = all
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-          }
       }                          
         effect = {
             add_country_modifier = {
@@ -88,12 +95,11 @@ gotland_missions = {
 			has_discovered = ROOT
       }      
       trigger = {
-          if = {
+
 			25  = {
             fort_level = 5
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-          }
       }                     
         effect = {
             25 = {
@@ -113,12 +119,10 @@ gotland_missions = {
 			has_discovered = ROOT
       }      
       trigger = {
-          if = {
 			25  = {
             development = 20
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-          }
       }                     
         effect = {
             25 = {
@@ -138,12 +142,10 @@ gotland_missions = {
 			has_discovered = ROOT
       }      
       trigger = {
-          if = {
 			25  = {
             has_building = university
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-          }
       }                     
         effect = {
             25 = {
@@ -163,12 +165,10 @@ gotland_missions = {
 			has_discovered = ROOT
       }      
       trigger = {
-          if = {
 			25  = {
             development = 40
 			country_or_non_sovereign_subject_holds = ROOT
 			}
-          }
       }                     
         effect = {
             25 = {
@@ -317,7 +317,7 @@ gotland_missions = {
 		icon = mission_hans_league 
 		required_missions = { } 
 		position = 9
-		trigger = 
+		trigger = {
 			OR = {
 				ADM = 3
 				DIP = 3
@@ -327,6 +327,7 @@ gotland_missions = {
 			development = 8
 			has_building = marketplace
             is_in_trade_league = HSA
+		}
 		effect = {
 			capital_scope = { 
 			add_base_tax = 1
@@ -353,9 +354,7 @@ gotland_missions = {
 		effect = {
 			capital_scope = {
 			add_base_production = 2
-				remove_province_modifier = {
-				name = "joining_hans_league"
-				}
+				remove_province_modifier = joining_hans_league
 				add_province_modifier = {
 				name = "growing_in_the_league"
 				duration = -1
