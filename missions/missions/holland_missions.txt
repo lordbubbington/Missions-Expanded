@@ -244,10 +244,10 @@ hollands_conquest_of_the_greater_low_countries_slot_5 = {
 			dip_power = 150
 			OR = {
 			overlord_of = GEL
-			owns_core_province 
+			owns_core_province = 99
 			}
 		}
-		effect = 
+		effect = {
 			add_dip_power = -150
 			inherit = GEL
 			add_country_modifier = {
@@ -380,7 +380,7 @@ province_growth_missions = {
 			is_at_war = no
 			treasury = 500
 			is_bankrupt = no
-			is_indeficit = no
+			is_in_deficit = no
 			num_of_loans = 0
 		}
 		effect = {
