@@ -72,7 +72,7 @@ meck_mission_slot_1 = {
 		effect = {
 			remove_country_modifier = meck_trading_lvl_3
 			add_country_modifier = {
-			name = "meck_trading_lvl_4
+			name = "meck_trading_lvl_4"
 			duration = -1
 			}
 		}
