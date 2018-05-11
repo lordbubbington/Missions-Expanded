@@ -182,15 +182,12 @@ norwegian_mission_group_2 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			2 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			3 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4166 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -274,7 +271,6 @@ norwegian_mission_group_2 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			25 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -403,7 +399,6 @@ norwegian_mission_group_3 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			4151 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -470,7 +465,6 @@ norwegian_mission_group_3 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			30 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -549,39 +543,30 @@ norwegian_mission_group_3 = {
 		trigger = {
 			is_at_war = no
 			25 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			1874 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			44 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			45 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			1858 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			43 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			40 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			38 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			33 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -677,11 +662,9 @@ norwegian_mission_group_4 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			16 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			315 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -749,15 +732,12 @@ norwegian_mission_group_4 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			251 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			253 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4364 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -820,11 +800,9 @@ norwegian_mission_group_4 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			4361 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4362 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -904,15 +882,12 @@ norwegian_mission_group_4 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
 			244 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4375 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4365 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1027,27 +1002,21 @@ norwegian_mission_group_4 = {
 		trigger = {
 			is_at_war = no
 			236 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			167 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			4383 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			97 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			1744 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 			1931 = {
-					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 			}
 		}

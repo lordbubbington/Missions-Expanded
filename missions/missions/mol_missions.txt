@@ -28,25 +28,37 @@ mol_1 = {
 				add_permanent_claim = ROOT
             }
             1943 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             281 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
             2406 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+ 				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
             }
         }
     }
