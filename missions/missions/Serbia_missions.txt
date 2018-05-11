@@ -49,19 +49,19 @@ Serbia_missions_1 = {
 				name = "Serbia_rich"
 				duration = 18250
 			}
-			any_owned_province = {
+			random_owned_province = {
 				add_base_tax = 1
 			}
-			any_owned_province = {
+			random_owned_province = {
 				add_base_tax = 1
 			}
-			any_owned_province = {
+			random_owned_province = {
 				add_base_manpower = 1
 			}
-			any_owned_province = {
+			random_owned_province = {
 				add_base_production = 1
 			}
-			any_owned_province = {
+			random_owned_province = {
 				add_base_production = 1
 			}
 		}
