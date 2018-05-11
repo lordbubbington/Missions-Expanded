@@ -93,7 +93,7 @@ polish_missions_main_slot = {
 			add_casus_belli = {
     				target = TEU
     				type = cb_vassalize_mission
-    				duration = 365
+    				months = 12
 			}
 		}
 	}
@@ -358,7 +358,7 @@ polish_slot_2 = {
 			add_casus_belli = {
     				target = POM
     				type = cb_vassalize_mission
-    				duration = 365
+    				months = 12
 			}
 		}
 	}
@@ -1372,11 +1372,15 @@ polish_lithuania_slot = {
 				duration = 9125
 			}
 			1752 = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 					
 		}
@@ -1650,11 +1654,15 @@ polish_ruthenia_slot = {
 		effect = {
 			add_mil_power = 200
 			151 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}	
 		}
 	}
