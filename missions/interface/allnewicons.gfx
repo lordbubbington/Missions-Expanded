@@ -1,0 +1,157 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "aegeianArchipelago"
+		texturefile = "gfx//interface//missions//AegeianArchipelago_icon.dds"
+	}
+	
+
+
+	spriteType = {
+		name = "albania"
+		texturefile = "gfx//interface//missions//Albania_icon.dds"
+	}
+	
+
+
+	spriteType = {
+		name = "alfold"
+		texturefile = "gfx//interface//missions//Alfold_icon.dds"
+	}
+	
+
+
+	spriteType = {
+		name = "bosnia"
+		texturefile = "gfx//interface//missions//Bosnia_icon.dds"
+	}
+	
+
+
+	spriteType = {
+		name = "bulgaria"
+		texturefile = "gfx//interface//missions//Bulgaria_icon.dds"
+	}
+	
+
+
+	spriteType = {
+		name = "croatia"
+		texturefile = "gfx//interface//missions//Croatia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "dalmatia"
+		texturefile = "gfx//interface//missions//Dalmatia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "macedonia"
+		texturefile = "gfx//interface//missions//Macedonia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "moldavia"
+		texturefile = "gfx//interface//missions//Moldavia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "montenegro"
+		texturefile = "gfx//interface//missions//Montenegro_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "morea"
+		texturefile = "gfx//interface//missions//Morea_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+
+
+	spriteType = {
+		name = "northgreece"
+		texturefile = "gfx//interface//missions//NorthernGreece_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "northtransylvania"
+		texturefile = "gfx//interface//missions//NorthernTransylvania.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "serbia"
+		texturefile = "gfx//interface//missions//Serbia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "slovakia"
+		texturefile = "gfx//interface//missions//Slovakia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "southtransylvania"
+		texturefile = "gfx//interface//missions//SouthernTransylvania.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+
+	spriteType = {
+		name = "thrace"
+		texturefile = "gfx//interface//missions//Thrace_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+		spriteType = {
+		name = "transdanubia"
+		texturefile = "gfx//interface//missions//Transdanubia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+		spriteType = {
+		name = "wallachia"
+		texturefile = "gfx//interface//missions//Wallachia_icon.dds"
+		loadType = "INGAME"
+		transparencecheck = yes	
+	}
+	
+			spriteType = {
+		name = "jerusalem"
+		texturefile = "gfx//interface//missions//jerusalem.dds"
+		}
+		
+		spriteType = {
+        name = "mission_gre_partisians"
+        texturefile = "gfx//interface//missions//mission_gre_particians.dds"	
+	}	
+	}
