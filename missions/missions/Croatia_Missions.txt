@@ -114,7 +114,7 @@ Croatia_missions_1 = {
 			}
 		}
 		effect = {
-			carniola_area = {
+			carinthia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -133,14 +133,14 @@ Croatia_missions_1 = {
 		position = 5
 		provinces_to_highlight = {
 			OR = {
-				area = carniola_area
+				area = carinthia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			carniola_area = {
+			carinthia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
