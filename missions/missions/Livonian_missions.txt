@@ -181,7 +181,7 @@ baltic_might = {
 		effect = {
 			add_mil_power = 100		
 			add_army_tradition = 1
-			finland = {
+			finland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -217,11 +217,12 @@ baltic_might = {
 		icon = mission_unite_home_region
 		required_missions = { independent_livonic_order }
 		position = 7
+		provinces_to_highlight = {
 			OR = {
 				area = karelia_area
 				area = finland_area
 			}
- 		
+ 		}
 		trigger = {
 			karelia_area = {
 				type = all
@@ -234,7 +235,6 @@ baltic_might = {
 		}
 		effect = {
 			38 = {
-				add_trade_power = 2
 				add_base_production = 2
 				add_country_modifier = {
 				name = "baltic_power"
