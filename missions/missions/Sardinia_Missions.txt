@@ -7,7 +7,7 @@ sardinia_missions_3 = {
 	}
 	has_country_shield = yes
 
-	build_a_respectable_navy = {
+	sardinia_build_a_respectable_navy = {
 		icon = mission_unite_home_region
 		required_missions = { }
 		position = 1
@@ -20,11 +20,18 @@ sardinia_missions_3 = {
 				name = sardinia_respected_navy
 				duration = 7300
 			}
+			2992 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
 		}
 	}
 	sardinian_naval_tradition = {
 		icon = mission_unite_home_region
-		required_missions = { build_a_respectable_navy }
+		required_missions = { sardinia_build_a_respectable_navy }
 		position = 2
 		trigger = {
 			navy_tradition = 50
@@ -183,6 +190,197 @@ sardinia_missions_3 = {
 					}		
 				}
 			}						
+}
+
+sardinia_missions_4 = {
+	slot = 4
+	ai = yes
+	generic = no
+	potential = {
+			tag = SAR
+	}
+	has_country_shield = yes
+	sardinia_a_base_in_italy = {
+		icon = mission_unite_home_region
+		required_missions = { sardinia  }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 2992
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2992 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			226 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 730
+			}
+		}
+	}	
+	sardinia_a_base_in_italy = {
+		icon = mission_unite_home_region
+		required_missions = {   }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 2992
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			2992 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 730
+			}
+		}
+	}
+	sardinia_take_liguria = {
+		icon = mission_unite_home_region
+		required_missions = { sardinia_a_base_in_italy }
+		position = 3
+		provinces_to_highlight = {
+			area = liguria_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			liguria_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			savoy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 730
+			}
+		}
+	}		
+	sardinia_conquer_savoy = {
+		icon = mission_unite_home_region
+		required_missions = { sardinia_take_liguria }
+		position = 4
+		provinces_to_highlight = {
+			area = savoy_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			savoy_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			piedmont_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 730
+			}
+		}
+	}
+	sardinia_conquer_piedmont = {
+		icon = mission_unite_home_region
+		required_missions = { sardinia_conquer_savoy }
+		position = 5
+		provinces_to_highlight = {
+			area = piedmont_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			piedmont_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lombardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 730
+			}
+		}
+	}
+	sardinia_conquer_lombardy = {
+		icon = mission_unite_home_region
+		required_missions = { sardinia_conquer_savoy }
+		position = 6
+		provinces_to_highlight = {
+			area = lombardy_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			lombardy_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			emilia_romanga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+			venetia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}			
+			add_country_modifier = {
+				name = sardinia_glorious_conquest
+				duration = 1825
+			}
+		}
+	}			
 }
 sardinia_missions_2 = {
 	slot = 2
@@ -522,7 +720,8 @@ sardinia_missions_1 = {
 		required_missions = {  }
 		position = 5
 		trigger = {
-			government_rank = 2		
+			government_rank = 2	
+			total_development = 200	
 			is_subject = no	
 		}
 		effect = {
