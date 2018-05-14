@@ -1,5 +1,5 @@
-sardinia_missions_1 = {
-	slot = 1
+sardinia_missions_3 = {
+	slot = 3
 	ai = yes
 	generic = no
 	potential = {
@@ -13,6 +13,7 @@ sardinia_missions_1 = {
 		position = 1
 		trigger = {
 			navy_size_percentage = 1
+			is_subject = no				
 		}
 		effect = {
 			add_country_modifier = {
@@ -183,8 +184,8 @@ sardinia_missions_1 = {
 				}
 			}						
 }
-sardinia_missions_1 = {
-	slot = 1
+sardinia_missions_2 = {
+	slot = 2
 	ai = yes
 	generic = no
 	potential = {
@@ -198,6 +199,7 @@ sardinia_missions_1 = {
 		position = 1
 		trigger = {
 			army_size_percentage = 1
+			is_subject = no				
 		}
 		effect = {
 			add_country_modifier = {
@@ -409,8 +411,8 @@ sardinia_missions_1 = {
 				}
 			}
 } 			
-sardinia_missions_3 = {
-	slot = 3
+sardinia_missions_1 = {
+	slot = 1
 	ai = yes
 	generic = no
 	potential = {
@@ -424,6 +426,12 @@ sardinia_missions_3 = {
 		position = 1
 		trigger = {
 			religious_unity = 1
+			127 = {
+				has_building = temple
+			}
+			2986 = {
+				has_building = temple
+			}			
 		}
 		effect = {
 			add_country_modifier = {
@@ -514,7 +522,8 @@ sardinia_missions_3 = {
 		required_missions = {  }
 		position = 5
 		trigger = {
-			government_rank = 2			
+			government_rank = 2		
+			is_subject = no	
 		}
 		effect = {
 			add_country_modifier = {
@@ -529,6 +538,7 @@ sardinia_missions_3 = {
 		position = 6
 		trigger = {
 			government_rank = 3		
+			is_subject = no				
 		}
 		effect = {
 			remove_country_modifier = {

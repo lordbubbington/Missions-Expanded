@@ -11,16 +11,11 @@ parma_control_of_rome = {
     diplomatic_reputation = 1
 }
 san_giovannis_evangelista = {
-    advisor_cost = -0.1
-    yearly_corruption = -0.01
-}
-parma_cathedral = {
-    local_development_cost = -0.1
-    missionaries = 1	
+    local_build_time = -0.05
+    local_development_cost = -0.025
 }
 parma_university_of_parma = {
-    global_institution_spread = 0.1	
-    local_institution_spread = 0.15	
+    local_institution_spread = 0.2	
 }
 parma_rebuilt = {
     local_development_cost = -0.1
@@ -33,13 +28,13 @@ parma_grown = {
     local_production_efficiency = 0.1
 }
 parma_center_of_italy = {
-    local_institution_spread = 0.25	
+    local_institution_spread = 0.3	
     province_trade_power_modifier = 0.25
     advisor_pool = 2     
 }
 parma_a_modern_city = {
-    trade_value_modifier = 0.25
-    local_tax_modifier = 0.1	
-    local_production_efficiency = 0.1	
-    local_monthly_devastation = -0.025
+    trade_value_modifier = 0.2
+    local_tax_modifier = 0.05	
+    local_production_efficiency = 0.05	
+    local_monthly_devastation = -0.02
 }

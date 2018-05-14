@@ -263,11 +263,15 @@ parma_missions_4 = {
 			}
 		}
 		effect = {
+			add_papal_influence = 25
+			add_devotion = 40	
+			add_republican_tradition = 10
+			add_legitimacy = 20	
+			add_church_power = 50
+			add_fervor = 25
+			add_dip_power = 50
 			105 = {
-				add_province_modifier = {
-					name = parma_cathedral
-					duration = -1
-				}
+				add_cardinal = yes	
 			}			
 		}
 	}	
@@ -297,9 +301,9 @@ parma_missions_4 = {
 			is_part_of_hre = yes
 		}
 		effect = {
-			adm_power = 50
-			dip_power = 50
-			mil_power = 50
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
 			capital_scope = {
 				add_base_tax = 1
 				add_base_manpower = 1
@@ -367,7 +371,7 @@ parma_missions_5 = {
 			105 = {
 				add_province_modifier = {
 					name = parma_center_of_italy
-					duration = -1
+					duration = 18250
 				}
 			}			
 		}
