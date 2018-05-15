@@ -12,7 +12,7 @@ parma_control_of_rome = {
 }
 san_giovannis_evangelista = {
     local_build_time = -0.05
-    local_development_cost = -0.025
+    local_development_cost = -0.25
 }
 parma_university_of_parma = {
     local_institution_spread = 0.2	
