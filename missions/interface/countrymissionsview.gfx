@@ -466,4 +466,28 @@ spriteTypes = {
         name = "mission_hans_league"
         texturefile = "gfx//interface//missions//mission_hans_league.dds"	
 	}
+###################Siena#####################	
+	spriteType = {
+        	name = "mission_sie_development"
+        	texturefile = "gfx//interface//missions//mission_sie_development.dds"
+	}
+	spriteType = {
+        	name = "mission_sie_republic"
+        	texturefile = "gfx//interface//missions//mission_sie_republic.dds"
+	}
+	spriteType = {
+        	name = "mission_sie_bank"
+        	texturefile = "gfx//interface//missions//mission_sie_bank.dds"
+	}
+	spriteType = {
+        	name = "mission_sie_pope"
+        	texturefile = "gfx//interface//missions//mission_sie_pope.dds"
+	}
+	spriteType = {
+        	name = "mission_sie_ambition"
+        	texturefile = "gfx//interface//missions//mission_sie_ambition.dds"
+	}
+	
+	
+	
 }	
