@@ -139,7 +139,7 @@ ven_constantinople_conquered = {
     local_build_time = 0.2
     tax_income = 24
 }
-ven_venice_conquered_constantinople = {
+ven_venice_looted_constantinople = {
     development_cost = -0.1
     local_build_cost = -0.2
     local_build_time = -0.2
