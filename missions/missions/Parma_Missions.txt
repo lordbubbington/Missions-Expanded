@@ -19,7 +19,7 @@ parma_missions_1 = {
 				name = parma_defending_our_country
 				duration = 7300
 			}
-			emilia_romanga_area = {
+			emilia_romagna_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -33,13 +33,13 @@ parma_missions_1 = {
 		required_missions = { parma_defend_our_nation  }
 		position = 2
 		provinces_to_highlight = {
-			area = emilia_romanga_area
+			area = emilia_romagna_area 
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			emilia_romanga_area = {
+			emilia_romagna_area  = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -74,7 +74,7 @@ parma_missions_1 = {
 			}									
 			add_country_modifier = {
 				name = parma_is_victorious
-				duration = 1825
+				duration = 3650
 			}
 		}
 	}
@@ -131,7 +131,7 @@ parma_missions_1 = {
 			}												
 			add_country_modifier = {
 				name = parma_is_victorious
-				duration = 1825
+				duration = 3650
 			}
 		}
 	}	
@@ -166,7 +166,7 @@ parma_missions_1 = {
 			}									
 			add_country_modifier = {
 				name = parma_is_victorious
-				duration = 1825
+				duration = 3650
 			}
 		}
 	}
@@ -195,7 +195,7 @@ parma_missions_1 = {
 			}									
 			add_country_modifier = {
 				name = parma_is_victorious
-				duration = 1825
+				duration = 3650
 			}
 		}
 	}	
@@ -217,7 +217,7 @@ parma_missions_1 = {
 		effect = {									
 			add_country_modifier = {
 				name = parma_is_victorious
-				duration = 1825
+				duration = 7300
 			}
 			add_country_modifier = {
 				name = parma_control_of_rome

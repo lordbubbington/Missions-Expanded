@@ -68,7 +68,7 @@ sardinia_missions_3 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}
@@ -97,7 +97,7 @@ sardinia_missions_3 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 				
 		}
@@ -128,7 +128,7 @@ sardinia_missions_3 = {
 			create_explorer = 50				
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 			add_country_modifier = {
 				name = sardinia_colonial_excitement
@@ -225,39 +225,10 @@ sardinia_missions_4 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}	
-	sardinia_a_base_in_italy = {
-		icon = mission_unite_home_region
-		required_missions = {   }
-		position = 2
-		provinces_to_highlight = {
-			province_id = 2992
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		trigger = {
-			2992 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = sardinia_glorious_conquest
-				duration = 730
-			}
-		}
-	}
 	sardinia_take_liguria = {
 		icon = mission_unite_home_region
 		required_missions = { sardinia_a_base_in_italy }
@@ -283,7 +254,7 @@ sardinia_missions_4 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}		
@@ -312,7 +283,7 @@ sardinia_missions_4 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}
@@ -341,7 +312,7 @@ sardinia_missions_4 = {
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}
@@ -361,7 +332,7 @@ sardinia_missions_4 = {
 			}
 		}
 		effect = {
-			emilia_romanga_area = {
+			emilia_romagna_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -377,7 +348,7 @@ sardinia_missions_4 = {
 			}			
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 1825
+				duration = 3650
 			}
 		}
 	}			
@@ -445,7 +416,7 @@ sardinia_missions_2 = {
 			}			
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}	
@@ -481,7 +452,7 @@ sardinia_missions_2 = {
 			}					
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}	
@@ -510,7 +481,7 @@ sardinia_missions_2 = {
 			}					
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}		
@@ -711,7 +682,7 @@ sardinia_missions_1 = {
 			}					
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
-				duration = 730
+				duration = 1825
 			}
 		}
 	}
