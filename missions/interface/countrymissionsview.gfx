@@ -487,7 +487,42 @@ spriteTypes = {
         	name = "mission_sie_ambition"
         	texturefile = "gfx//interface//missions//mission_sie_ambition.dds"
 	}
-	
-	
+##################Malta########################
+	spriteType = {
+        	name = "mission_jai_independent"
+        	texturefile = "gfx//interface//missions//mission_jai_independent.dds"
+	}
+	spriteType = {
+        	name = "mission_jai_expand"
+        	texturefile = "gfx//interface//missions//mission_jai_expand.dds"
+	}
+	spriteType = {
+        	name = "mission_jai_valleta"
+        	texturefile = "gfx//interface//missions//mission_jai_valleta.dds"
+	}
+	spriteType = {
+        	name = "mission_jai_carthage"
+        	texturefile = "gfx//interface//missions//mission_jai_carthage.dds"
+	}
+	spriteType = {
+        	name = "mission_cth_tunis"
+        	texturefile = "gfx//interface//missions//mission_cth_tunis.dds"
+	}
+	spriteType = {
+        	name = "mission_cth_tripoli"
+        	texturefile = "gfx//interface//missions//mission_cth_tripoli.dds"
+	}
+	spriteType = {
+        	name = "mission_cth_algiers"
+        	texturefile = "gfx//interface//missions//mission_cth_algiers.dds"
+	}
+	spriteType = {
+        	name = "mission_cth_colony"
+        	texturefile = "gfx//interface//missions//mission_cth_colony.dds"
+	}
+	spriteType = {
+        	name = "mission_cth_cartago"
+        	texturefile = "gfx//interface//missions//mission_cth_cartago.dds"
+	}
 	
 }	
