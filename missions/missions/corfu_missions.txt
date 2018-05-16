@@ -7,7 +7,7 @@ tag = CEP
 }
 has_country_shield = yes
 
-nax_freedom = {
+CEP_freedom = {
 required_missions = { }
 	trigger = {
 	is_subject = no
