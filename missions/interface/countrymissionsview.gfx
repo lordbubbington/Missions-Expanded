@@ -524,5 +524,196 @@ spriteTypes = {
         	name = "mission_cth_cartago"
         	texturefile = "gfx//interface//missions//mission_cth_cartago.dds"
 	}
-	
+############### Poland #################
+	spriteType = {
+        	name = "pol_coal"
+        	texturefile = "gfx//interface//missions//pol_coal.dds"
+	}
+	spriteType = {
+        	name = "pol_sejm"
+        	texturefile = "gfx//interface//missions//pol_sejm.dds"
+	}
+	spriteType = {
+        	name = "pol_sign"
+        	texturefile = "gfx//interface//missions//pol_sign.dds"
+	}
+	spriteType = {
+        	name = "pol_town"
+        	texturefile = "gfx//interface//missions//pol_town.dds"
+	}
+	spriteType = {
+        	name = "pol_mill"
+        	texturefile = "gfx//interface//missions//pol_mill.dds"
+	}
+	spriteType = {
+        	name = "pol_ship"
+        	texturefile = "gfx//interface//missions//pol_ship.dds"
+	}
+	spriteType = {
+        	name = "pol_swed"
+        	texturefile = "gfx//interface//missions//pol_swed.dds"
+	}
+	spriteType = {
+        	name = "pol_ambe"
+        	texturefile = "gfx//interface//missions//pol_ambe.dds"
+	}
+	spriteType = {
+        	name = "pol_bank"
+        	texturefile = "gfx//interface//missions//pol_bank.dds"
+	}
+	spriteType = {
+        	name = "pol_army"
+        	texturefile = "gfx//interface//missions//pol_army.dds"
+	}
+	spriteType = {
+        	name = "pol_sieg"
+        	texturefile = "gfx//interface//missions//pol_sieg.dds"
+	}
+	spriteType = {
+        	name = "pol_mold"
+        	texturefile = "gfx//interface//missions//pol_mold.dds"
+	}
+	spriteType = {
+        	name = "pol_roma"
+        	texturefile = "gfx//interface//missions//pol_roma.dds"
+	}
+	spriteType = {
+        	name = "pol_hung"
+        	texturefile = "gfx//interface//missions//pol_hung.dds"
+	}
+	spriteType = {
+        	name = "pol_plc"
+        	texturefile = "gfx//interface//missions//pol_plc.dds"
+	}
+	spriteType = {
+        	name = "pol_girl"
+        	texturefile = "gfx//interface//missions//pol_girl.dds"
+	}
+	spriteType = {
+        	name = "pol_babc"
+        	texturefile = "gfx//interface//missions//pol_babc.dds"
+	}
+	spriteType = {
+        	name = "pol_pota"
+        	texturefile = "gfx//interface//missions//pol_pota.dds"
+	}
+	spriteType = {
+        	name = "pol_snow"
+        	texturefile = "gfx//interface//missions//pol_snow.dds"
+	}
+	spriteType = {
+        	name = "pol_tsar"
+        	texturefile = "gfx//interface//missions//pol_tsar.dds"
+	}
+	spriteType = {
+        	name = "pol_sarm"
+        	texturefile = "gfx//interface//missions//pol_sarm.dds"
+	}
+	spriteType = {
+        	name = "pol_cons"
+        	texturefile = "gfx//interface//missions//pol_cons.dds"
+	}
+	spriteType = {
+        	name = "pol_boh"
+        	texturefile = "gfx//interface//missions//pol_boh.dds"
+	}
+	spriteType = {
+        	name = "pol_cros"
+        	texturefile = "gfx//interface//missions//pol_cros.dds"
+	}
+	spriteType = {
+        	name = "pol_chur"
+        	texturefile = "gfx//interface//missions//pol_chur.dds"
+	}
+	spriteType = {
+        	name = "pol_bast"
+        	texturefile = "gfx//interface//missions//pol_bast.dds"
+	}
+	spriteType = {
+        	name = "pol_huss"
+        	texturefile = "gfx//interface//missions//pol_huss.dds"
+	}
+	spriteType = {
+        	name = "pol_sea"
+        	texturefile = "gfx//interface//missions//pol_sea.dds"
+	}
+	spriteType = {
+        	name = "pol_libr"
+        	texturefile = "gfx//interface//missions//pol_libr.dds"
+	}
+	spriteType = {
+        	name = "pol_jews"
+        	texturefile = "gfx//interface//missions//pol_jews.dds"
+	}
+	spriteType = {
+        	name = "pol_gold"
+        	texturefile = "gfx//interface//missions//pol_gold.dds"
+	}
+	spriteType = {
+        	name = "pol_gdan"
+        	texturefile = "gfx//interface//missions//pol_gdan.dds"
+	}
+	spriteType = {
+        	name = "pol_dom"
+        	texturefile = "gfx//interface//missions//pol_dom.dds"
+	}
+	spriteType = {
+        	name = "pol_trad"
+        	texturefile = "gfx//interface//missions//pol_trad.dds"
+	}
+	spriteType = {
+        	name = "pol_secured"
+        	texturefile = "gfx//interface//missions//pol_secured.dds"
+	}
+	spriteType = {
+        	name = "pol_throne"
+        	texturefile = "gfx//interface//missions//pol_throne.dds"
+	}
+	spriteType = {
+        	name = "pol_casi"
+        	texturefile = "gfx//interface//missions//pol_casi.dds"
+	}
+	spriteType = {
+        	name = "pol_lwow"
+        	texturefile = "gfx//interface//missions//pol_lwow.dds"
+	}
+	spriteType = {
+        	name = "pol_merm"
+        	texturefile = "gfx//interface//missions//pol_merm.dds"
+	}
+	spriteType = {
+        	name = "pol_teut"
+        	texturefile = "gfx//interface//missions//pol_teut.dds"
+	}
+	spriteType = {
+        	name = "pol_pomo"
+        	texturefile = "gfx//interface//missions//pol_pomo.dds"
+	}
+	spriteType = {
+        	name = "pol_delu"
+        	texturefile = "gfx//interface//missions//pol_delu.dds"
+	}
+	spriteType = {
+        	name = "pol_set"
+        	texturefile = "gfx//interface//missions//pol_set.dds"
+	}
+	spriteType = {
+        	name = "pol_cast"
+        	texturefile = "gfx//interface//missions//pol_cast.dds"
+	}
+	spriteType = {
+        	name = "pol_sile"
+        	texturefile = "gfx//interface//missions//pol_sile.dds"
+	}
+	spriteType = {
+        	name = "pol_mora"
+        	texturefile = "gfx//interface//missions//pol_mora.dds"
+	}
+	spriteType = {
+        	name = "pol_vise"
+        	texturefile = "gfx//interface//missions//pol_vise.dds"
+	}
+
+
+
 }	
