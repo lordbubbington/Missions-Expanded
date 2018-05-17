@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  polish_renaissance_mod:0 "Polish Arts Influential"
  west_slavic_union:0 "West Slavic Unity"
  papal_sanction_poland:0 "Papal Approval" 
@@ -79,11 +79,11 @@
  rise_of_industry_desc:0 "We should make sure to focus on the many resources through out our nation."
  expansion_of_cities_title:0 "Found New Towns"
  expansion_of_cities_desc:0 "As our population swells we need larger towns to accomodate the demand."
- coal_powerhouse_title:0 "First Factories"
+ coal_powerhouse_title:0 "Polish Coal"
  coal_powerhouse_desc:0 "Steam power has revolutionized our production capabilities."
  sign_constitution_title:0 "Sign Constitution"
  sign_constitution_desc:0 "As our urban population grows, they demand more rights."
- end_feudalism_title:0 "Reject Feudalism"
+ end_feudalism_title:0 "Expand Sejm"
  end_feudalism_desc:0 "We can no longer rely on a system that exploits its own people."
  shipping_lanes_title:0 "Shipping Lanes"
  shipping_lanes_desc:0 "Our new dockyards allow for greater contact with the empires of the West."
@@ -97,15 +97,15 @@
  romans_in_romania_desc:0 "The fall of the Roman Empire led to many Romans coming to Romania."
  black_sea_route_title:0 "Black Sea Route"
  black_sea_route_desc:0 "Why should be focus solely on the Baltic when the Black Sea is ours."
- mediterranian_link_title:0 "Mediterranian Link"
- mediterranian_link_desc:0 "The warm Mediterranian waters will allow much more prosperity."
+ mediterranian_link_title:0 "Integrate Romania"
+ mediterranian_link_desc:0 "Integrating Romania into our commonwealth will strengthen our southern border."
  settle_lithuania_title:0 "Frontier Lithuania"
  settle_lithuania_desc:0 "Now that we hold these new lands we must link them to our home."
  winter_crops_title:0 "American Imports"
  winter_crops_desc:0 "The Potato revolutionized our food production capabilities."
- russia_1_title:0 "Russian Yolk"
+ russia_1_title:0 "Russian Aggression"
  russia_1_desc:0 "These neighbors are no different than tartars!"
- russia_2_title:0 "Trouble in Moskwa"
+ russia_2_title:0 "Install Tsar"
  russia_2_desc:0 "The Russian Throne lays dormant while its rightful holder is in our court."
  restore_hungary_title:0 "Hungarian Inheritance"
  restore_hungary_desc:0 "Our kings held the crown of Hungary multiple times. The death of Władysław III of Poland meant an end to the Polish Hungarian union but our claim remains as long as we have the will to enforce it."
@@ -117,6 +117,8 @@
  sarmatianism_desc:0 "We are decendents of the Sarmatian riders of the Orient, we must adopt their customs."
  ensure_constantinople_title:0 "Christian Constantinople"
  ensure_constantinople_desc:0 "We must not let the Turks continue to pillage Europe."
+ bohemian_friendship_title:0 "Bohemian Friendship"
+ bohemian_friendship_desc:0 "We have amended our relations with our Bohemian neighbors."
  
  
 
