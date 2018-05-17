@@ -14,6 +14,7 @@ papal_sanction_poland = {
 }
 enforced_unity_pol = {
 	diplomatic_upkeep = 1
+	max_absolutism = 10
 }
 
 defender_of_europe = {
