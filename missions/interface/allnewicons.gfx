@@ -32,7 +32,43 @@ spriteTypes = {
 		name = "bulgaria"
 		texturefile = "gfx//interface//missions//Bulgaria_icon.dds"
 	}
+
+
+
+	spriteType = {
+		name = "snowy_cannons"
+		texturefile = "gfx//interface//missions//Cannon_icon.dds"
+	}
 	
+
+
+
+	spriteType = {
+		name = "halberdier"
+		texturefile = "gfx//interface//missions//Halberdier.dds"
+	}
+
+
+
+	spriteType = {
+		name = "dark_knight"
+		texturefile = "gfx//interface//missions//Dark_knight.dds"
+	}
+
+
+
+	spriteType = {
+		name = "renaissance"
+		texturefile = "gfx//interface//missions//Renaissance.dds"
+	}
+
+
+
+	spriteType = {
+		name = "genoa_jeans"
+		texturefile = "gfx//interface//missions//Genoa_jeans.dds"
+	}
+
 
 
 	spriteType = {
