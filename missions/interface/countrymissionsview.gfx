@@ -713,7 +713,9 @@ spriteTypes = {
         	name = "pol_vise"
         	texturefile = "gfx//interface//missions//pol_vise.dds"
 	}
-
-
-
+############### Modena #################
+	spriteType = {
+		name = "mission_generic_old_university"
+		texturefile = "gfx//interface//missions//mission_generic_old_university.dds"
+	}
 }	
