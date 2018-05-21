@@ -1,0 +1,327 @@
+#Buy a Base?
+country_event = {
+	id = POR_flav.1
+	title = "POR_flav.1.t"
+	desc = "POR_flav.1.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = { num_of_loans = 4 }
+		has_discovered = 668
+		668 = {
+			NOT = {owner = {technology_group = western}}
+		}
+		#is_year = 1500
+	}
+	
+	mean_time_to_happen = {
+		months = 12 
+	}
+	
+	option = {
+		name = "POR_flav.1.a" #Offer the Ming to buy/rent the Harbor of Macau
+		ai_chance = {
+			factor = 75
+		}
+		custom_tooltip = POR_flav.1.a.tt
+		tooltip = {
+		add_country_modifier = {
+				name = "macau_rent_pay"
+				duration = -1
+			}
+		}
+		668 = { owner = {
+			country_event = { id = POR_flav.2 }
+		}
+		}
+	}
+	option = { #no moneys to spend
+		name = "POR_flav.1.b"
+		ai_chance = {
+			factor = 25
+		}
+		custom_tooltip = POR_flav.1.b.tt
+		add_prestige = -5
+	}
+}
+
+#Selling our Ports
+country_event = {
+	id = POR_flav.2
+	title = "POR_flav.2.t"
+	desc = "POR_flav.2.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "POR_flav.2.a" #Sell Macau
+		ai_chance = { factor = 100 }
+		tooltip = {
+			668 = {
+				cede_province = POR
+			}
+			add_country_modifier = {
+				name = "macau_rent_get"
+				duration = -1
+			}
+			add_treasury = 100
+		}
+		add_treasury = 100
+		FROM = {
+			country_event = { id = POR_flav.3 }
+			add_opinion = {
+				who = ROOT
+				modifier = macau_sold
+			}
+		}
+	}
+	option = {
+		name = "POR_flav.2.b" #We will keep Macau
+		ai_chance = { factor = 0 }
+		custom_tooltip = POR_flav.2.b.tt
+	}
+}
+
+#Treaty of Macau
+country_event = {
+	id = POR_flav.3
+	title = "POR_flav.3.t"
+	desc = "POR_flav.3.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "POR_flav.3.a" #
+		668 = { owner  = {
+			add_country_modifier = {
+				name = "macau_rent_get"
+				duration = -1
+			}
+			668 = {
+				remove_core = MNG
+				add_core = POR
+				cede_province = POR
+			}
+		}
+		}
+		add_country_modifier = {
+				name = "macau_rent_pay"
+				duration = -1
+			}
+		add_treasury = -100
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = macau_sold
+			}
+		}
+	}
+}
+
+#Ming wants to keep Macau
+country_event = {
+	id = POR_flav.4
+	title = "POR_flav.4.t"
+	desc = "POR_flav.4.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "POR_flav.4.a" 
+	}
+}
+
+##CLEANUP_no Macau no Rent
+country_event = {
+	id = POR_flav.5
+	title = "POR_flav.5.t"
+	desc = "POR_flav.5.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		NOT = {owns = 668}
+		has_country_modifier = macau_rent_pay
+	}
+	
+	mean_time_to_happen = {
+		months = 1 
+	}
+	
+	option = {
+		name = "POR_flav.5.a"
+	remove_country_modifier = macau_rent_pay
+	668 = {
+	remove_province_modifier= feitoria_macau
+	}
+	
+	}
+}
+
+### Event ID 6 reserved for MNG cleanup
+
+##Socotra claim
+country_event = {
+	id = POR_flav.7
+	title = "POR_flav.7.t"
+	desc = "POR_flav.7.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		has_discovered = 1099
+		NOT = { 1099 = { owned_by = POR}}
+		has_country_modifier = POR_merchant_navy
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "POR_flav.7.a"
+		POR = {
+		add_treasury = -75
+		add_yearly_sailors = -1
+		}
+		1099 = {
+				add_core = POR
+				cede_province = POR
+		}
+	}
+	
+	option = {
+		name = "POR_flav.7.b"
+		add_prestige = -5
+	}
+}
+
+##Socotra Base
+country_event = {
+	id = POR_flav.8
+	title = "POR_flav.8.t"
+	desc = "POR_flav.8.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		1099 = { owned_by = POR }
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "POR_flav.8.a"
+		POR = {
+		add_treasury = -200
+		}
+		1099 = {
+			add_province_modifier = {
+			name = "socotra_naval_base"
+			duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "POR_flav.8.b"
+		add_base_production = -1
+		add_prestige = -5
+	}
+}
+
+# The Portuguese Crown in a Union
+country_event = {
+	id = flavor_POR.9	
+	title = "flavor_spa.EVTNAME3162"
+	desc = "flavor_spa.EVTDESC3162"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPA
+		marriage_with = POR
+		is_subject = no
+		POR = {
+			exists = yes
+			#ai = yes
+			#was_player = no
+			is_subject = no
+			has_regency = yes
+			religion = ROOT
+			NOT = { is_rival = SPA }
+			has_opinion = { who = ROOT value = 150 }
+		}
+		is_year = 1550
+		NOT = { is_year = 1650 }
+	}
+
+	### THIS MTTH should proc the union in the above triggercase 75%
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+
+	option = {		# One King, Two Kingdoms
+		name = "flavor_spa.EVTOPTB3162"
+		ai_chance = { factor = 90 }
+		POR = {country_event = { id = POR_flav.10 }}
+		#create_union = POR # is now done by the next event
+	}
+	option = {		# The extra burden is not worth it
+		name = "flavor_spa.EVTOPTC3162"
+		ai_chance = { factor = 10 }
+		add_prestige = 1
+	}
+}
+
+##Portuguese side of the union
+country_event = {
+	id = POR_flav.10
+	title = "POR_flav.10.t"
+	desc = "POR_flav.10.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "POR_flav.10.a" #accept union
+		ai_chance = {
+			factor = 95
+		}
+		tooltip = {
+			SPA = {create_union = POR}
+		}
+		SPA = {create_union = POR}
+	}
+	option = { #refuse
+		name = "POR_flav.10.b"
+		ai_chance = {
+			factor = 5
+		}
+		add_stability = -3
+	}
+}
