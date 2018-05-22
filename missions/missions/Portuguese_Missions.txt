@@ -43,6 +43,12 @@ por_african_ambitions = {
 		icon = mission_rb_increase_our_reach
 		required_missions { por_discover_african_coast } 
 		position = 3
+		
+		provinces_to_highlight = {
+			province_id = 1096
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
 			
 		trigger = {  
 			owns = 1096 
@@ -143,7 +149,7 @@ por_african_ambitions = {
 	
 	por_convert_kongo = {
 		icon = mission_african_soldier
-		required_missions = { 
+		required_missions = {
 			por_colonise_central_africa
 			Casa_da_India_improvement
 		}
@@ -165,7 +171,7 @@ por_african_ambitions = {
 	
 		effect = {
 			create_subject = {
-			subject_type = colony
+			subject_type = african_colony
 			subject = KON
 			}
 			add_adm_power = -100
@@ -179,7 +185,7 @@ por_african_ambitions = {
 				add_country_modifier = {
 				name = "por_kongo_papal_kongoside"
 				duration = 18250
-			}
+				}
 			}
 		}
 	}
@@ -420,6 +426,12 @@ por_brazilian_ambitions = {
 		required_missions { por_discovers_indonesia } 
 		position = 11
 		
+		provinces_to_highlight = {
+			province_id = 596
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
 		trigger = {  
 			owns = 596 
 			treasury = 250
@@ -454,7 +466,7 @@ por_east_african_ambitions = {
 		required_missions = { por_colonise_west_africa }
 		position = 6
 		completed_by = 1499.1.1
-		
+						
 		trigger = { 
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_south_africa
@@ -662,6 +674,12 @@ por_east_african_ambitions = {
 		required_missions = { }
 		position = 12
 		
+		provinces_to_highlight = {
+			province_id = 668
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
 		trigger = {
 				owns_core_province = 668
 				is_at_war = no 
@@ -857,6 +875,12 @@ por_zanzibar_hormuz_goadourada_missions = {
 		icon = mission_market_place_with_asian_traders
 		required_missions { portugal_discovers_india } 
 		position = 10
+		
+		provinces_to_highlight = {
+			province_id = 2030
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
 		
 		trigger = {  
 			owns = 2030

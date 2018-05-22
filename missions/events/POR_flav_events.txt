@@ -1,3 +1,7 @@
+##Reserving a namespace
+
+namespace = POR_flav
+
 #Buy a Base?
 country_event = {
 	id = POR_flav.1
@@ -324,4 +328,161 @@ country_event = {
 		}
 		add_stability = -3
 	}
+}
+
+country_event = {
+	id = POR_flav.10
+	title = "POR_flav.10.t"
+	desc = "POR_flav.10.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "POR_flav.10.a" #accept union
+		ai_chance = {
+			factor = 95
+		}
+		tooltip = {
+			SPA = {create_union = POR}
+		}
+		SPA = {create_union = POR}
+	}
+	option = { #refuse
+		name = "POR_flav.10.b"
+		ai_chance = {
+			factor = 5
+		}
+		add_stability = -3
+	}
+}
+
+##Fast Colonization of Arguin
+province_event = {
+	id = POR_flav.11
+	title = "POR_flav.11.t"
+	desc = "POR_flav.11.d"
+	picture = COLONIZATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_colony = yes
+		province_id = 1111
+		colonysize = 300
+		#NOT = { colonysize = 500 }
+		has_province_modifier = feitoria_first
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = "POR_flav.11.a"
+		add_colonysize = 400
+		add_treasury = 50
+	}
+}
+
+##Information event for Sao Tome and fernandao po
+province_event = {
+	id = POR_flav.12
+	title = "POR_flav.12.t"
+	desc = {
+	   trigger = { province_id = 1306 }
+	   desc = "POR_flav.12.d.1"
+	}
+	desc = {
+	   trigger = { province_id = 1097 }
+	   desc = "POR_flav.12.d.2"
+	}
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owned_by = POR
+		OR = {
+		colonysize = 300
+		is_city = yes
+		}
+		OR = {
+		province_id = 1306 #sao tome
+		province_id = 1097 #fernando po
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	option = {
+		ai_chance = {
+			factor = 95
+		}
+		name = "POR_flav.12.a.1"
+		if = {
+			limit = {
+				province_id = 1306
+			}
+			1306 = { 
+			add_colonysize = 200
+			POR = { add_treasury = -10 }
+			}
+        }
+		if = {
+			limit = {
+				AND = {
+				province_id = 1097
+				NOT = { province_id = 1306 }
+				}
+			}
+			1097 = { 
+			add_colonysize = 200
+			POR = { 
+				add_treasury = -10 
+			}
+			}
+		}
+		POR = { set_country_flag = por_colonized_volcanic_islands }
+	}
+	option = { #refuse
+		name = "POR_flav.12.b"
+		ai_chance = {
+			factor = 5
+		}
+		POR = { 
+			set_country_flag = por_colonized_volcanic_islands
+		}
+	}
+		
+}
+
+##Information event Elmina
+
+country_event = {
+	id = POR_flav.13
+	title = "POR_flav.13.t"
+	desc = "POR_flav.13.d"
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		has_discovered = 1139 
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	option = {
+		name = "POR_flav.13.a"
+		set_country_flag = por_discovered_elmina
+		add_treasury = 25
+	}		
 }

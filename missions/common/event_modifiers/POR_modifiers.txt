@@ -6,10 +6,12 @@ Casa_da_India_building_1 = {
 	allowed_num_of_buildings = 1
 	#local_ship_cost = -0.10
 	trade_efficiency = 0.1
+	inflation_reduction = 0.1
+	global_foreign_trade_power = 0.10
 	#inflation_reduction = 0.05
 	province_trade_power_modifier = 0.10
 	province_trade_power_value = 5
-	colonist_placement_chance = 0.025
+	colonist_placement_chance = 0.05
 	global_colonial_growth = 10
 	native_uprising_chance = -0.50
 	#native_assimilation = 0.25
@@ -23,8 +25,8 @@ Casa_da_India_building_2 = {
 	allowed_num_of_buildings = 2
 	#local_ship_cost = -0.25
 	trade_efficiency = 0.2
-	inflation_reduction = 0.1
-	global_foreign_trade_power = 0.10
+	inflation_reduction = 0.2
+	global_foreign_trade_power = 0.20
 	province_trade_power_modifier = 0.20
 	province_trade_power_value = 10	
 	colonist_placement_chance = 0.075
@@ -40,7 +42,7 @@ Casa_da_India_building_3 = {
 	allowed_num_of_buildings = 2
 	#local_ship_cost = -0.25
 	trade_efficiency = 0.25
-	inflation_reduction = 0.25
+	inflation_reduction = 0.35
 	global_trade_power = 0.20
 	global_foreign_trade_power = 0.20
 	province_trade_power_modifier = 0.25
@@ -54,7 +56,7 @@ Casa_da_India_building_3 = {
 	}
 	
 vila_do_infante = {
-	local_tax_modifier = -0.9
+	local_tax_modifier = -0.75
 	range = 0.15
 	trade_range_modifier = 0.25
 	navy_tradition = 1.0
@@ -69,7 +71,7 @@ vila_do_infante = {
 
 feitoria_building_up = {
 	tax_income  = -2
-	local_colonial_growth = 10
+	local_colonial_growth = 15
 	local_colonist_placement_chance = 0.05
 }
 
@@ -78,6 +80,7 @@ feitoria_first = {
 	local_unrest = -1
 	trade_goods_size = 1.0
 	trade_goods_size_modifier = 0.2
+	native_uprising_chance = -0.50
 	picture = "global_colonial_growth"
 }
 
@@ -202,15 +205,15 @@ POR_colo_boost = {
 por_brazil_complete = {
 	reduced_liberty_desire = 25
 	global_tariffs = 0.10
-	liberty_desire_from_subject_development = -0.05
+	liberty_desire_from_subject_development = -0.10
 }
 
 por_caribbean_papal = {
-	papal_influence = -2.0
+	papal_influence = -2.5
 }
 
 por_kongo_papal = {
-	papal_influence = 1.0
+	papal_influence = 2.0
 	missionaries = -1
 }
 

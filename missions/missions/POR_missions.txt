@@ -14,7 +14,12 @@ CasaDaIndia_missions = {
 		icon = mission_dominate_home_trade_node
 		required_missions { } 
 		position = 1
-			
+		
+		provinces_to_highlight = {
+			province_id = 1111
+			NOT = { owned_by = ROOT }
+		}
+		
 		trigger = {  
 			treasury = 50
 			owns = 1111 
@@ -31,7 +36,7 @@ CasaDaIndia_missions = {
 				}
 				add_province_modifier = {
 					name = "feitoria_building_up"
-					duration = 1095
+					duration = 1825
 				}
 			}
 		}
@@ -64,9 +69,9 @@ CasaDaIndia_missions = {
 			add_treasury = -100
 			add_dip_power = 50
 			capital_scope = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
 				add_province_modifier = {
 				name = "Casa_da_India_building_1"
 				duration = -1
@@ -81,7 +86,19 @@ CasaDaIndia_missions = {
 		required_missions = { Casa_da_India_mission }
 		position = 4
 		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1097
+				province_id = 1306
+			}
+			has_discovered = ROOT
+		}
+		
 		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = por_mission_fernando_po.tt
+				has_country_flag = por_colonized_volcanic_islands
+			}
 			owns = 1097
 			owns = 1306
 			treasury = 100
@@ -96,7 +113,7 @@ CasaDaIndia_missions = {
 			1306 = {
 				change_trade_goods = sugar
 				change_religion = jewish
-				add_base_tax = 1
+				add_base_tax = 2
 				add_base_production = 4
 				add_base_manpower = 1
 				add_province_modifier = {
@@ -121,16 +138,26 @@ CasaDaIndia_missions = {
 		required_missions { Casa_da_India_mission } 
 		position = 5
 		
+		provinces_to_highlight = {
+			province_id = 1139
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
 		trigger = {  
+			custom_trigger_tooltip = {
+				tooltip = por_mission_fort_elmina.tt
+				has_country_flag = por_discovered_elmina
+			}
 			owns = 1139 
-			treasury = 300
+			treasury = 200 
 		}
 		
 		effect = {
 			1139 = {
-			add_treasury = -300
+			add_treasury = -200
 			add_building = fort_15th
-			add_base_production = 2
+			#add_base_production = 2
 			change_trade_goods = gold
 				add_province_modifier = {
 				name = "feitoria_fort_elmina"
@@ -138,7 +165,7 @@ CasaDaIndia_missions = {
 				}
 				add_province_modifier = {
 					name = "feitoria_building_up"
-					duration = 1095
+					duration = 1825
 				}
 			}
 		}
@@ -164,13 +191,13 @@ CasaDaIndia_missions = {
 			is_subject = NO
 			owns_core_province = 227
 			is_at_war = no 
-			treasury = 500
+			treasury = 350
 			capital = 227
 			exploration_ideas = 7
 		}
 		
 		effect = {
-			add_treasury = -500
+			add_treasury = -350
 			add_dip_power = 150
 			capital_scope = {
 				add_base_tax = 3
@@ -238,12 +265,12 @@ Marinha_Portuguesa_missions = {
 		trigger = {
 			owns_core_province = 230
 			is_at_war = no 
-			treasury = 100
+			treasury = 50
 		}
 		
 		effect = {
 			add_navy_tradition = 20.0
-			add_treasury = -100
+			add_treasury = -50
 			#add_dip_power = 100
 			230 = {
 				add_province_modifier = {
@@ -260,15 +287,19 @@ Marinha_Portuguesa_missions = {
 		required_missions = { POR_mission_VilaDoInfante }
 		position = 2
 		
+		provinces_to_highlight = {
+			province_id = 367
+		}
+		
 		trigger = {
 				owns_core_province = 367
 				is_at_war = no 
-				treasury = 50
+				#treasury = 50
 				adm_power = 50
 			}
 		
 		effect = {
-				add_treasury = -50
+				#add_treasury = -50
 				add_adm_power = -50
 				367 = {
 					add_province_modifier = {
@@ -366,6 +397,12 @@ por_dip_missions = {
 		required_missions = { POR_mission_azores_base }
 		position = 3
 		
+		provinces_to_highlight = {
+			province_id = 481
+			has_discovered = ROOT
+			#NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
 		trigger = { 
 			owns = 481
 		}
@@ -384,6 +421,11 @@ por_dip_missions = {
 		icon = mission_rb_colonise_canada
 		required_missions = { por_bermuda_mission }
 		position = 4
+		
+		provinces_to_highlight = {
+			province_id = 2573
+			has_discovered = ROOT
+		}
 		
 		trigger = { 
 			OR = {
