@@ -1,0 +1,249 @@
+sicily_mission_1 = {
+	slot = 1
+	generic = no
+		ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+		tag = SIC
+		tag = TSC
+		tag = TSE
+		}
+	}
+
+	request_independence = {
+		icon = mission_religious
+
+		position = 1
+		required_missions = { 
+		}
+		
+		provinces_to_highlight = {
+			province_id = 125
+			province_id = 124
+			province_id = 2982
+			province_id = 126
+			}
+		trigger = {
+			ROOT = {
+				OR = {
+					years_in_union_under = {
+							who = ARA
+							years = 1
+							}
+					years_in_vassalage_under = {
+							who = ARA
+							years = 1
+							}
+						}
+					}
+				}
+		effect = {
+			break_union = ARA
+			set_government_rank = 2
+			124 = { cede_province = SIC add_core = SIC }
+			125 = { cede_province = SIC add_core = SIC }
+			126 = { cede_province = SIC add_core = SIC }
+			2982 = { cede_province = SIC add_core = SIC }					
+		}
+			
+	}
+	extortion_plot	= {
+		icon = mission_monarch_in_throne_room
+		position = 2
+		required_missions = { 
+			request_independence
+		}
+		provinces_to_highlight = {
+			province_id = 127
+			province_id = 2986
+			}
+			trigger = {
+				treasury = 200
+				has_spy_network_in = { who = ARA value = 20}
+				army_size_percentage = 1
+				navy_size_percentage = 1
+				fort_15th = 2
+				barracks = 4
+				marriage_with = ARA
+			}
+			effect = {
+				127 = { cede_province = SAR }
+				2986 = { cede_province = SAR }
+				create_union = SAR
+				}
+			
+		
+		}
+	
+
+	
+	take_naples = {
+		icon = mission_conquer_50_development
+
+		position = 3
+		required_missions = { 
+			extortion_plot
+		}
+		provinces_to_highlight = {
+			province_id = 123
+			province_id = 2984
+			province_id = 1934
+			province_id = 122
+			province_id = 1933
+			province_id = 2983
+			province_id = 2985
+			province_id = 121
+			province_id = 120
+			}
+			trigger = {
+				123 = { owner = { tag = ROOT } }
+				2984 = { owner = { tag = ROOT } }
+				1934 = { owner = { tag = ROOT } }
+				122 = { owner = { tag = ROOT } }
+				1933 = { owner = { tag = ROOT } }
+				2983 = { owner = { tag = ROOT } }
+				2985 = { owner = { tag = ROOT } }
+				121 = { owner = { tag = ROOT } }
+				120 = { owner = { tag = ROOT } }
+			}
+			effect = {
+				123 = { add_core = ROOT }
+				2984 = { add_core = ROOT }
+				1934 = { add_core = ROOT }
+				122 = { add_core = ROOT }
+				1933 = { add_core = ROOT }
+				2983 = { add_core = ROOT}
+				2985 = { add_core = ROOT }
+				121 = { add_core = ROOT }
+				120 = { add_core = ROOT }
+				add_treasury = 200
+			}
+			
+		
+		}
+	
+	
+	tunisian_assets = {
+		icon = mission_cannons_firing
+
+		position = 4
+		required_missions = { 
+			take_naples
+		}
+		provinces_to_highlight = {
+			province_id = 341
+			province_id = 353
+			province_id = 354
+			province_id = 2473
+			province_id = 1882
+			province_id = 2454
+			province_id = 2453
+			province_id = 2954
+			province_id = 2452
+			province_id = 2451
+			}
+			trigger = {
+				341 = { owner = { tag = ROOT } }
+				353 = { owner = { tag = ROOT } }
+				354 = { owner = { tag = ROOT } }
+				2473 = { owner = { tag = ROOT } }
+				1882 = { owner = { tag = ROOT } }
+				2454 = { owner = { tag = ROOT } }
+				2453 = { owner = { tag = ROOT } }
+				2954 = { owner = { tag = ROOT } }
+				2452 = { owner = { tag = ROOT } }
+				2451 = { owner = { tag = ROOT } }
+			}
+			effect = {
+				341 = { add_core = ROOT }
+				353 = { add_core = ROOT }
+				354 = { add_core = ROOT }
+				2473 = { add_core = ROOT }
+				1882 = { add_core = ROOT }
+				2454 = { add_core = ROOT }
+				2453 = { add_core = ROOT }
+				2954 = { add_core = ROOT }
+				2452 = { add_core = ROOT }
+				2451 = { add_core = ROOT }
+				add_treasury = 200
+			}
+			
+		
+		}
+	
+	greek_holdings = {
+		icon = mission_early_game_buildings
+
+		position = 5
+		required_missions = { 
+			tunisian_assets
+		}
+		provinces_to_highlight = {
+			province_id = 142
+			province_id = 146
+			province_id = 147
+			province_id = 164
+			province_id = 2348
+			province_id = 320
+			province_id = 4174
+			}
+			trigger = {
+				142 = { owner = { tag = ROOT } }
+				146 = { owner = { tag = ROOT } }
+				147 = { owner = { tag = ROOT } }
+				164 = { owner = { tag = ROOT } }
+				2348 = { owner = { tag = ROOT } }
+				320 = { owner = { tag = ROOT } }
+				4174 = { owner = { tag = ROOT } }
+			}
+			effect = {
+				142 = { add_core = ROOT }
+				146 = { add_core = ROOT }
+				147 = { add_core = ROOT }
+				164 = { add_core = ROOT }
+				2348 = { add_core = ROOT }
+				320 = { add_core = ROOT }
+				4174 = { add_core = ROOT }
+				add_treasury = 200
+			}
+			
+		
+		}
+	
+	
+	nation_of_islands = {
+		icon = mission_invade_island
+
+		position = 6
+		required_missions = { 
+			greek_holdings
+		}
+		provinces_to_highlight = {
+			province_id = 112
+			province_id = 333
+			province_id = 1247
+			province_id = 163
+			province_id = 321
+			}
+			trigger = {
+				112 = { owner = { tag = ROOT } }
+				333 = { owner = { tag = ROOT } }
+				1247 = { owner = { tag = ROOT } }
+				163 = { owner = { tag = ROOT } }
+				321 = { owner = { tag = ROOT } }
+			}
+			effect = {
+				112  = { add_core = ROOT }
+				333 = { add_core = ROOT }
+				1247 = { add_core = ROOT }
+				163 = { add_core = ROOT }
+				321 = { add_core = ROOT }
+				add_stability = 6
+				add_legitimacy	= 200
+				add_prestige = 200
+			}
+			
+		
+		}
+	}
