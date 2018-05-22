@@ -1,0 +1,106 @@
+###############################################
+roman_government = {
+	monarchy = yes
+	
+	color = { 167 10 100 }
+	
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	royal_marriage = yes
+	different_religion_acceptance = -20
+	different_religion_group_acceptance = -50
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+	is_elective = yes
+	has_parliament = yes
+	allow_convert = no
+	can_use_trade_post = yes
+	can_form_trade_league = yes
+
+	faction = ROM_Lords
+	faction = ROM_Traders
+	faction = ROM_Military
+	faction = ROM_Slaves
+	faction = ROM_Citizens
+	faction = ROM_Subjects
+	faction = ROM_Religion
+
+	max_states = 1
+	
+	rank = {
+		1 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = -0.2
+		}
+		2 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = -0.2
+		}
+		3 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = 0.2
+			global_autonomy = 0.2
+			num_accepted_cultures = 3
+			max_absolutism = 10
+			legitimacy = 0.1
+			production_efficiency = 0.1
+			global_tax_modifier = 0.05
+			vassal_income = 0.05	
+			global_unrest = 0.3
+			unjustified_demands = 0.01
+			same_culture_advisor_cost = -0.25
+			war_exhaustion = 0.02
+			global_manpower_modifier = 0.1
+		}
+	}
+}	
+sicilian_monarchy = {
+	monarchy = yes
+	color = { 48  127  51 }
+	
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	
+	royal_marriage = yes
+	
+	faction = SIC_Citizens
+	faction = SIC_Mafia
+	
+	ai_will_do = {
+		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {
+					government = sicilian_monarchy
+				}
+		}
+	}
+	ai_importance = 2
+	
+	max_states = 5
+	
+	rank = {
+		1 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = -0.2
+			production_efficiency = 0.1
+		}
+		2 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = -0.2
+			production_efficiency = 0.2
+		}
+		3 = {
+			tolerance_own = 1
+			fort_maintenance_modifier = -0.2
+			production_efficiency = 0.3
+		}
+	}
+	
+}
