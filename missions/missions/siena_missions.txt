@@ -48,7 +48,7 @@ siena_missions_first_slot = {
 			}			
 		}
 		effect = {
-			add_papal_influence = 100
+			add_papal_influence = 25
 		}
 	}
 	
