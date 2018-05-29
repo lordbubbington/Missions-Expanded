@@ -14,7 +14,7 @@ country_event = {
 		}
 		ruler_age = 30
 		government = iqta
-		has_country_flag = granada_library_flag
+		has_country_flag = granada_library
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
 		NOT = { government = mamluk_government }
@@ -38,12 +38,11 @@ country_event = {
 		define_heir = {
 			dynasty = ROOT
 			age = 13
-			adm = 6
-			dip = 6
-			mil = 6
+			adm = 5
+			dip = 5
+			mil = 5
 			claim = 90
 			female = no
-			name = Mustafa
 			no_consort_with_heir = yes
 			}
 			set_global_flag	= granadan_heir
