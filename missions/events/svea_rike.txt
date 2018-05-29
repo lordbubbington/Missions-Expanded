@@ -30,9 +30,10 @@ country_event = {
 		define_ruler = {
 			dynasty = Vasa
 			age = 27
-			adm = 5
-			dip = 5
-			mil = 5
+			fixed = yes
+			adm = 4
+			dip = 4
+			mil = 4
 			claim = 100
 			female = no
 			name = Gustav
@@ -84,12 +85,13 @@ country_event = {
 		define_ruler = {
 			dynasty = Vasa
 			age = 17
-			adm = 6
-			dip = 6
-			mil = 6
+			fixed = yes
+			adm = 5
+			dip = 5
+			mil = 5
 			claim = 100
 			female = no
-			name = Gustavus Adolphus
+			name = "Gustavus Adolphus"
 			no_consort_with_heir = yes
 			}
 			set_country_flag = gustavus_adolfus
@@ -136,14 +138,15 @@ country_event = {
 	option = {
 		name = swedishleaders.3.a
 		define_ruler = {
-			dynasty = von_Wittelsbach
+			dynasty = "von Wittelsbach"
 			age = 17
+			fixed = yes
 			adm = 4
 			dip = 2
 			mil = 6
 			claim = 100
 			female = no
-			name = Charles X
+			name = "Charles X"
 			no_consort_with_heir = yes
 			}
 			set_country_flag = charles_x
@@ -190,23 +193,24 @@ country_event = {
 	option = {
 		name = swedishleaders.4.a
 		define_ruler = {
-			dynasty = von_Wittelsbach
+			dynasty = "von Wittelsbach"
+			fixed = yes
 			age = 17
 			adm = 6
 			dip = 3
 			mil = 1
 			claim = 100
 			female = no
-			name = Charles XI
+			name = "Charles XI"
 			no_consort_with_heir = yes
 			}
 			set_country_flag = charles_xi
 
 				define_ruler_to_general = {
-			    shock = 3
-				fire = 3
+			    shock = 2
+				fire = 2
 				manuever = 5
-				siege = 4
+				siege = 3
 		}
 	}
 	}
@@ -245,14 +249,15 @@ country_event = {
 	option = {
 		name = swedishleaders.5.a
 		define_ruler = {
-			dynasty = von_Wittelsbach
+			dynasty = "von Wittelsbach"
+			fixed = yes
 			age = 15
 			adm = 1
 			dip = 0
 			mil = 6
 			claim = 100
 			female = no
-			name = Charles XII
+			name = "Charles XII"
 			no_consort_with_heir = yes
 			}
 			set_country_flag = charles_xii
@@ -295,7 +300,7 @@ country_event = {
 		name = swedishleaders.6.a
 		ai_chance = { factor = 90 }
 		add_country_modifier = {
-			name = tålmodig_ledare
+			name = talmodig_ledare
 			duration = -1
 		}
 	}
@@ -332,12 +337,12 @@ country_event = {
 		define_heir = {
 			dynasty = Vasa
 			age = 5
-			adm = 4
-			dip = 4
-			mil = 4
+			adm = 3
+			dip = 3
+			mil = 3
 			claim = 100
 			female = no
-			name = Gustavus_Adolohus
+			name = "Gustavus Adolohus"
 			no_consort_with_heir = yes
 		}
 				define_ruler_to_general = {
