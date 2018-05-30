@@ -1,0 +1,389 @@
+Croatia_missions_1 = {
+	slot = 1
+	ai = yes
+	generic = no
+	potential = {
+			tag = ALB
+	}
+	has_country_shield = yes
+
+	Albania_full_strength = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.75
+		}
+		effect = {
+			add_country_modifier = {
+				name = "alb_searching_for_allies"
+				duration = 7300
+			}
+			add_yearly_manpower = 3
+		}
+	}
+	Albania_allies = {
+		icon = mission_alliances
+		required_missions = { Albania_full_strength }
+		position = 2
+		trigger = {
+			num_of_allies = 2
+		}
+		effect = {
+			every_country = {
+				limit = {
+					alliance_with = ALB
+				}
+				add_trust = {
+    					who = ROOT
+   					value = 25
+    					mutual = yes
+				}
+			}
+		}
+	}
+	Albania_Vlore = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 143
+		}
+		position = 6
+		trigger = {
+			143 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			143 = {
+				cede_province = ROOT
+			}
+		}
+	}
+	Albania_rascia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Unity }
+		position = 8
+		provinces_to_highlight = {
+			area = rascia_area
+		}
+		trigger = {
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			serbia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_serbia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_rascia }
+		position = 9
+		provinces_to_highlight = {
+			area = serbia_area
+		}
+		trigger = {
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bosnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_bosnia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_serbia }
+		position = 10
+		provinces_to_highlight = {
+			area = bosnia_area
+		}
+		trigger = {
+			bosnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_croatia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_bosnia }
+		position = 11
+		provinces_to_highlight = {
+			area = croatia_area
+		}
+		trigger = {
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_coast = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_croatia }
+		position = 12
+		provinces_to_highlight = {
+			area = east_adriatic_coast_area
+		}
+		trigger = {
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+		}
+	}
+}
+Croatia_missions_2 = {
+	slot = 2
+	ai = yes
+	generic = no
+	potential = {
+			tag = ALB
+	}
+	has_country_shield = yes
+
+	Albania_Unity = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Durres Albania_Vlore }
+		position = 7
+		provinces_to_highlight = {
+			area = albania_area
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			carinthia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "albania_powah"
+				duration = 7300
+			}
+		}
+	}
+	Albania_Macedonia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Unity }
+		position = 8
+		provinces_to_highlight = {
+			area = macedonia_area
+		}
+		trigger = {
+			macedonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_Thracia = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Macedonia }
+		position = 9
+		provinces_to_highlight = {
+			area = thrace_area
+		}
+		trigger = {
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_bulgaria = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Thracia }
+		position = 8
+		provinces_to_highlight = {
+			area = bulgaria_area
+		}
+		trigger = {
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_adm_power = 50
+			add_mil_power = 50
+		}
+	}
+}
+Croatia_missions_3 = {
+	slot = 3
+	ai = yes
+	generic = no
+	potential = {
+			tag = ALB
+	}
+	has_country_shield = yes
+
+
+	Albania_Durres = {
+		icon = mission_unite_home_region
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 4174
+		}
+		position = 6
+		trigger = {
+			4174 = {
+				controlled_by = ROOT
+			}
+		}
+		effect = {
+			4174 = {
+				cede_province = ROOT
+			}
+		}
+	}
+	Albania_Northern_greece = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Unity }
+		position = 8
+		provinces_to_highlight = {
+			area = northern_greece_area
+		}
+		trigger = {
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_Greece_West = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Northern_greece }
+		position = 9
+		provinces_to_highlight = {
+			area = morea_area
+		}
+		trigger = {
+			morea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aegean_archipelago_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Albania_Greece_East = {
+		icon = mission_unite_home_region
+		required_missions = { Albania_Greece_West }
+		position = 10
+		provinces_to_highlight = {
+			area = aegean_archipelago_area
+		}
+		trigger = {
+			aegean_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			valencia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
