@@ -22,7 +22,7 @@ SWE_scandinavia = {
 		
 	effect = {
 			add_manpower = 10
-			create_general = 100
+			create_general = 40
 			}
 			}
 			
