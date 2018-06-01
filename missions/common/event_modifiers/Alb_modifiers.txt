@@ -8,3 +8,6 @@ albania_powah = {
 athlete_christi = {
 	prestige = 0.25
 }
+alb_searching_for_allies = {
+	diplomatic_reputation = 2
+}
