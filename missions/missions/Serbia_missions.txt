@@ -406,7 +406,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Liberate_Bulgaria = {
-		icon = mission_conquer_5_states
+		icon = bulgaria
 		required_missions = { Serbia_get_uskup }
 		position = 2
 		provinces_to_highlight = {
@@ -438,7 +438,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Control_Macedonia = {
-		icon = mission_cannons_firing
+		icon = macedonia
 		required_missions = { Serbia_Liberate_Bulgaria }
 		position = 3
 		provinces_to_highlight = {
@@ -470,7 +470,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Control_Thracia = {
-		icon = mission_assemble_an_army
+		icon = thrace
 		required_missions = { Serbia_Control_Macedonia }
 		position = 4
 		provinces_to_highlight = {
@@ -502,7 +502,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Conquer_Albania = {
-		icon = mission_cannons_firing
+		icon = albania
 		required_missions = { Serbia_Control_Thracia }
 		position = 5
 		provinces_to_highlight = {
@@ -534,7 +534,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Conquer_Epirus = {
-		icon = mission_assemble_an_army
+		icon = northgreece
 		required_missions = { Serbia_Conquer_Albania }
 		position = 6
 		provinces_to_highlight = {
@@ -566,7 +566,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Conquer_Achaea = {
-		icon = mission_conquer_5_states
+		icon = morea
 		required_missions = { Serbia_Conquer_Epirus }
 		position = 7
 		provinces_to_highlight = {
@@ -598,7 +598,7 @@ Serbia_missions_2 = {
 		}
 	}
 	Serbia_Control_ageaen_sea_isles = {
-		icon = mission_conquer_50_development
+		icon = aegeianArchipelago
 		required_missions = { Serbia_Conquer_Achaea }
 		position = 8
 		provinces_to_highlight = {
@@ -985,7 +985,7 @@ Serbia_missions_3 = {
 	has_country_shield = yes
 
 	Serbia_save_the_serbian_people_in_bosnia = {
-		icon = mission_conquer_5_states
+		icon = bosnia
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -1030,7 +1030,7 @@ Serbia_missions_3 = {
 		}
 	}
 	Serbia_conquer_dalmatia = {
-		icon = mission_conquer_50_development
+		icon = dalmatia
 		required_missions = { Serbia_save_the_serbian_people_in_bosnia }
 		position = 3
 		provinces_to_highlight = {
@@ -1074,7 +1074,7 @@ Serbia_missions_3 = {
 		}
 	}
 	Serbia_conquer_croatia = {
-		icon = mission_conquer_50_development
+		icon = croatia
 		required_missions = { Serbia_conquer_dalmatia }
 		position = 5
 		provinces_to_highlight = {
@@ -1101,7 +1101,7 @@ Serbia_missions_3 = {
 		}
 	}
 	Serbia_reconquer_belgrade = {
-		icon = mission_cannons_firing
+		icon = serbia
 		required_missions = { Serbia_conquer_croatia }
 		position = 7
 		provinces_to_highlight = {

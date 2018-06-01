@@ -1,4 +1,4 @@
-Croatia_missions_1 = {
+Albania_missions_1 = {
 	slot = 1
 	ai = yes
 	generic = no
@@ -104,6 +104,20 @@ Croatia_missions_1 = {
 		effect = {
 			143 = {
 				cede_province = ROOT
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -219,7 +233,7 @@ Croatia_missions_1 = {
 		}
 	}
 }
-Croatia_missions_2 = {
+Albania_missions_2 = {
 	slot = 2
 	ai = yes
 	generic = no
@@ -242,30 +256,12 @@ Croatia_missions_2 = {
 			}
 		}
 		effect = {
-			rascia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			carinthia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_greece_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			add_country_modifier = {
 				name = "albania_powah"
 				duration = 7300
+			}
+			albania_area = {
+				remove_core = TUR
 			}
 		}
 	}
@@ -283,7 +279,7 @@ Croatia_missions_2 = {
 			}
 		}
 		effect = {
-			northern_greece_area = {
+			thrace_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -306,7 +302,7 @@ Croatia_missions_2 = {
 			}
 		}
 		effect = {
-			northern_greece_area = {
+			bulgaria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -335,7 +331,7 @@ Croatia_missions_2 = {
 		}
 	}
 }
-Croatia_missions_3 = {
+Albania_missions_3 = {
 	slot = 3
 	ai = yes
 	generic = no
@@ -360,6 +356,13 @@ Croatia_missions_3 = {
 		effect = {
 			4174 = {
 				cede_province = ROOT
+			}
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -423,13 +426,9 @@ Croatia_missions_3 = {
 			}
 		}
 		effect = {
-			valencia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = ROOT
-			}
+			add_dip_power = 50
+			add_mil_power = 50
+			add_adm_power = 50
 		}
 	}
 }
