@@ -79,6 +79,28 @@ Aquileia_missions_1 = {
 				name = "AQU_navy"
 				duration = 7300
 			}
+			1774 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			108 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
 		}
 	}
 	Aquileia_treviso_verona = {
@@ -106,6 +128,28 @@ Aquileia_missions_1 = {
 			add_country_modifier = {
 				name = "AQU_unity"
 				duration = 7300
+			}
+			112 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
+			}
+			110 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+							is_core = ROOT
+						}
+					}
+					add_core = ROOT
+				}
 			}
 		}
 	}
