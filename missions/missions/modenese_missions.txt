@@ -70,6 +70,7 @@ modenese_mission_group = {
 		position = 5
 		trigger = {
 			east_adriatic_coast_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -96,6 +97,7 @@ modenese_mission_group = {
 		position = 7
 		trigger = {
 			tunisia_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
