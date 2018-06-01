@@ -21,11 +21,15 @@ sardinia_missions_3 = {
 				duration = 7300
 			}
 			2992 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}			
 		}
 	}
@@ -60,11 +64,15 @@ sardinia_missions_3 = {
 		}
 		effect = {
 			226 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
@@ -89,11 +97,15 @@ sardinia_missions_3 = {
 		}
 		effect = {
 			367 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
@@ -118,7 +130,7 @@ sardinia_missions_3 = {
 			}
 		}
 		effect = {
-			macronesia_area = {
+			macaronesia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -217,11 +229,15 @@ sardinia_missions_4 = {
 		}
 		effect = {
 			226 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
@@ -245,7 +261,7 @@ sardinia_missions_4 = {
 			}
 		}
 		effect = {
-			savoy_area = {
+			savoy_dauphine_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -263,13 +279,13 @@ sardinia_missions_4 = {
 		required_missions = { sardinia_take_liguria }
 		position = 4
 		provinces_to_highlight = {
-			area = savoy_area
+			area = savoy_dauphine_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			savoy_area = {
+			savoy_dauphine_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -376,11 +392,15 @@ sardinia_missions_2 = {
 				duration = 7300
 			}
 			1247 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}			
 		}
 	}
@@ -401,18 +421,26 @@ sardinia_missions_2 = {
 		}
 		effect = {
 			333 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			126 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}			
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
@@ -444,11 +472,15 @@ sardinia_missions_2 = {
 				add_permanent_claim = ROOT
 			}
 			142 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}					
 			add_country_modifier = {
 				name = sardinia_glorious_conquest
@@ -676,12 +708,12 @@ sardinia_missions_1 = {
 		effect = {
 			142 = {
 				add_province_modifier = {
-					name = sardinia_a_base_in_the_eastern_mediterranean
+					name = "sardinia_a_base_in_the_eastern_mediterranean"
 					duration = -1
 				}
 			}					
 			add_country_modifier = {
-				name = sardinia_glorious_conquest
+				name = "sardinia_glorious_conquest"
 				duration = 1825
 			}
 		}
@@ -697,7 +729,7 @@ sardinia_missions_1 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = sardinia_our_kingdom
+				name = "sardinia_our_kingdom"
 				duration = -1
 			}						
 		}
@@ -711,11 +743,9 @@ sardinia_missions_1 = {
 			is_subject = no				
 		}
 		effect = {
-			remove_country_modifier = {
-				sardinia_our_kingdom
-			}						
+			remove_country_modifier = sardinia_our_kingdom					
 			add_country_modifier = {
-				name = sardinia_empire
+				name = "sardinia_empire"
 				duration = -1
 			}			
 		}
@@ -733,9 +763,10 @@ sardinia_missions_1 = {
 				}
 		effect = {
 				add_country_modifier = {
-					name = sardinia_colonization_boom
+					name = "sardinia_colonization_boom"
 					duration = 7300
 					}		
 				}
-			}			
+			}
+}			
 										

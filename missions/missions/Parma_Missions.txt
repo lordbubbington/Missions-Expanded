@@ -52,25 +52,37 @@ parma_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			108 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			111 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			174 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}									
 			add_country_modifier = {
 				name = parma_is_victorious
@@ -108,7 +120,7 @@ parma_missions_1 = {
 			}			
 		}
 		effect = {
-			savoy_area = {
+			savoy_dauphine_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -123,11 +135,15 @@ parma_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			112 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}												
 			add_country_modifier = {
 				name = parma_is_victorious
@@ -141,7 +157,7 @@ parma_missions_1 = {
 		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = savoy_area
+				area = savoy_dauphine_area
 				area = liguria_area
 			}
 			NOT = {
@@ -149,7 +165,7 @@ parma_missions_1 = {
 			}
 		}
 		trigger = {
-			savoy_area = {
+			savoy_dauphine_area = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			liguria_area = {
@@ -187,11 +203,15 @@ parma_missions_1 = {
 		}
 		effect = {
 			118 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}									
 			add_country_modifier = {
 				name = parma_is_victorious
