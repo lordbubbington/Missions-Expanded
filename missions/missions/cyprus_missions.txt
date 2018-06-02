@@ -16,7 +16,7 @@ fort_15th = 1
 }
 effect = {
 add_army_tradition = 10
-add_navy tradition = 10
+add_navy_tradition = 10
 add_dip_power = 50
 }
 }
@@ -181,17 +181,21 @@ potential = {
 	accepted_culture = greek
 	dip_power = 50
 	}
-	effect = {
-	change_primary_culture = greek
-	add_dip_power = -50
-	320 = {
-	limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+		effect = {
+			change_primary_culture = greek
+			add_dip_power = -50
+				320 = {
+					if = {
+						limit = {
+							NOT = {
+								owned_by = ROOT
+								is_core = ROOT
+							}
+						}
+						add_permanent_claim = ROOT
+					}
 				}
-				add_permanent_claim = ROOT
-			}
-	}
+		}
 	}
 	
 	cyp_take_rhodes = {
@@ -202,17 +206,20 @@ potential = {
 	}
 	trigger = {
 	320 = {
-	type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
 		}
 	effect = {
 	163 = {
-		limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			}
 			}
@@ -224,12 +231,11 @@ potential = {
 	}
 	trigger = {
 		163 = {
-	type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
 		}
 		effect = {
-		aegean_archipelagos_area = {
+		aegean_archipelago_area = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -243,10 +249,10 @@ potential = {
 	icon = aegeianArchipelago
 	required_missions = { cyp_crete }
 	provinces_to_highlight = {
-	area = aegean_archipelagos_area
+	area = aegean_archipelago_area
 	}
 	trigger = {
-	aegean_archipelagos_area = {
+	aegean_archipelago_area = {
 		type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
