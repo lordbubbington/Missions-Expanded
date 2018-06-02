@@ -70,7 +70,6 @@ modenese_mission_group = {
 		position = 5
 		trigger = {
 			east_adriatic_coast_area = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -97,7 +96,6 @@ modenese_mission_group = {
 		position = 7
 		trigger = {
 			tunisia_area = {
-				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -150,11 +148,15 @@ modenese_mission_group_2 = {
 		}
 		effect = {
 			113 = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 		}
 	}
@@ -197,11 +199,15 @@ modenese_mission_group_2 = {
 		}
 		effect = {
 			109 = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 			add_country_modifier = {
 				name = "modena_emilia_romagna_united"

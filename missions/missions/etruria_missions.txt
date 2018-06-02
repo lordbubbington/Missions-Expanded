@@ -72,11 +72,15 @@ etruria_missions = {
 		}
 		effect = {
 			118 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 		}
 	}
@@ -99,11 +103,15 @@ etruria_missions = {
 		}
 		effect = {
 			118 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
 			}
 		}
 	}

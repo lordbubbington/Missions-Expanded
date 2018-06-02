@@ -30,39 +30,59 @@ man_mission_1 = {
                 add_permanent_claim = ROOT
             }
             105 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             2979 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             113 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             106 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             108 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
         }
     }
@@ -152,39 +172,59 @@ man_mission_1 = {
             add_army_professionalism = 0.05
             add_adm_power = 50
             114 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             118 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             2977 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             119 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             2976 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
         }
     }
@@ -305,9 +345,7 @@ man_mission_2 = {
         }
         trigger = {
             109 = {
-                calc_if_true = {
-                    temple = 1
-                }
+				has_building = temple
             }
         }
         effect = {

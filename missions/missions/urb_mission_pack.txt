@@ -37,18 +37,26 @@ urb_mission_1 = {
         }
         effect = {
             119 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+ 				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
             2976 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
         }
     }
@@ -85,11 +93,15 @@ urb_mission_1 = {
 				add_permanent_claim = ROOT
             }
             118 = {
-                limit = {
-                    NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
+				if = {
+                    limit = {
+                        NOT = {
+                            owned_by = ROOT
+                            is_core = ROOT
+                        }
+                    }
+                    add_permanent_claim = ROOT
+                }
             }
         }
     }
