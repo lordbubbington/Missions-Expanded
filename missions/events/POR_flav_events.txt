@@ -360,7 +360,7 @@ country_event = {
 }
 
 ##Fast Colonization of Arguin
-province_event = {
+country_event = {
 	id = POR_flav.11
 	title = "POR_flav.11.t"
 	desc = "POR_flav.11.d"
@@ -369,11 +369,13 @@ province_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_colony = yes
-		province_id = 1111
-		colonysize = 300
-		#NOT = { colonysize = 500 }
-		has_province_modifier = feitoria_first
+		1111 = { 
+			is_colony = yes 
+			colonysize = 300
+			#NOT = { colonysize = 500 }
+			has_province_modifier = feitoria_first
+		}
+		tag = POR
 	}
 
 	mean_time_to_happen = {
@@ -382,7 +384,9 @@ province_event = {
 
 	option = {
 		name = "POR_flav.11.a"
-		add_colonysize = 400
+		1111 = {
+		add_colonysize = 200
+		}
 		add_treasury = 50
 	}
 }
@@ -485,4 +489,61 @@ country_event = {
 		set_country_flag = por_discovered_elmina
 		add_treasury = 25
 	}		
+}
+
+country_event = {
+	id = POR_flav.14
+	title = "POR_flav.14.t"
+	desc = "POR_flav.14.d"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = POR
+		has_discovered = 4182
+		NOT = { 4182 = { owned_by = POR}}
+		#has_country_modifier = POR_merchant_navy
+		is_year = 1530
+		4182 = {
+			owner = {
+			num_of_provinces_in_states = 2
+			ai = yes
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "POR_flav.14.a"
+		#### Owner gets compensation
+		4182 = {
+			owner = {
+			add_country_modifier = {
+			name = "por_in_japan"
+			duration = 18250
+			}
+			add_treasury = 75
+			}
+			random_neighbor_province = { 
+			change_religion = catholic
+			}
+		}
+		
+		#### Portuguese get Nagasaki 
+		4182 = {
+				add_core = POR
+				cede_province = POR
+				change_religion = catholic
+		}
+		add_treasury = -75
+	}
+	
+	option = {
+		name = "POR_flav.14.b"
+		add_prestige = -5
+	}
 }

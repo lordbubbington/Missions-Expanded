@@ -1,4 +1,4 @@
-
+## Tree for establishing and improving the casa da india
 CasaDaIndia_missions = {
 
 	slot = 2
@@ -11,7 +11,8 @@ CasaDaIndia_missions = {
 	
 	
 	POR_mission_first_feitoria = { 
-		icon = mission_dominate_home_trade_node
+		##icon = mission_dominate_home_trade_node
+		icon = mission_ship_smallharbor
 		required_missions { } 
 		position = 1
 		
@@ -47,7 +48,8 @@ CasaDaIndia_missions = {
 	####################################	
 	Casa_da_India_mission = {
 		#icon = mission_colonial
-		icon = mission_rb_the_bank_of_scotland
+		#icon = mission_rb_the_bank_of_scotland
+		icon = mission_casa_da_india_pic1
 		required_missions = { 
 			POR_mission_first_feitoria
 			por_discover_african_coast
@@ -80,9 +82,9 @@ CasaDaIndia_missions = {
 		}
 	}
 
-	
 	POR_mission_fernando_po = {
-		icon = mission_rb_settle_the_north
+		#icon = mission_rb_settle_the_north
+		icon = mission_sugar_plantation
 		required_missions = { Casa_da_India_mission }
 		position = 4
 		
@@ -134,7 +136,8 @@ CasaDaIndia_missions = {
 	}
 	
 	POR_mission_fort_elmina = { 
-		icon = mission_dominate_home_trade_node
+		#icon = mission_dominate_home_trade_node
+		icon = mission_base_flag
 		required_missions { Casa_da_India_mission } 
 		position = 5
 		
@@ -154,8 +157,8 @@ CasaDaIndia_missions = {
 		}
 		
 		effect = {
-			1139 = {
 			add_treasury = -200
+			1139 = {
 			add_building = fort_15th
 			#add_base_production = 2
 			change_trade_goods = gold
@@ -177,7 +180,8 @@ CasaDaIndia_missions = {
 	####################################
 	Casa_da_India_improvement = {
 		#icon = mission_colonial
-		icon = mission_rb_the_bank_of_scotland
+		#icon = mission_rb_the_bank_of_scotland
+		icon = mission_casa_da_india_pic1
 		required_missions = { 
 			Casa_da_India_mission 
 			por_colonise_central_africa
@@ -218,7 +222,8 @@ CasaDaIndia_missions = {
 	
 	Casa_da_India_focus = {
 		#icon = mission_colonial
-		icon = mission_rb_the_bank_of_scotland
+		#icon = mission_rb_the_bank_of_scotland
+		icon = mission_casa_da_india_pic1
 		required_missions = { Casa_da_India_improvement }
 		position = 10
 	
@@ -247,6 +252,7 @@ CasaDaIndia_missions = {
 	}
 }
 
+## Missions for navigation school -> azores -> merchant marine -> thalassocrazy
 Marinha_Portuguesa_missions = {
 	
 	slot = 3
@@ -258,7 +264,8 @@ Marinha_Portuguesa_missions = {
 	has_country_shield = yes
 
 	POR_mission_VilaDoInfante = {
-		icon = mission_conquer_50_development
+		#icon = mission_conquer_50_development
+		icon = mission_escola
 		required_missions = { }
 		position = 1
 	
@@ -283,7 +290,8 @@ Marinha_Portuguesa_missions = {
 	}
 	
 	POR_mission_azores_base = {
-		icon=mission_dominate_home_trade_node
+		#icon=mission_dominate_home_trade_node
+		icon = mission_base_flag
 		required_missions = { POR_mission_VilaDoInfante }
 		position = 2
 		
@@ -312,7 +320,8 @@ Marinha_Portuguesa_missions = {
 	}
 	
 	POR_mission_marina = {
-		icon = mission_rb_grow_the_channel
+		#icon = mission_rb_grow_the_channel
+		icon = mission_merchant_navy
 		required_missions = { 
 			POR_mission_azores_base
 			Casa_da_India_mission
@@ -337,7 +346,8 @@ Marinha_Portuguesa_missions = {
 	}
 	
 	POR_mission_government = {
-		icon = mission_trade_company_region_abroad
+		#icon = mission_trade_company_region_abroad
+		icon = mission_globe_map
 		required_missions = { POR_mission_marina }
 		position = 4
 		
@@ -345,7 +355,6 @@ Marinha_Portuguesa_missions = {
 			adm_power = 200
 			dip_power = 100
 			mil_power = 100
-			has_institution = colonialism
 			overseas_provinces_percentage = 0.51
 			num_of_light_ship = 100
 		}
@@ -393,7 +402,8 @@ por_dip_missions = {
 	}
 	
 	por_bermuda_mission = {
-		icon = mission_rb_take_gibraltar
+		#icon = mission_rb_take_gibraltar
+		icon = mission_north_map
 		required_missions = { POR_mission_azores_base }
 		position = 3
 		
@@ -418,7 +428,8 @@ por_dip_missions = {
 	}
 	
 	por_newfoundland_missions = {
-		icon = mission_rb_colonise_canada
+		#icon = mission_rb_colonise_canada
+		icon = mission_observatory
 		required_missions = { por_bermuda_mission }
 		position = 4
 		
@@ -449,7 +460,8 @@ por_dip_missions = {
 	}
 		
 	por_rb_greenland = {
-		icon = mission_rb_cod_wars
+		#icon = mission_rb_cod_wars
+		icon = mission_ship_ice
 		required_missions = { por_newfoundland_missions }
 		position = 5
 		

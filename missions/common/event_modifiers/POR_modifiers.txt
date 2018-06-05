@@ -16,7 +16,8 @@ Casa_da_India_building_1 = {
 	native_uprising_chance = -0.50
 	#native_assimilation = 0.25
 	#range = 0.25
-	picture = "auto_explore_adjacent_to_colony"
+	#picture = "auto_explore_adjacent_to_colony"
+	picture = "GFX_icon_casa_da_india"
 	}
 	
 Casa_da_India_building_2 = {
@@ -34,7 +35,8 @@ Casa_da_India_building_2 = {
 	native_uprising_chance = -0.50
 	native_assimilation = 0.25
 	#range = 0.5
-	picture = "auto_explore_adjacent_to_colony"
+	picture = "GFX_icon_casa_da_india"
+	#picture = "auto_explore_adjacent_to_colony"
 	}
 	
 Casa_da_India_building_3 = {
@@ -52,7 +54,8 @@ Casa_da_India_building_3 = {
 	#native_uprising_chance = -0.50
 	#native_assimilation = 0.50
 	colonists = -2
-	picture = "auto_explore_adjacent_to_colony"
+	picture = "GFX_icon_casa_da_india"
+	#picture = "auto_explore_adjacent_to_colony"
 	}
 	
 vila_do_infante = {
@@ -113,6 +116,18 @@ feitoria_macau = {
 	province_trade_power_modifier = 0.15
 	local_defensiveness = 0.5
 	fort_level = 2
+	local_unrest = -1
+	allowed_num_of_buildings = 1
+	picture = "global_trade_income_modifier"
+}
+
+feitoria_nagasaki = {
+	trade_goods_size = 1
+	trade_goods_size_modifier = 0.2
+	province_trade_power_value = 10
+	province_trade_power_modifier = 0.15
+	local_defensiveness = 0.25
+	fort_level = 1
 	local_unrest = -1
 	allowed_num_of_buildings = 1
 	picture = "global_trade_income_modifier"
@@ -210,6 +225,12 @@ por_brazil_complete = {
 
 por_caribbean_papal = {
 	papal_influence = -2.5
+}
+
+por_in_japan = {
+	global_institution_spread = 0.25
+	technology_cost = -0.05
+	idea_cost = -0.05
 }
 
 por_kongo_papal = {

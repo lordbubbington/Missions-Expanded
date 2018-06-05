@@ -1,3 +1,6 @@
+### The following file contains the rearranged PDX missions and some new ones along the tree.
+## The independent part of the tree can be found in POR_missions.txt
+
 por_african_ambitions = {
 
 	slot = 1
@@ -40,7 +43,8 @@ por_african_ambitions = {
 	################
 	
 	POR_mission_cape_verde = { 
-		icon = mission_rb_increase_our_reach
+		#icon = mission_rb_increase_our_reach
+		icon = mission_ship_mountain
 		required_missions { por_discover_african_coast } 
 		position = 3
 		
@@ -101,7 +105,8 @@ por_african_ambitions = {
 	}
 	
 	por_colonise_central_africa = {
-		icon = mission_trade_company_region_abroad
+		#icon = mission_trade_company_region_abroad
+		icon = mission_central_africa
 		required_missions = { por_colonise_west_africa }
 		completed_by = 1584.1.1
 		
@@ -161,7 +166,8 @@ por_african_ambitions = {
 			ai = yes
 			#was_player = no
 			is_subject = no
-			has_opinion = { who = POR value = 120 }
+			has_opinion = { who = POR value = 150 }
+			alliance_with = POR
 			}
 			army_size = KON
 			adm_power = 100
@@ -354,7 +360,7 @@ por_brazilian_ambitions = {
 	}
 	
 	por_establishes_foothold_brazil = {
-		icon = mission_trade_company_region_abroad
+		icon = mission_brazil_small
 		required_missions = { 
 			portugal_discovers_south_america 
 		}
@@ -390,7 +396,7 @@ por_brazilian_ambitions = {
 	}
 	
 	por_terra_brazil = {
-		icon = mission_trade_company_region_abroad
+		icon = mission_brazil_mid
 		required_missions = { 
 			por_establishes_foothold_brazil 
 		}
@@ -422,7 +428,7 @@ por_brazilian_ambitions = {
 	}
 	
 	POR_mission_feitoria_malacca = { 
-		icon = mission_war_chest
+		icon = mission_a_famosa
 		required_missions { por_discovers_indonesia } 
 		position = 11
 		
@@ -670,7 +676,7 @@ por_east_african_ambitions = {
 	}
 	
 	POR_mission_macau_post = {
-		icon=mission_war_chest
+		icon=mission_macao
 		required_missions = { }
 		position = 12
 		
@@ -720,7 +726,8 @@ por_south_africa_mission = {
 	####Caribbean
 	
 	por_rb_caribbean_colony = {
-		icon = mission_dominate_home_trade_node
+		#icon = mission_dominate_home_trade_node
+		icon = mission_caribbean
 		required_missions = { por_colonise_west_africa }
 		position = 6
 		
@@ -872,7 +879,8 @@ por_zanzibar_hormuz_goadourada_missions = {
 	}
 	
 	POR_mission_feitoria_goa = { 
-		icon = mission_market_place_with_asian_traders
+		icon = mission_goa_dourada
+		#icon = mission_market_place_with_asian_traders
 		required_missions { portugal_discovers_india } 
 		position = 10
 		
@@ -949,6 +957,42 @@ por_indonesia_trade_dominance = {
 				duration = 7300
 			}
 		}
+	}
+	
+	POR_mission_nagasaki_post = {
+		icon = mission_nagasaki
+		required_missions = { }
+		position = 12
+		
+		provinces_to_highlight = {
+			province_id = 4182
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+		
+		trigger = {
+				owns_core_province = 4182
+				is_at_war = no 
+				treasury = 250
+				has_country_modifier = POR_merchant_navy
+				#has_institution = global_trade
+		}
+		
+		effect = {
+			add_treasury = -250
+			4182 = {
+				add_building = fort_15th
+				change_trade_goods = silk
+				add_base_tax = 1
+				add_base_production = 2
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = "feitoria_nagasaki"
+					duration = -1
+				}
+			}
+		}
+	
 	}
 
 }
