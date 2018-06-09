@@ -13,18 +13,15 @@ country_event = {
 		name = morrocansubmition.1.a
 		GRA = { inherit = ROOT }
 	}
-	ai_chance = {
-			factor = 50
 	
 		option = {
 		name = morrocansubmition.1.b
 		GRA = { 
-	reverse_add_casus_belli = {
+	add_casus_belli = {
     target = ROOT
     type = cb_annex
     duration = -1
 	}
 	}
-	ai_chance = {
-			factor = 50
+	}
 	}
