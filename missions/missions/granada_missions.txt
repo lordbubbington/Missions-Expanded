@@ -22,8 +22,8 @@ ai = yes
 	effect = {
 	lower_andalucia_area = {
 	limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT 
+					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -47,16 +47,11 @@ ai = yes
 		}
 		
 	effect = {
-	lower_andalucia_area = {
-	limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
-			}
+
 		alentejo_area = {
 	limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT 
+					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -78,16 +73,11 @@ ai = yes
 			}
 		}
 		effect = {
-		alentejo_area = {
-	limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
-			}
+
 			toledo_area = {
 	limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT 
+					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -128,23 +118,7 @@ ai = yes
 			}
 			}
 			effect = {
-			toledo_area = {
-	limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
-			}
-			218 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_core = ROOT
-				}
-			}
+
 			valencia_area = {
 	limit = {
 					NOT = { is_core = ROOT }
@@ -169,18 +143,12 @@ ai = yes
 			}
 			}
 			effect = {
-			valencia_area = {
-			limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
 				egypt_region = {
 			limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
 				
-			}
 			}
 			}
 			}

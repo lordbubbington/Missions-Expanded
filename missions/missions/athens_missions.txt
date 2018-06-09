@@ -8,7 +8,7 @@ potential = {
 	has_country_shield = yes
 	
 	ath_freedom = {
-	icon = mission_assemble_an_army
+	icon = mission_monarch_in_throne_room
 	required_missions = { }
 	trigger = {
 	is_subject = no
@@ -20,7 +20,7 @@ potential = {
 	}
 	
 	ath_fortify = {
-	icon = mission_assemble_an_army
+	icon = mission_arabian_fort
 	required_missions = { ath_freedom } 
 	trigger = {
 	fort_15th = 1
@@ -37,7 +37,7 @@ potential = {
 			}
 			
 	ath_morea = {
-	icon = mission_assemble_an_army
+	icon = mission_conquer_5_states
 		required_missions = { ath_fortify }
 		provinces_to_highlight = {
 		area = morea_area
@@ -60,7 +60,7 @@ potential = {
 			}
 			
 	ath_aegean = {
-	icon = mission_assemble_an_army
+	icon = mission_sea_battles
 	required_missions = { ath_morea }
 	provinces_to_highlight = {
 	area = aegean_archipelago_area
@@ -90,7 +90,7 @@ potential = {
 		}
 	
 	ath_asia = {
-			icon = mission_assemble_an_army
+			icon = mission_unite_home_region
 		required_missions = { ath_aegean }
 		provinces_to_highlight = {
 		OR = {
@@ -130,6 +130,7 @@ potential = {
 			has_country_shield = yes
 			
 	ath_develop = {
+	icon = mission_early_game_buildings
 	required_missions = { ath_fortify }
 	position = 3
 	trigger = {
@@ -157,6 +158,7 @@ potential = {
 	}
 	
 	ath_trebizont = {
+	icon = mission_cannons_firing
 	required_missions = { ath_asia }
 	position = 6
 	provinces_to_highlight = {
@@ -195,6 +197,7 @@ potential = {
 	}
 	
 	ath_italy = {
+	icon = mission_assemble_an_army
 	required_missions = { ath_trebizont }
 	provinces_to_highlight = {
 	OR = {
@@ -218,10 +221,7 @@ potential = {
 		}
 		}
 	effect = {
-	add_country_modifier = {
-	name = western_cannons
-	duration = -1
-	}
+	add_adm_power = 100
 	}
 	}
 	}
@@ -236,6 +236,7 @@ potential = {
 	has_country_shield = yes
 			
 	ath_government_reforms = {
+	icon = mission_alliances
 	required_missions = { }
 	trigger = {
 		capital = 146
@@ -246,6 +247,7 @@ potential = {
 		}
 		}
 	ath_phalanx = {
+	icon = mission_assemble_an_army
 	required_missions = { ath_government_reforms }
 	trigger = {
 	mil_tech = 9
@@ -262,6 +264,7 @@ potential = {
 	}
 	
 	ath_navy = {
+	icon = mission_establish_high_seas_navy
 	required_missions = { ath_phalanx }
 	trigger = {
 	navy_size_percentage = 1
@@ -272,6 +275,7 @@ potential = {
 	}
 	
 	ath_cannons = {
+	icon = mission_cannons_firing
 	required_missions = { ath_navy }
 	trigger = {
 	mil_tech = 16
@@ -301,6 +305,7 @@ potential = {
 			
 			
 	ath_greek_culture = {
+	icon = mission_empire
 	required_missions = { ath_government_reforms }
 	position = 2
 	trigger = {

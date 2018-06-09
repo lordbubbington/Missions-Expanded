@@ -1,13 +1,13 @@
-cyp_slot_3 = {
+cyp_slot_3  {
 slot = 3
 generic = no
 ai = yes
-potential = {
+potential  {
 		tag = CYP
 	}
 	has_country_shield = yes
 	
-cyp_defend = {
+cyp_defend {
 icon = mission_assemble_an_army
 required_missions = { }
 trigger = {
@@ -16,12 +16,12 @@ fort_15th = 1
 }
 effect = {
 add_army_tradition = 10
-add_navy_tradition = 10
+add_navy tradition = 10
 add_dip_power = 50
 }
 }
 
-cyp_last_crusade = {
+cyp_last_crusade  {
 icon = mission_assemble_an_army
 required_missions = { cyp_defend }
 trigger = {
@@ -181,21 +181,17 @@ potential = {
 	accepted_culture = greek
 	dip_power = 50
 	}
-		effect = {
-			change_primary_culture = greek
-			add_dip_power = -50
-				320 = {
-					if = {
-						limit = {
-							NOT = {
-								owned_by = ROOT
-								is_core = ROOT
-							}
-						}
-						add_permanent_claim = ROOT
-					}
+	effect = {
+	change_primary_culture = greek
+	add_dip_power = -50
+	320 = {
+	limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
-		}
+				add_permanent_claim = ROOT
+			}
+	}
 	}
 	
 	cyp_take_rhodes = {
@@ -206,20 +202,17 @@ potential = {
 	}
 	trigger = {
 	320 = {
+	type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
 		}
 	effect = {
 	163 = {
-if = {
-                    limit = {
-                        NOT = {
-                            owned_by = ROOT
-                            is_core = ROOT
-                        }
-                    }
-                    add_permanent_claim = ROOT
-                }
+		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			}
 			}
@@ -231,11 +224,12 @@ if = {
 	}
 	trigger = {
 		163 = {
+	type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}
 		}
 		effect = {
-		aegean_archipelago_area = {
+		aegean_archipelagos_area = {
 	limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -249,10 +243,10 @@ if = {
 	icon = aegeianArchipelago
 	required_missions = { cyp_crete }
 	provinces_to_highlight = {
-	area = aegean_archipelago_area
+	area = aegean_archipelagos_area
 	}
 	trigger = {
-	aegean_archipelago_area = {
+	aegean_archipelagos_area = {
 		type = all
 		country_or_non_sovereign_subject_holds = ROOT
 		}

@@ -27,7 +27,7 @@ gre_slot_1 = {
 		}
 		
 		gre_government = {
-		icon = mission_assemble_an_army
+		icon = mission_empire
 		required_missions = { greek_pride }
 		trigger = {
 		capital = 146
@@ -39,7 +39,7 @@ gre_slot_1 = {
 		}
 		
 		gre_league = {
-		icon = mission_assemble_an_army
+		icon = mission_alliances
 		required_missions = { gre_government }
 		trigger = {
 			if = {
@@ -71,7 +71,7 @@ gre_slot_1 = {
 		}
 		
 		gre_democracy = {
-		icon = mission_assemble_an_army
+		icon = mission_alliances
 		required_missions = { gre_league }
 		trigger = {
 		republican_tradition = 100
@@ -84,7 +84,7 @@ gre_slot_1 = {
 		}
 		}
 		gre_allies = {
-		icon = mission_assemble_an_army
+		icon = mission_alliances
 		required_missions = { gre_democracy }
 		trigger = {
 		num_of_allies = 3
@@ -97,7 +97,7 @@ gre_slot_1 = {
 		}
 		}
 		gre_vassals = {
-		icon = mission_assemble_an_army
+		icon = mission_have_two_subjects
 		required_missions = { gre_allies }
 		trigger = {
 		num_of_subjects = 1
@@ -121,7 +121,7 @@ gre_slot_2 = {
 		has_country_shield = yes
 		
 		gre_league_2 = {
-		icon = mission_assemble_an_army
+		icon = mission_monarch_in_throne_room
 		required_missions = { gre_government }
 		position = 3
 		trigger = {
@@ -154,7 +154,7 @@ gre_slot_2 = {
 		}
 		
 		gre_conquer_macedonia = {
-		icon = mission_assemble_an_army
+		icon = mission_conquer_5_states
 		required_missions = { gre_league_2 }
 		provinces_to_highlight = {
 		area = macedonia_area
@@ -184,7 +184,7 @@ gre_slot_2 = {
 		}
 		
 		gre_conquer_asia_coast = {
-		icon = mission_assemble_an_army
+		icon = mission_unite_home_region
 		required_missions = { gre_conquer_macedonia }
 		provinces_to_highlight = {
 		OR = {
@@ -213,7 +213,7 @@ gre_slot_2 = {
 			}
 			}
 			gre_conquer_crimea = {
-					icon = mission_assemble_an_army
+					icon = mission_sea_battles
 		required_missions = { gre_conquer_asia_coast }
 		provinces_to_highlight = {
 		area = crimea_area
@@ -235,7 +235,7 @@ gre_slot_2 = {
 			}
 			}
 			gre_conquer_provence = {
-								icon = mission_assemble_an_army
+								icon = mission_invade_island
 		required_missions = { gre_conquer_crimea }
 		provinces_to_highlight = {
 		area = provence_area
@@ -265,7 +265,7 @@ gre_slot_3 = {
 		has_country_shield = yes
 		
 		gre_league_3 = {
-		icon = mission_assemble_an_army
+		icon = mission_dominate_home_trade_node
 		required_missions = { gre_government }
 		position = 3
 		trigger = {
@@ -298,7 +298,7 @@ gre_slot_3 = {
 		}
 		
 		gre_develop = {
-		icon = mission_assemble_an_army
+		icon = mission_conquer_50_development
 		required_missions = { gre_league_3 }
 		trigger = {
 		treasury = 200
@@ -317,7 +317,7 @@ gre_slot_3 = {
 		}
 		
 		gre_build = {
-		icon = mission_assemble_an_army
+		icon = mission_early_game_buildings
 		required_missions = { gre_develop }
 		trigger = {
 		workshop = 4
@@ -331,7 +331,7 @@ gre_slot_3 = {
 		}
 		
 		gre_income = {
-		icon = mission_assemble_an_army
+		icon = mission_high_income
 		required_missions = { gre_build }
 		trigger = {
 		share_of_starting_income = 2.5
@@ -388,7 +388,7 @@ gre_slot_3 = {
 	}
 	
 	greek_cav = {
-	icon = mission_assemble_an_army
+	icon = mission_cossack_cavalry
 	required_missions = { gre_phalanx }
 	trigger = {
 	mil_tech = 14
@@ -404,7 +404,7 @@ gre_slot_3 = {
 	}
 	
 	gre_cannons = {
-	icon = mission_assemble_an_army
+	icon = mission_cannons_firing
 	required_missions = { greek_cav }
 	trigger = {
 	mil_tech = 16
@@ -430,7 +430,7 @@ gre_slot_3 = {
 		has_country_shield = yes
 		
 	gre_partisians = {
-	icon = mission_gre_partisians
+	icon = mission_non-western_cavalry_raid
 	required_missions = { greek_cav }
 	position = 3
 	trigger = {
