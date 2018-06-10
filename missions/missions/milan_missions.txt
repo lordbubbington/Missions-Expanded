@@ -22,6 +22,7 @@ milan_mission_group = {
 		position = 2
 		trigger = {
 			101 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -100,6 +101,7 @@ lombard_mission_group = {
 	ai = yes
 	potential = {
 		OR = {
+			tag = MLO
 			tag = LOM
 		}
 	}
@@ -321,6 +323,7 @@ lombard_mission_group = {
 		position = 13
 		trigger = {
 			4316 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 				has_great_project = suez_canal
 			}
@@ -380,26 +383,18 @@ milan_mission_group_2 = {
 				duration = 5475
 			}
 			1871 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			1867 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -425,15 +420,11 @@ milan_mission_group_2 = {
 		}
 		effect = {
 			1247 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -458,49 +449,60 @@ milan_mission_group_2 = {
 		}
 		position = 5
 		trigger = {
-			venetia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				AND = {
+					venetia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					lombardy_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					piedmont_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tuscany_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					liguria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					emilia_romagna_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					government = monarchy
+				}
+				tag = ITA
 			}
-			lombardy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			piedmont_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			tuscany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			liguria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			emilia_romagna_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			government = monarchy
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					is_part_of_hre = yes
-				}
-				set_in_empire = no
-			}
+			
 			set_government_rank = 2
 			add_prestige = 25
 			add_legitimacy = 15
 			add_adm_power = 25
 			add_dip_power = 25
 			add_mil_power = 25
-			change_tag = LOM
 			swap_non_generic_missions = yes
-			country_event = {
-				id = ideagroups.1
+			if = {
+				limit = {
+					NOT = { tag = ITA }
+				}
+				every_owned_province = {
+					limit = {
+						is_part_of_hre = yes
+					}
+					set_in_empire = no
+				}
+				change_tag = LOM
+				country_event = {
+					id = ideagroups.1
+				}
 			}
 		}
 	}
@@ -512,6 +514,7 @@ lombard_mission_group_2 = {
 	ai = yes
 	potential = {
 		OR = {
+			tag = MLO
 			tag = LOM
 		}
 	}
@@ -534,6 +537,7 @@ lombard_mission_group_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			118 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -578,9 +582,11 @@ lombard_mission_group_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			121 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2983 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -615,7 +621,8 @@ lombard_mission_group_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			110 = {
-			country_or_non_sovereign_subject_holds = ROOT
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -657,6 +664,7 @@ milan_mission_group_3 = {
 		position = 1
 		trigger = {
 			107 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -704,15 +712,11 @@ milan_mission_group_3 = {
 				add_permanent_claim = ROOT
 			}
 			130 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -724,6 +728,7 @@ lombard_mission_group_3 = {
 	ai = yes
 	potential = {
 		OR = {
+			tag = MLO
 			tag = LOM
 		}
 	}
@@ -741,6 +746,7 @@ lombard_mission_group_3 = {
 		position = 8
 		trigger = {
 			110 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -872,9 +878,11 @@ milan_mission_group_4 = {
 		position = 2
 		trigger = {
 			106 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			113 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -902,6 +910,7 @@ milan_mission_group_4 = {
 		position = 3
 		trigger = {
 			114 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -928,6 +937,7 @@ milan_mission_group_4 = {
 		position = 4
 		trigger = {
 			205 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -956,6 +966,7 @@ milan_mission_group_4 = {
 		position = 5
 		trigger = {
 			130 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			east_adriatic_coast_area = {
@@ -1002,6 +1013,7 @@ lombard_mission_group_4 = {
 	ai = yes
 	potential = {
 		OR = {
+			tag = MLO
 			tag = LOM
 		}
 	}
@@ -1272,39 +1284,51 @@ lombard_mission_group_4 = {
 		trigger = {
 			OR = {
 				504 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				2054 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				517 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				2030 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				534 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				540 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				572 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				539 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				543 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				2084 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				561 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				564 = {
+					type = any
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -1392,6 +1416,7 @@ milan_mission_group_5 = {
 					dip_power = 50
 				}
 				109 = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -1434,26 +1459,18 @@ milan_mission_group_5 = {
 				add_permanent_claim = ROOT
 			}
 			101 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			106 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1471,23 +1488,21 @@ milan_mission_group_5 = {
 		position = 3
 		trigger = {
 			1871 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1867 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			205 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1499,6 +1514,7 @@ lombard_mission_group_5 = {
 	ai = yes
 	potential = {
 		OR = {
+			tag = MLO
 			tag = LOM
 		}
 	}
@@ -1649,7 +1665,7 @@ lombard_mission_group_5 = {
 	
 	milan_colonise_south_africa = {
 		icon = mission_african_soldier
-		required_missions = { }
+		trquired_missions = { }
 		position = 10
 		provinces_to_highlight = {
 			OR = {
@@ -1702,37 +1718,25 @@ lombard_mission_group_5 = {
 				add_permanent_claim = ROOT
 			}
 			2778 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			1207 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			2779 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1771,37 +1775,32 @@ lombard_mission_group_5 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2778 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1207 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2779 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			1208 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			1210 = {
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
 				}
+				add_permanent_claim = ROOT
 			}
 			ifat_area = {
 				limit = {
@@ -1915,9 +1914,11 @@ lombard_mission_group_5 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1208 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			1210 = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
