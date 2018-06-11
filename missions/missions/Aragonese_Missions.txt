@@ -401,14 +401,10 @@ Aragonese_slot_3 = {
 			}
 		}
 		trigger = {
-			173 = {
+
+			_area = {
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			176 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			175 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				type = all
 			}
 			languedoc_area = {
 				country_or_non_sovereign_subject_holds = ROOT
