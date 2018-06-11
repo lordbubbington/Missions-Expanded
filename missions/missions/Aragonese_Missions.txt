@@ -378,6 +378,130 @@ aragonese_missions_2 = {
 		}
 	}
 }
+Aragonese_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARA
+	}
+	has_country_shield = yes
+
+		ara_central_italy = {
+		icon = mission_cannons_firing
+		required_missions = { integrate_naples }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = central_italy_area
+				area = naples_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			176 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			175 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			languedoc_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+		}
+	}
+Aragonese_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = ARA
+	}
+	has_country_shield = yes
+	ara_southern_france = {
+		icon = mission_cannons_firing
+		required_missions = { ara_maximize_strength }
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				province_id = 173
+				province_id = 176
+				province_id = 175
+				area = languedoc_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			173 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			176 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			175 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			languedoc_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+		}
+	}
+	ara_provence = {
+		icon = mission_galleys_in_port
+		required_missions = { ara_southern_france }
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				area = provence_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			provence_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+		}
+	}
+	ara_dauphine = {
+		icon = mission_assemble_an_army
+		required_missions = { ara_provence }
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				area = savoy_dauphine_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			savoy_dauphine_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+		}
+	}
+}
 Aragonese_slot_5 = {
 	slot = 5
 	generic = no
