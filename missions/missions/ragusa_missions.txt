@@ -8,7 +8,7 @@ ragusa_missions_slot_1 = {
 	has_country_shield = yes
 	
 	ragusa_develop_mission = {
-		icon =
+		icon = mission_have_manufactories
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -25,7 +25,7 @@ ragusa_missions_slot_1 = {
 	}
 	
 	ragusa_light_ships = {
-		icon =
+		icon = mission_establish_high_seas_navy
 		required_missions = { ragusa_develop_mission }
 		position = 2
 		trigger = {
@@ -40,7 +40,7 @@ ragusa_missions_slot_1 = {
 	}
 	
 	ragusa_increase_trade = {
-		icon =
+		icon = mission_dominate_home_trade_node
 		required_missions = { ragusa_light_ships }
 		position = 3
 		trigger = {
@@ -57,7 +57,7 @@ ragusa_missions_slot_1 = {
 	}
 	
 	ragusa_build_marketplaces = {
-		icon =
+		icon = mission_early_game_buildings
 		required_missions = { ragusa_increase_trade }
 		position = 4
 		trigger = {
@@ -74,7 +74,7 @@ ragusa_missions_slot_1 = {
 	}
 	
 	ragusa_dominate_adriatic_sea = {
-		icon =
+		icon = mission_sea_battles
 		required_missions = { ragusa_build_marketplaces }
 		position = 5
 		trigger = {
@@ -136,7 +136,7 @@ ragusa_missions_slot_1 = {
 	}
 	
 	ragusa_american_goods = {
-		icon =
+		icon = mission_trade_company_region_abroad
 		required_missions = { ragusa_dominate_adriatic_sea }
 		position = 6
 		trigger = {
@@ -167,7 +167,7 @@ ragusa_missions_slot_3 = {
 	has_country_shield = yes
 	
 	ragusa_attack_venice = {
-		icon =
+		icon = mission_cannons_firing
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -186,7 +186,7 @@ ragusa_missions_slot_3 = {
 	}
 	
 	ragusa_take_dalmatia = {
-		icon =
+		icon = mission_assemble_an_army
 		required_missions = { ragusa_attack_venice }
 		position = 2
 		trigger = {
@@ -206,7 +206,7 @@ ragusa_missions_slot_3 = {
 	}
 	
 	ragusa_vassalize_venice = {
-		icon =
+		icon = mission_have_two_subjects
 		required_missions = { ragusa_take_dalmatia }
 		position = 3
 		trigger = {
@@ -235,7 +235,7 @@ ragusa_missions_slot_4 = {
 	has_country_shield = yes
 		
 	ragusa_buy_hum = {
-		icon =
+		icon = mission_war_chest
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -262,7 +262,7 @@ ragusa_missions_slot_4 = {
 	}
 	
 	ragusa_annex_bosnia = {
-		icon =
+		icon = mission_unite_home_region
 		required_missions = { ragusa_buy_hum }
 		position = 2
 		trigger = {
@@ -286,7 +286,7 @@ ragusa_missions_slot_4 = {
 	}
 	
 	ragusa_spanish_ports = {
-		icon =
+		icon = mission_galleys_in_port
 		required_missions = { }
 		position = 5
 		trigger = {
@@ -304,7 +304,7 @@ ragusa_missions_slot_4 = {
 	}
 	
 	ragusa_colonization = {
-		icon =
+		icon = mission_colonial
 		required_missions = { ragusa_spanish_ports ragusa_foot_in_italy }
 		position = 6
 		trigger = {
@@ -329,7 +329,7 @@ ragusa_missions_slot_5 = {
 	has_country_shield = yes
 	
 	ragusa_ally_genoa = {
-		icon =
+		icon = mission_alliances
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -344,7 +344,7 @@ ragusa_missions_slot_5 = {
 	}
 	
 	ragusa_ottoman_treaty = {
-		icon =
+		icon = mission_alliances
 		required_missions = { }
 		position = 2
 		trigger = {
@@ -366,7 +366,7 @@ ragusa_missions_slot_5 = {
 	}
 	
 	ragusa_ally_ferrara = {
-		icon =
+		icon = mission_alliances
 		required_missions = { }
 		position = 3
 		trigger = {
@@ -381,7 +381,7 @@ ragusa_missions_slot_5 = {
 	}
 	
 	ragusa_vassalize_ferrara = {
-		icon =
+		icon = mission_have_two_subjects
 		required_missions = { ragusa_ally_ferrara }
 		position = 4
 		trigger = {
@@ -398,7 +398,7 @@ ragusa_missions_slot_5 = {
 	}
 	
 	ragusa_foot_in_italy = {
-		icon =
+		icon = mission_unite_home_region
 		required_missions = { ragusa_vassalize_ferrara }
 		position = 5
 		trigger = {
