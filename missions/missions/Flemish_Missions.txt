@@ -13,7 +13,7 @@ fla_conquest = {
 		required_missions = { }
 		trigger = {
 			is_subject = no
-			owns_core_province = 1
+			owns_core_province = 90
 			is_at_war = no
 		}
 		effect = {
@@ -119,4 +119,3 @@ fla_growth = {
 			}
 		}
 	}
-}
