@@ -1,0 +1,15 @@
+ulm_rose = {
+	all_power_cost = -0.4
+}
+ulm_rise = {
+	all_power_cost = -0.1
+	discipline = 0.1
+	siege_ability = 0.1
+	land_forcelimit = 5
+	global_manpower = 5
+	land_morale = 0.2
+	colonists = 2
+	colonist_placement_chance = 0.2
+	global_colonial_growth = 100
+	administrative_efficiency = 0.3
+}
