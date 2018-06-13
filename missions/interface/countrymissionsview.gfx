@@ -722,4 +722,9 @@ spriteTypes = {
 		name = "mission_medieval_fort"
 		texturefile = "gfx//interface//missions//mission_medieval_fort.dds"
 	}
+############### Ulm #################
+	spriteType = {
+		name = "mission_ulm"
+		texturefile = "gfx//interface//missions//mission_ulm.dds"
+	}
 }	
