@@ -42,7 +42,7 @@ hungary_missions_slot_1 = {
 		position = 2
 		trigger = {
 			is_in_war = {
-				attackers = HUN
+				attackers = ROOT
 				defenders = TUR
 			}
 		}
@@ -62,7 +62,7 @@ hungary_missions_slot_1 = {
 		position = 3
 		trigger = {
 			is_in_war = {
-				attackers = HUN
+				attackers = ROOT
 				defenders = TUR
 			}
 		}
@@ -231,7 +231,7 @@ hungary_missions_slot_2 = {
 		position = 3
 		trigger = {
 			is_in_war = {
-				attackers = HUN
+				attackers = ROOT
 				defenders = POL
 			}
 		}
@@ -251,7 +251,7 @@ hungary_missions_slot_2 = {
 		position = 4
 		trigger = {
 			is_in_war = {
-				attackers = HUN
+				attackers = ROOT
 				defenders = HAB
 			}
 		}
