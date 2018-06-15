@@ -2685,45 +2685,68 @@ global_unrest = -2
 }
 
 ragusa_development = {
-global_tax_modifier = 0.1
+	development_cost = -0.1
 }
 
 ragusa_ships = {
-trade_efficiency = 0.05
+	naval_forcelimit = 2
+	light_ship_cost = -0.1
+	global_ship_trade_power = 0.2
 }
 
 ragusa_increased_trade = {
-development_cost = -0.1
+	global_trade_power = 0.15
+	global_prov_trade_power_modifier = 0.05
+	trade_efficiency = 0.1
 }
 
 ragusa_marketplaces = {
-trade_range_modifier = 0.1
+	global_trade_power = 0.1
+	trade_efficiency = 0.1
 }
 
 ragusa_america = {
-global_tariffs = 0.25
+	global_trade_goods_size_modifier = 0.4
+	merchants = 1
+	global_trade_power = 0.5
+	trade_efficiency = 0.5
+	global_ship_trade_power = 0.4
 }
 
 ragusa_war_venice = {
-land_morale = 0.05
+	land_morale = 0.15
+	recover_army_morale_speed = 0.15
 }
 
 ragusa_venice_vassal = {
-liberty_desire = -5
-}
-
-ragusa_spanish_ports_modifier = {
-range = 0.1
-}
-
-ragusa_colonization_modifier = {
-global_colonial_growth = 10
+	diplomatic_reputation = 2
 }
 
 ragusa_allied_genoa = {
-diplomatic_reputation = 1
+	diplomatic_reputation = 1
+}
+
+ragusa_spanish_ports_modifier = {
+	colonists = 1
+	global_colonial_growth = 5
+	native_assimilation = 0.25
+}
+
+ragusa_colonization_modifier = {
+	colonists = 1
+	global_colonial_growth = 2
+	native_assimilation = 0.1
 }
 
 ragusa_allied_ferrara = {
-diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+}
+
+rom_tolerance = {
+tolerance_heathen = 2
+tolerance_heretic = 2
+}
+
+rom_legions = {
+infantry_power = 0.1
 }
