@@ -13,7 +13,6 @@ etruria_missions = {
 		required_missions = { }
 		trigger = {
 			is_subject = no
-			owns_core_province = 1
 			is_at_war = no
 		}
 		effect = {
