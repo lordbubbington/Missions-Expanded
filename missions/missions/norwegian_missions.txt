@@ -16,7 +16,7 @@ norwegian_mission_group = {
 			army_size_percentage = 1
 		}
 		effect = {
-			add_manpower = 5000
+			add_manpower = 5
 			add_army_tradition = 15
 		}
 	}
@@ -713,7 +713,7 @@ norwegian_mission_group_4 = {
 	}
 	
 	restore_norwegian_rule_highlands = {
-		icon = mission_rb_take_gibraltar
+		icon = mission_invade_island
 		required_missions = { gain_norwegian_independence }
 		provinces_to_highlight = {
 			OR = {
@@ -1192,7 +1192,7 @@ norwegian_mission_group_4 = {
 	}
 	
 	restore_norwegian_rule_normandy = {
-		icon = mission_rb_increase_our_reach
+		icon = mission_galleys_in_port
 		required_missions = { restore_norwegian_jorvik }
 		provinces_to_highlight = {
 			OR = {
@@ -1227,7 +1227,7 @@ norwegian_mission_group_4 = {
 	}
 	
 	norwegian_invasion_brittany = {
-		icon = mission_rb_conquer_brittany
+		icon = mission_assemble_an_army
 		required_missions = { restore_norwegian_rule_normandy }
 		provinces_to_highlight = {
 			OR = {
