@@ -8,6 +8,7 @@ tag = CEP
 has_country_shield = yes
 
 CEP_freedom = {
+icon = mission_monarch_in_throne_room
 required_missions = { }
 	trigger = {
 	is_subject = no
@@ -26,6 +27,7 @@ required_missions = { }
 			}
 			
 CEP_morea = {
+icon = mission_cossack_cavalry
 required_missions = { CEP_freedom }
 	provinces_to_highlight = {
 		area = morea_area
@@ -48,6 +50,7 @@ required_missions = { CEP_freedom }
 			}
 			
 CEP_aegean = {
+icon = mission_sea_battles
 required_missions = { CEP_morea }
 	provinces_to_highlight = {
 		area = aegean_archipelago_area
@@ -77,6 +80,7 @@ required_missions = { CEP_morea }
 		}
 		
 CEP_nax_minor_asia = {
+icon = mission_unite_home_region
 required_missions = { CEP_aegean }
 		provinces_to_highlight = {
 		OR = {
@@ -106,6 +110,7 @@ required_missions = { CEP_aegean }
 			}
 			
 cep_nax_north_greece = {
+icon = mission_have_two_subjects
 required_missions = { CEP_minor_asia }
 provinces_to_highlight = {
 area = northern_greece_area

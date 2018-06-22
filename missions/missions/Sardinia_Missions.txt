@@ -8,7 +8,7 @@ sardinia_missions_3 = {
 	has_country_shield = yes
 
 	sardinia_build_a_respectable_navy = {
-		icon = mission_unite_home_region
+		icon = mission_galleys_in_port
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -34,7 +34,7 @@ sardinia_missions_3 = {
 		}
 	}
 	sardinian_naval_tradition = {
-		icon = mission_unite_home_region
+		icon = mission_establish_high_seas_navy
 		required_missions = { sardinia_build_a_respectable_navy }
 		position = 2
 		trigger = {
@@ -48,7 +48,7 @@ sardinia_missions_3 = {
 		}
 	}	
 	sardinia_conquer_baleares = {
-		icon = mission_unite_home_region
+		icon = mission_invade_island
 		required_missions = { sardinia_conquer_corsica  }
 		position = 3
 		provinces_to_highlight = {
@@ -81,7 +81,7 @@ sardinia_missions_3 = {
 		}
 	}
 	sardinia_conquer_gibraltar = {
-		icon = mission_unite_home_region
+		icon = mission_sea_battles
 		required_missions = { sardinia_conquer_baleares }
 		position = 4
 		provinces_to_highlight = {
@@ -115,7 +115,7 @@ sardinia_missions_3 = {
 		}
 	}
 	sardinia_conquer_azores = {
-		icon = mission_unite_home_region
+		icon = mission_cannons_firing
 		required_missions = { sardinia_conquer_gibraltar }
 		position = 5
 		provinces_to_highlight = {
@@ -213,7 +213,7 @@ sardinia_missions_4 = {
 	}
 	has_country_shield = yes
 	sardinia_a_base_in_italy = {
-		icon = mission_unite_home_region
+		icon = mission_european_church
 		required_missions = { sardinia  }
 		position = 2
 		provinces_to_highlight = {
@@ -246,7 +246,7 @@ sardinia_missions_4 = {
 		}
 	}	
 	sardinia_take_liguria = {
-		icon = mission_unite_home_region
+		icon = mission_have_two_subjects
 		required_missions = { sardinia_a_base_in_italy }
 		position = 3
 		provinces_to_highlight = {
@@ -304,7 +304,7 @@ sardinia_missions_4 = {
 		}
 	}
 	sardinia_conquer_piedmont = {
-		icon = mission_unite_home_region
+		icon = mission_build_up_to_force_limit
 		required_missions = { sardinia_conquer_savoy }
 		position = 5
 		provinces_to_highlight = {
@@ -333,7 +333,7 @@ sardinia_missions_4 = {
 		}
 	}
 	sardinia_conquer_lombardy = {
-		icon = mission_unite_home_region
+		icon = mission_conquer_5_states
 		required_missions = { sardinia_conquer_savoy }
 		position = 6
 		provinces_to_highlight = {
@@ -379,7 +379,7 @@ sardinia_missions_2 = {
 	has_country_shield = yes
 
 	build_a_sizable_army = {
-		icon = mission_unite_home_region
+		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -405,7 +405,7 @@ sardinia_missions_2 = {
 		}
 	}
 	sardinia_conquer_corsica = {
-		icon = mission_unite_home_region
+		icon = mission_establish_high_seas_navy
 		required_missions = { build_a_respectable_navy build_a_sizable_army  }
 		position = 2
 		provinces_to_highlight = {
@@ -449,7 +449,7 @@ sardinia_missions_2 = {
 		}
 	}	
 	sardinia_conquer_malta = {
-		icon = mission_unite_home_region
+		icon = mission_invade_island
 		required_missions = { sardinia_conquer_corsica  }
 		position = 3
 		provinces_to_highlight = {
@@ -489,7 +489,7 @@ sardinia_missions_2 = {
 		}
 	}	
 	sardinia_conquer_sicily = {
-		icon = mission_unite_home_region
+		icon = mission_empire
 		required_missions = { sardinia_conquer_malta  }
 		position = 4
 		provinces_to_highlight = {
@@ -518,7 +518,7 @@ sardinia_missions_2 = {
 		}
 	}		
 	sardinia_conquer_tunisia = {
-		icon = mission_unite_home_region
+		icon = mission_galleys_in_port
 		required_missions = { sardinia_conquer_sicily  }
 		position = 5
 		provinces_to_highlight = {
@@ -540,7 +540,7 @@ sardinia_missions_2 = {
 		}
 	}
 	sardinia_a_great_power = {
-		icon = mission_unite_home_region
+		icon = mission_empire
 		required_missions = { sardinia_our_kingdom  }
 		position = 6
 		trigger = {
@@ -642,7 +642,7 @@ sardinia_missions_1 = {
 		}
 	}
 	sardinia_develop_sardinia = {
-		icon = mission_unite_home_region
+		icon = mission_conquer_50_development
 		required_missions = { sardinia_a_united_country }
 		position = 2
 		trigger = {
@@ -673,7 +673,7 @@ sardinia_missions_1 = {
 		}
 	}
 	sardinia_develop_corsica = {
-		icon = mission_unite_home_region
+		icon = mission_dominate_home_trade_node
 		required_missions = { sardinia_develop_sardinia }
 		position = 3
 		trigger = {
@@ -691,7 +691,7 @@ sardinia_missions_1 = {
 		}
 	}
 	sardinia_conquer_corfu = {
-		icon = mission_unite_home_region
+		icon = mission_invade_island
 		required_missions = { sardinia_conquer_malta  }
 		position = 4
 		provinces_to_highlight = {
@@ -719,7 +719,7 @@ sardinia_missions_1 = {
 		}
 	}
 	sardinia_our_kingdom = {
-		icon = mission_unite_home_region
+		icon = mission_empire
 		required_missions = {  }
 		position = 5
 		trigger = {
@@ -735,7 +735,7 @@ sardinia_missions_1 = {
 		}
 	}	
 	sardinia_a_sardinian_empire = {
-		icon = mission_unite_home_region
+		icon = mission_empire
 		required_missions = { sardinia_our_kingdom }
 		position = 6
 		trigger = {

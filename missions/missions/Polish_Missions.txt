@@ -55,7 +55,7 @@ polish_missions_main_slot = {
 	}
 
 	retake_corridor = { #Conquer Western Prussia
-		icon = pol_huss
+		icon = mission_conquer_5_states
 		required_missions = { drive_out_teutons }
 		completed_by = 1466.10.19
 		position = 2
@@ -98,7 +98,7 @@ polish_missions_main_slot = {
 		}
 	}
 	reintegrate_gdansk = {
-		icon = pol_gdan
+		icon = mission_conquer_50_development
 		required_missions = { retake_corridor }
 		position = 3
 		provinces_to_highlight = {
@@ -120,7 +120,7 @@ polish_missions_main_slot = {
 		}
 	}
 	liberate_pomerania = {
-		icon = pol_pomo
+		icon = mission_empire
 		required_missions = { reintegrate_gdansk }
 		position = 4
 		provinces_to_highlight = {
@@ -164,7 +164,7 @@ polish_missions_main_slot = {
 		}
 	}
 	liberate_sorbia = {
-		icon = pol_set
+		icon = mission_cossack_cavalry
 		required_missions = { liberate_pomerania }
 		position = 5
 		provinces_to_highlight = {
@@ -213,7 +213,7 @@ polish_missions_main_slot = {
 		}
 	}
 	restore_wendish_borders = {
-		icon = pol_cast
+		icon = mission_cannons_firing
 		required_missions = { liberate_sorbia }
 		position = 6
 		provinces_to_highlight = {
@@ -253,7 +253,7 @@ polish_missions_main_slot = {
 
 	}
 	west_slavic_integration = {
-		icon = pol_throne
+		icon = mission_empire
 		required_missions = { 
 			restore_wendish_borders
 			unite_poland 
@@ -308,7 +308,7 @@ polish_slot_2 = {
 	has_country_shield = yes
 
 	knights_defeated = {
-		icon = pol_teut
+		icon = mission_monarch_in_throne_room
 		position = 3
 		required_missions = { retake_corridor }
 		provinces_to_highlight = {
@@ -363,7 +363,7 @@ polish_slot_2 = {
 		}
 	}
 	mazovia_return = {
-		icon = pol_merm
+		icon = mission_have_two_subjects
 		position = 4
 		required_missions = { knights_defeated }
 		provinces_to_highlight = {
@@ -384,7 +384,7 @@ polish_slot_2 = {
 		}
 	}
 	consolidate_red_ruthenia = {
-		icon = pol_lwow
+		icon = mission_conquer_50_development
 		position = 5
 		required_missions = { mazovia_return }
 		provinces_to_highlight = {
@@ -410,7 +410,7 @@ polish_slot_2 = {
 		}
 	}
 	unite_poland = {
-		icon = pol_casi
+		icon = mission_empire
 		position = 6
 		required_missions = { consolidate_red_ruthenia }
 		provinces_to_highlight = {
@@ -500,7 +500,7 @@ polish_slot_4 = {
 	}
 
 	liberate_silesia = {
-		icon = pol_sile
+		icon = mission_conquer_5_states
 		required_missions = { polish_renaissance }
 		position = 4
 		provinces_to_highlight = {
@@ -534,7 +534,7 @@ polish_slot_4 = {
 	}
 
 	liberate_moravia = {
-		icon = pol_vise
+		icon = mission_conquer_50_development
 		required_missions = { liberate_silesia }
 		position = 5
 		provinces_to_highlight = {
@@ -577,7 +577,7 @@ polish_slot_4 = {
 	}
 
 	liberate_bohemia = {
-		icon = pol_mora
+		icon = mission_assemble_an_army
 		required_missions = { liberate_moravia }
 		position = 6
 		provinces_to_highlight = {
@@ -626,7 +626,7 @@ polish_slot_1 = {
 	has_country_shield = yes
 
 	reach_the_sea = {
-		icon = pol_sea
+		icon = mission_galleys_in_port
 		position = 1
 		required_missions = { }
 		trigger = {
@@ -655,7 +655,7 @@ polish_slot_1 = {
 	
 
 	baltic_domination = {
-		icon = pol_dom
+		icon = mission_high_income
 		position = 3
 		required_missions = { expand_trade }
 		provinces_to_highlight = {
@@ -681,7 +681,7 @@ polish_slot_1 = {
 	}
 
 	thriving_coastal_economy = {
-		icon = pol_secured
+		icon = mission_high_income
 		position = 4
 		required_missions = { baltic_domination }
 		trigger = { 
@@ -697,7 +697,7 @@ polish_slot_1 = {
 	}
 
 	northern_rivals = {
-		icon = pol_swed
+		icon = mission_alliances
 		position = 6
 		required_missions = { thriving_coastal_economy }
 		trigger = { 
@@ -735,7 +735,7 @@ polish_slot_1 = {
 	}
 
 	northern_security = {
-		icon = pol_delu
+		icon = mission_cannons_firing
 		position = 7
 		required_missions = { northern_rivals }
 		provinces_to_highlight = {
@@ -789,7 +789,7 @@ polish_slot_5 = {
 	has_country_shield = yes
 
 	holy_ties = {
-		icon = pol_cros
+		icon = mission_hands_praying
 		required_missions = { }
 		position = 1
 		trigger = { 
@@ -812,7 +812,7 @@ polish_slot_5 = {
 	}
 
 	patronage_mission = {
-		icon = pol_chur
+		icon = mission_european_church
 		position = 2
 		required_missions = { holy_ties }
 		trigger = {
@@ -831,7 +831,7 @@ polish_slot_5 = {
 	}
 
 	defense_of_europe = {
-		icon = pol_bast
+		icon = mission_religious
 		position = 3
 		required_missions = { patronage_mission }
 		trigger = {
@@ -847,7 +847,7 @@ polish_slot_5 = {
 	}
 
 	learning_center = {
-		icon = pol_libr
+		icon = mission_early_game_buildings
 		position = 5
 		required_missions = { defense_of_europe }
 		trigger = {
@@ -863,7 +863,7 @@ polish_slot_5 = {
 		}
 	}
 	religious_acceptance = {
-		icon = pol_jews
+		icon = mission_european_church
 		position = 6
 		required_missions = { learning_center }
 		trigger = {
@@ -883,7 +883,7 @@ polish_slot_5 = {
 	}
 
 	secular_empire = {
-		icon = pol_gold
+		icon = mission_empire
 		position = 7
 		required_missions = { religious_acceptance }
 		trigger = {
@@ -916,7 +916,7 @@ polish_industry_slot = {
 	has_country_shield = yes
 
 	rise_of_industry = {
-		icon = pol_mill
+		icon = mission_have_manufactories
 		
 		
 		position = 8
@@ -948,7 +948,7 @@ polish_industry_slot = {
 	}
 
 	expansion_of_cities = {
-		icon = pol_town         
+		icon = mission_early_game_buildings        
 		position = 9
 		required_missions = { rise_of_industry }
 		trigger = {
@@ -963,7 +963,7 @@ polish_industry_slot = {
 	}
 
 	coal_powerhouse = {
-		icon = pol_coal         
+		icon = mission_have_manufactories         
 		position = 10
 		required_missions = { expansion_of_cities }
 		trigger = {
@@ -1035,7 +1035,7 @@ polish_industry_slot = {
 	}
 
 	sign_constitution = {
-		icon = pol_sign        
+		icon = mission_high_income      
 		position = 11
 		required_missions = { coal_powerhouse }
 		trigger = {
@@ -1056,7 +1056,7 @@ polish_industry_slot = {
 	}
 
 	end_feudalism = {
-		icon = pol_sejm         
+		icon = mission_alliances      
 		position = 12
 		required_missions = { sign_constitution }
 		trigger = {
@@ -1088,7 +1088,7 @@ polish_trade_slot = {
 	has_country_shield = yes
 
 	bohemian_friendship = {
-		icon = pol_boh         
+		icon = mission_alliances         
 		position = 8
 		required_missions = {  }
 		trigger = {
@@ -1109,7 +1109,7 @@ polish_trade_slot = {
 	}
 	
 	shipping_lanes = {
-		icon = pol_ship         
+		icon = mission_galleys_in_port        
 		position = 9
 		required_missions = { rise_of_industry }
 		trigger = {
@@ -1121,7 +1121,7 @@ polish_trade_slot = {
 		}
 	}
 	amber_trade = {
-		icon = pol_ambe         
+		icon = mission_dominate_home_trade_node         
 		position = 10
 		required_missions = { shipping_lanes }
 		trigger = {
@@ -1142,7 +1142,7 @@ polish_trade_slot = {
 		}
 	}
 	polish_stockmarket = {
-		icon = pol_bank         
+		icon = mission_trade_company_region_abroad      
 		position = 11
 		required_missions = { amber_trade }
 		trigger = {
@@ -1153,7 +1153,7 @@ polish_trade_slot = {
 		}
 	}
 	westernization = {
-		icon = pol_army        
+		icon = mission_non-western_soldiers       
 		position = 12
 		required_missions = { polish_stockmarket }
 		trigger = {
@@ -1183,7 +1183,7 @@ polish_moldavia_slot = {
 	has_country_shield = yes
 
 	romans_in_romania = {
-		icon = pol_sieg         
+		icon = mission_monarch_in_throne_room         
 		position = 8
 		required_missions = { }
 		trigger = {
@@ -1210,7 +1210,7 @@ polish_moldavia_slot = {
 	}
 
 	black_sea_route = {
-		icon = pol_mold        
+		icon = mission_invade_island       
 		position = 9
 		required_missions = { romans_in_romania }
 		trigger = {
@@ -1233,7 +1233,7 @@ polish_moldavia_slot = {
 	}
 
 	mediterranian_link = {
-		icon = pol_roma         
+		icon = mission_sea_battles        
 		position = 10
 		required_missions = { black_sea_route }
 		trigger = {
@@ -1271,7 +1271,7 @@ polish_hungary_slot = {
 	has_country_shield = yes
 
 	restore_hungary = { #Decline of Hungary
-		icon = pol_hung
+		icon = mission_monarch_in_throne_room
 		required_missions = {  } #None
 		position = 8
 		trigger = {

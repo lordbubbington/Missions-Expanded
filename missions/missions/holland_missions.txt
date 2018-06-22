@@ -136,7 +136,7 @@ holland_united_provinces = {
 		effect = {
 			add_country_modifier = {
 			name = "united_provinces"
-			duration = -1
+			duration = 7300
 			}
 			add_adm_power = 100 
 			add_core = 95 
@@ -178,7 +178,7 @@ hollands_conquest_of_the_greater_low_countries_slot_4 = {
 			add_mil_power = 250 
 			add_country_modifier = {
 			name = "nations_global_unrest"
-			duration = -1
+			duration = 7300
 			}
 		}
 	}
@@ -386,8 +386,8 @@ province_growth_missions = {
 		effect = {
 			add_treasury = -500
 			capital_scope = {
-			add_base_tax = 7
-			add_base_production = 5
+			add_base_tax = 4
+			add_base_production = 3
 			add_base_manpower = 2
 				add_province_modifier = {
 				name = "amsterdams_canal_system"
@@ -446,7 +446,7 @@ united_low_countries_mission = {
 		effect = {
 			add_country_modifier = {
 			name = "united_low_countries"
-			duration = -1
+			duration = 7300
 			}
 		}
 	}

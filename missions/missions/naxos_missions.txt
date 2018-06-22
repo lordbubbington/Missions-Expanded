@@ -8,6 +8,7 @@ tag = NAX
 has_country_shield = yes
 
 nax_freedom = {
+icon = mission_alliances
 required_missions = { }
 	trigger = {
 	is_subject = no
@@ -26,6 +27,7 @@ required_missions = { }
 			}
 			
 nax_morea = {
+icon = mission_cannons_firing
 required_missions = { nax_freedom }
 	provinces_to_highlight = {
 		area = morea_area
@@ -48,6 +50,7 @@ required_missions = { nax_freedom }
 			}
 			
 nax_aegean = {
+icon = mission_establish_high_seas_navy
 required_missions = { nax_morea }
 	provinces_to_highlight = {
 		area = aegean_archipelago_area
@@ -77,6 +80,7 @@ required_missions = { nax_morea }
 		}
 		
 nax_minor_asia = {
+icon = mission_invade_island
 required_missions = { nax_aegean }
 		provinces_to_highlight = {
 		OR = {
@@ -106,6 +110,7 @@ required_missions = { nax_aegean }
 			}
 			
 nax_north_greece = {
+icon = mission_non-western_soldiers
 required_missions = { nax_minor_asia }
 provinces_to_highlight = {
 area = northern_greece_area

@@ -122,6 +122,7 @@ ned_colonial_group_two = {
 	ned_brazil_colony = {
 		icon = mission_colonial
 		required_missions = { ned_american_discovery }
+		position = 3
 		completed_by = 1650.1.1
 		
 		provinces_to_highlight = {
@@ -274,6 +275,7 @@ ned_colonial_group_three = {
 	ned_malacca = {
 		icon = mission_unite_home_region
 		required_missions = { ned_spice_australia }
+		position = 6
 		
 		provinces_to_highlight = {
 			OR = {
@@ -322,6 +324,7 @@ ned_colonial_group_four = {
 	ned_taiwan = {
 		icon = mission_rice_field
 		required_missions = { ned_spice_australia }
+		position = 6
 		
 		provinces_to_highlight = {
 			area = taiwan_area

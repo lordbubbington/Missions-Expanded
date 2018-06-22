@@ -7,7 +7,7 @@ venetian_missions_1 = {
 	}
 	has_country_shield = yes
 	venice_control_renaissance_origin = {
-		icon = mission_war_chest
+		icon = mission_conquer_50_development
 		required_missions = { }
 		trigger = {
             all_province = {
@@ -23,7 +23,7 @@ venetian_missions_1 = {
 		}
 	}
 	venice_conquer_albania = {
-		icon = mission_war_chest
+		icon = mission_conquer_5_states
 		required_missions = { venice_a_sizable_navy_and_army }
 		provinces_to_highlight = {
 				area = albania_area
@@ -68,7 +68,7 @@ venetian_missions_1 = {
 		}
 	}
 	venice_conquer_western_greece = {
-		icon = mission_war_chest
+		icon = mission_early_game_buildings
 		required_missions = { venice_conquer_albania }
 		provinces_to_highlight = {
             OR = {
@@ -125,7 +125,7 @@ venetian_missions_1 = {
 		}
 	}        
 	venice_conquer_eastern_greece = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = { venice_conquer_western_greece }
 		provinces_to_highlight = {
             OR = {
@@ -171,7 +171,7 @@ venetian_missions_1 = {
 		}
 	}
 	venice_conquer_constantinople = {
-		icon = mission_war_chest
+		icon = mission_invade_island
 		required_missions = { venice_conquer_eastern_greece }
 		provinces_to_highlight = {
 				province_id = 151
@@ -239,7 +239,7 @@ venetian_missions_1 = {
 		}
 	}
 	venice_secure_greece = {
-		icon = mission_war_chest
+		icon = mission_sea_battles
 		required_missions = { venice_conquer_constantinople }
 		provinces_to_highlight = {
             OR = {
@@ -274,7 +274,7 @@ venetian_missions_1 = {
 		}
 	}                
 	venice_conquer_anatolian_coast = {
-		icon = mission_war_chest
+		icon = mission_unite_home_region
 		required_missions = { venice_secure_greece }
 		provinces_to_highlight = {
             OR = {
@@ -314,7 +314,7 @@ venetian_missions_1 = {
 		}
 	}                
 	venice_control_black_sea_trade = {
-		icon = mission_war_chest
+		icon = mission_dominate_home_trade_node
 		required_missions = { }
 		trigger = {
 			1322 = {
@@ -332,7 +332,7 @@ venetian_missions_1 = {
 		}
 	}
 	ven_make_venice_a_huge_city = {
-		icon = mission_war_chest
+		icon = mission_conquer_50_development
 		required_missions = { }
 		trigger = {
 			112 = {
@@ -349,7 +349,7 @@ venetian_missions_1 = {
 		}
 	}                    
 	ven_make_venice_a_grand_port = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = { ven_make_venice_a_huge_city }
 		trigger = {
 			112 = {
@@ -423,7 +423,7 @@ venetian_missions_1 = {
 				}
 			}
 	venice_major_producer_of_glass = {
-		icon = mission_war_chest
+		icon = mission_asian_trader
 		required_missions = { }
 		trigger = {
 			glass = 5							                        
@@ -472,7 +472,7 @@ venetian_missions_2 = {
 	}
 	has_country_shield = yes
 	venice_a_sizable_navy_and_army = {
-		icon = mission_war_chest
+		icon = mission_establish_high_seas_navy
 		required_missions = { }
 		trigger = {
             army_size_percentage = 1
@@ -546,7 +546,7 @@ venetian_missions_2 = {
 		}
 	}                     
 	venice_secure_austrian_border = {
-		icon = mission_war_chest
+		icon = mission_assemble_an_army
 		required_missions = { venice_a_sizable_navy_and_army }
 		provinces_to_highlight = {
             OR = {
@@ -581,7 +581,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_into_lombardy = {
-		icon = mission_war_chest
+		icon = mission_build_up_to_force_limit
 		required_missions = { venice_secure_austrian_border }
 		provinces_to_highlight = {
 				area = lombardy_area
@@ -626,7 +626,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_conquer_piedmont = {
-		icon = mission_war_chest
+		icon = mission_cossack_cavalry
 		required_missions = { venice_into_lombardy }
 		provinces_to_highlight = {
 				area = piedmont_area
@@ -649,7 +649,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_conquer_genoa = {
-		icon = mission_war_chest
+		icon = mission_empire
 		required_missions = { venice_conquer_emilia_romagna }
 		provinces_to_highlight = {
 				area = liguria_area
@@ -676,7 +676,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_conquer_crimea = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = { venice_conquer_constantinople }
 		provinces_to_highlight = {
 				area = crimea_area
@@ -710,7 +710,7 @@ venetian_missions_2 = {
 		}
 	}        
 	venice_conquer_azov = {
-		icon = mission_war_chest
+		icon = mission_have_two_subjects
 		required_missions = { venice_conquer_crimea }
 		provinces_to_highlight = {
 				area = azov_area
@@ -733,7 +733,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_conquer_alexandria = {
-		icon = mission_war_chest
+		icon = mission_invade_island
 		required_missions = { venice_dominate_balkan_and_anatolian_trade }
 		provinces_to_highlight = {
 				area = delta_area
@@ -756,7 +756,7 @@ venetian_missions_2 = {
 		}
 	}
 	venice_control_egyptian_trade = {
-		icon = mission_war_chest
+		icon = mission_high_income
 		required_missions = { venice_conquer_alexandria }
 		trigger = {
 			112 = {
@@ -792,7 +792,7 @@ venetian_missions_2 = {
 		}
 	}
 	ven_university_of_venice = {
-		icon = mission_war_chest
+		icon = mission_early_game_buildings
 		required_missions = { ven_make_venice_a_huge_city }
 		trigger = {
 			112 = {
@@ -809,7 +809,7 @@ venetian_missions_2 = {
 		}
 	}
 	ven_start_to_industrialize_venice = {
-		icon = mission_war_chest
+		icon = mission_have_manufactories
 		required_missions = { ven_make_venice_a_huge_city }
 		trigger = {
 			112 = {
@@ -893,7 +893,7 @@ venetian_missions_3 = {
 	}
 	has_country_shield = yes	
 	ven_somethin_somethin_st_marks_basilica = {
-		icon = mission_war_chest
+		icon = mission_european_church
 		required_missions = { ven_make_venice_a_huge_city }
 		trigger = {
 			112 = {
@@ -910,7 +910,7 @@ venetian_missions_3 = {
 		}
 	}
 	venice_conquer_adriatic_coast = {
-		icon = mission_war_chest
+		icon = mission_sea_battles
 		required_missions = { venice_a_sizable_navy_and_army }
 		provinces_to_highlight = {
             OR = {
@@ -956,7 +956,7 @@ venetian_missions_3 = {
 		}
 	}                										             
 	venice_a_buffer_state_in_croatia = {
-		icon = mission_war_chest
+		icon = mission_unite_home_region
 		required_missions = { venice_conquer_adriatic_coast }
 		provinces_to_highlight = {
 				area = croatia_area
@@ -1019,7 +1019,7 @@ venetian_missions_3 = {
 	}                										                
                                 
 	venice_conquer_emilia_romagna = {
-		icon = mission_war_chest
+		icon = mission_monarch_in_throne_room
 		required_missions = { venice_into_lombardy }
 		provinces_to_highlight = {
 				area = emilia_romagna_area
@@ -1075,7 +1075,7 @@ venetian_missions_3 = {
 		}									
 	}	               
 	venice_conquer_tuscany = {
-		icon = mission_war_chest
+		icon = mission_cannons_firing
 		required_missions = { venice_conquer_emilia_romagna }
 		provinces_to_highlight = {
 				area = tuscany_area
@@ -1098,7 +1098,7 @@ venetian_missions_3 = {
 		}									
 	}
 	venice_dominate_local_trade = {
-		icon = mission_war_chest
+		icon = mission_trade_company_region_abroad
 		required_missions = { }
 		trigger = {
 			112 = {
@@ -1116,7 +1116,7 @@ venetian_missions_3 = {
 		}
 	}	
 	venice_dominate_balkan_and_anatolian_trade = {
-		icon = mission_war_chest
+		icon = mission_trade_company_region_abroad
 		required_missions = { }
 		trigger = {
 			112 = {
@@ -1180,7 +1180,7 @@ venetian_missions_3 = {
 		}
 	}
 	venice_a_true_naval_tradition = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = {  }
 		trigger = {
 			navy_tradition = 80	
@@ -1203,7 +1203,7 @@ venetian_missions_3 = {
 		
 
 	venice_take_taiwan = {
-		icon = mission_war_chest
+		icon = mission_invade_island
 		required_missions = { ven_a_base_in_india }
 		provinces_to_highlight = {
 				area = taiwan_area
@@ -1236,7 +1236,7 @@ venetian_missions_3 = {
 		}
 	}
 	venice_a_base_in_china = {
-		icon = mission_war_chest
+		icon = mission_buddhist_monk_praying
 		required_missions = { venice_take_taiwan }
 		provinces_to_highlight = {
 				area = 668
@@ -1285,7 +1285,7 @@ venetian_missions_4 = {
 	}
 	has_country_shield = yes	
 	venice_integrate_naxos_and_corfu = {
-		icon = mission_war_chest
+		icon = mission_alliances
 		required_missions = { }
 		provinces_to_highlight = {
             OR = {
@@ -1323,7 +1323,7 @@ venetian_missions_4 = {
 		}
 	}	               	 			
 	venice_conquer_cyprus = {
-		icon = mission_war_chest
+		icon = mission_invade_island
 		required_missions = { venice_integrate_naxos_and_corfu }
 		provinces_to_highlight = {
 			province_id = 321
@@ -1368,7 +1368,7 @@ venetian_missions_4 = {
 		}
 	}	               	
 	venice_take_rhodes_and_chios = {
-		icon = mission_war_chest
+		icon = mission_invade_island
 		required_missions = { venice_conquer_cyprus }
 		provinces_to_highlight = {
 			OR = {
@@ -1403,7 +1403,7 @@ venetian_missions_4 = {
 		}
 	}	
 	venice_expand_our_buffer_state = {
-		icon = mission_war_chest
+		icon = mission_unite_home_region
 		required_missions = { venice_conquer_adriatic_coast }
 		provinces_to_highlight = {
 			OR = {
@@ -1444,7 +1444,7 @@ venetian_missions_4 = {
 		}
 	}
 	venice_conquer_central_italy = {
-		icon = mission_war_chest
+		icon = mission_unite_home_region
 		required_missions = { venice_conquer_emilia_romagna }
 		provinces_to_highlight = {
 				area = central_italy_area
@@ -1478,7 +1478,7 @@ venetian_missions_4 = {
 		}									
 	}		               		 											                
 	venice_conquer_rome = {
-		icon = mission_war_chest
+		icon = mission_religious
 		required_missions = { venice_conquer_emilia_romagna }
 		provinces_to_highlight = {
 				province_id = 118
@@ -1538,7 +1538,7 @@ venetian_missions_4 = {
 		}									
 	}
 	venice_conquer_southern_italy = {
-		icon = mission_war_chest
+		icon = mission_sea_battles
 		required_missions = { venice_conquer_emilia_romagna }
 		provinces_to_highlight = {
 			OR = {
@@ -1594,7 +1594,7 @@ venetian_missions_4 = {
 		}									
 	}
 	ven_a_base_in_western_africa = {
-	icon = mission_colonial
+	icon = mission_galleys_in_port
 	required_missions = { }
 			trigger = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1750,7 +1750,7 @@ venetian_missions_4 = {
 		}
 	}
 	venice_build_shipbuilding_infastructure = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = { }
 		trigger = {
 			shipyard = 10           
@@ -1785,7 +1785,7 @@ venetian_missions_5 = {
 	}
 	has_country_shield = yes
 	ven_the_worlds_greatest_navy = {
-	icon = mission_colonial
+	icon = mission_establish_high_seas_navy
 	required_missions = { }
 			trigger = {
 				heavy_ship_fraction = 0.1
@@ -1799,7 +1799,7 @@ venetian_missions_5 = {
 		}
 	}	
 	venice_a_base_in_malta = {
-		icon = mission_war_chest
+		icon = mission_great_wall
 		required_missions = { venice_integrate_naxos_and_corfu }
 		provinces_to_highlight = {
 			province_id = 126
@@ -1833,7 +1833,7 @@ venetian_missions_5 = {
 		}
 	}	
 	venice_conquer_sicily = {
-		icon = mission_war_chest
+		icon = mission_cannons_firing
 		required_missions = { venice_a_base_in_malta }
 		provinces_to_highlight = {
 			area = sicily_area
@@ -1878,7 +1878,7 @@ venetian_missions_5 = {
 		}
 	}
 	venice_conquer_corsica_and_sardinia = {
-		icon = mission_war_chest
+		icon = mission_assemble_an_army
 		required_missions = { venice_conquer_sicily }
 		provinces_to_highlight = {
 			area = corsica_sardinia_area 
@@ -1946,7 +1946,7 @@ venetian_missions_5 = {
 		}
 	}
 	venice_conquer_gibraltar = {
-		icon = mission_war_chest
+		icon = mission_galleys_in_port
 		required_missions = { venice_conquer_baleares }
 		provinces_to_highlight = {
 			province_id = 226
@@ -1973,7 +1973,7 @@ venetian_missions_5 = {
 		}
 	}
 	venice_build_trade_infastructure = {
-		icon = mission_war_chest
+		icon = mission_trade_company_region_abroad
 		required_missions = { }
 		trigger = {
 			marketplace = 10           
