@@ -188,6 +188,86 @@ spriteTypes = {
 		
 		spriteType = {
         name = "mission_gre_partisians"
-        texturefile = "gfx//interface//missions//mission_gre_particians.dds"	
+        texturefile = "gfx//interface//missions//mission_particians.dds"	
 	}	
+		spriteType = {
+        name = "mission_poland"
+        texturefile = "gfx//interface//missions//polska.dds"	
+	}	
+			spriteType = {
+        name = "mission_rome"
+        texturefile = "gfx//interface//missions//1527.dds"	
+	}	
+				spriteType = {
+        name = "mission_bb"
+        texturefile = "gfx//interface//missions//hohenzollern.dds"	
+	}	
+				spriteType = {
+        name = "mission_man"
+        texturefile = "gfx//interface//missions//man.dds"	
+	}	
+				spriteType = {
+        name = "mission_livonia2"
+        texturefile = "gfx//interface//missions//livonia2.dds"	
 	}
+				spriteType = {
+        name = "mission_wagons"
+        texturefile = "gfx//interface//missions//wagons.dds"	
+	}
+				spriteType = {
+        name = "mission_army"
+        texturefile = "gfx//interface//missions//infantry.dds"	
+	}	
+					spriteType = {
+        name = "mission_leadergood"
+        texturefile = "gfx//interface//missions//carl.dds"	
+	}	
+				spriteType = {
+        name = "mission_military_4"
+        texturefile = "gfx//interface//missions//leader.dds"		
+	}	
+					spriteType = {
+        name = "mission_conquer"
+        texturefile = "gfx//interface//missions//caroliner.dds"	
+	}	
+					spriteType = {
+        name = "mission_modern"
+        texturefile = "gfx//interface//missions//modern.dds"	
+	}
+					spriteType = {
+        name = "mission_fred"
+        texturefile = "gfx//interface//missions//fred.dds"	
+	}
+					spriteType = {
+        name = "mission_volt"
+        texturefile = "gfx//interface//missions//volt.dds"	
+	}
+					spriteType = {
+        name = "mission_napoleon"
+        texturefile = "gfx//interface//missions//napoleon.dds"	
+	}
+					spriteType = {
+        name = "mission_columbus"
+        texturefile = "gfx//interface//missions//columbus.dds"	
+	}
+					spriteType = {
+        name = "mission_armada"
+        texturefile = "gfx//interface//missions//armada.dds"	
+	}	
+						spriteType = {
+        name = "mission_hre"
+        texturefile = "gfx//interface//missions//hre.dds"	
+	}	
+							spriteType = {
+        name = "mission_lutzen"
+        texturefile = "gfx//interface//missions//lutzen.dds"	
+	}	
+							spriteType = {
+        name = "mission_kneel"
+        texturefile = "gfx//interface//missions//KNEEL.dds"	
+	}	
+							spriteType = {
+        name = "mission_league"
+        texturefile = "gfx//interface//missions//league.dds"	
+	}	
+}
