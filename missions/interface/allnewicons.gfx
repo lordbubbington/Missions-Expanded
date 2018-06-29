@@ -270,4 +270,24 @@ spriteTypes = {
         name = "mission_league"
         texturefile = "gfx//interface//missions//league.dds"	
 	}	
+								spriteType = {
+        name = "mission_ferd"
+        texturefile = "gfx//interface//missions//ferd.dds"	
+	}
+								spriteType = {
+        name = "mission_white"
+        texturefile = "gfx//interface//missions//white.dds"	
+	}
+		spriteType = {
+        name = "mission_pikes"
+        texturefile = "gfx//interface//missions//pikes.dds"	
+	}
+		spriteType = {
+	        name = "mission_charl"
+        texturefile = "gfx//interface//missions//charl.dds"	
+	}
+		spriteType = {
+	        name = "mission_imperial"
+        texturefile = "gfx//interface//missions//imperial.dds"	
+	}
 }
