@@ -50,7 +50,7 @@ boh_1 = {
 	}
 	
 	boh_saxony_1 = {
-	icon = mission_monarch_in_throne_room
+	icon = mission_saxony
 		required_missions = { boh_hussite_one }
 		
 		trigger = {
@@ -114,7 +114,7 @@ boh_1 = {
 		}
 	}
 	boh_brandenburg = {
-	icon = mission_bb
+	icon = mission_prussia
 	required_missions = { boh_saxony_2 }
 	
 	trigger = {
@@ -329,13 +329,22 @@ boh_2 = {
 	required_missions = { }
 	
 	trigger = {
-	adm_power = 150
+	OR = {
+	religion = hussites
+		
+		calc_true_if = {
+		all_owned_province = {
+		religion = hussites
+		}
+		amount = 5
+			}
+		}
 	}
 	effect = {
 	add_country_modifier = {
 	name = hussite
 	duration = -1
-		}
+			}
 	wielkopolska_area = {
 												limit = {
 					NOT = { is_core = ROOT 
@@ -579,7 +588,7 @@ curonia_area = {
 effect = {
 livonia_area = {
 					limit = {
-					NOT = { is_core = ROOT 
+				NOT = { is_core = ROOT 
 					owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
@@ -626,7 +635,149 @@ set_government_rank = 3
 				country_event = { id = hre_event.5 }
 			}
 		}
-	}	
+	}
+
+boh_germany_1 = {
+icon = mission_alliances
+required_missions = { boh_united }
+trigger = {
+braunschweig_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+effect = {
+westphalia_area = {
+					limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+boh_germany_2 = {
+icon = mission_westphalia
+required_missions = { boh_germany_1 }
+trigger = {
+westphalia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	effect = {
+	weser_area = {
+						limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		
+		north_rhine_area = {
+						limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+boh_rhine = {
+icon = mission_alliances
+required_missions = { boh_germany_2 }
+trigger = {
+north_rhine_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+effect = {
+		lower_rhineland_area = {
+					limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+boh_rhine_2 = {
+icon = mission_alliances
+required_missions = { boh_rhine }
+trigger = {
+		lower_rhineland_area = {
+						type = all
+				owned_by = ROOT
+			}
+		}
+effect = {
+wallonia_area = {
+					limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+boh_belgium = {
+icon = mission_alliances
+required_missions = { boh_rhine_2 }
+trigger = {
+wallonia_area = {
+						type = all
+				owned_by = ROOT
+			}
+		}
+effect = {
+flanders_area = {
+					limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	boh_flanders = {
+	icon = mission_alliances
+	required_missions = { boh_belgium }
+	trigger = {
+	flanders_area = {
+							type = all
+				owned_by = ROOT
+			}
+		}
+	effect = {
+	picardy_area = {
+						limit = {
+				NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	boh_france_1 = {
+	icon = mission_alliances
+	required_missions = { boh_flanders }
+	trigger = {
+	picardy_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	effect = {
+	add_adm_power = 100
+		}
+	}
 }
 		
 boh_3 = {
@@ -715,7 +866,7 @@ boh_3 = {
 }
 
 	boh_austria_2 = {
-	icon = mission_conquer_50_development
+	icon = mission_habsburgs
 	required_missions = { boh_austria_1 }
 	
 	trigger = {
@@ -753,7 +904,7 @@ boh_3 = {
 }
 
 	boh_bavaria = {
-	icon = mission_assemble_an_army
+	icon = mission_bavaria
 	required_missions = { boh_austria_2 boh_saxony_2 }
 	
 	trigger = {
@@ -981,6 +1132,41 @@ position = 16
 	name = ruthenia_conquered
 	duration = 7300
 			}
+		}
+	}
+	
+boh_wesser = {
+icon = mission_alliances
+required_missions = { boh_germany_2 }
+position = 20
+trigger = {
+weser_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	effect = {
+	holstein_area = {
+					limit = {
+					NOT = { is_core = ROOT 
+					owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	boh_holstein = {
+	icon = mission_alliances
+	required_missions = { boh_wesser }
+	trigger = {
+	holstein_area = {
+					type = all
+				owned_by = ROOT
+			}
+		}
+	effect = {
+	add_adm_power = 200
 		}
 	}
 }
@@ -1243,224 +1429,6 @@ boh_5 = {
 	}
 }
 
-
-boh_30_years_war = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = BOH
-	}
-	has_country_shield = yes
-	
-	boh_league_1 = {
-	icon = mission_alliances
-	required_missions = { }
-	position = 20
-	trigger = {
-	OR = {
-	in_league = protestant
-	in_league = catholic
-		}
-	}
-	effect = {
-	add_country_modifier = {
-	name = hre_flames
-	duration = 7300
-		}
-	}
-}
-
-boh_prepare_for_flames = {
-icon = mission_man
-required_missions = { boh_league_1 }
-trigger = {
-			army_size_percentage = 1
-			manpower_percentage = 0.8
-			}
-effect = {
-add_mil_power = 50
-		}
-	}
-}
-
-boh_30_years_war_catholic = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag = BOH
-	}
-	has_country_shield = yes
-	
-	boh_catholic_league = {
-	icon = mission_league
-	required_missions = { boh_prepare_for_flames }
-	position = 22
-	trigger = {
-	calc_true_if = {
-	all_country = {
-		in_league = catholic
-	}
-	amount = 20
-		}
-	}
-	effect = {
-	add_country_modifier = {
-	name = support
-	duration = 3000
-			}
-		}
-	}
-	
-	boh_1_power = {
-	icon = mission_kneel
-	required_missions = { boh_catholic_league }
-	trigger = {
-	calc_true_if = {
-	TUR = { in_league = catholic }
-	FRA = { in_league = catholic }
-	SPA = { in_league = catholic }
-	CAS = { in_league = catholic }
-	POL = { in_league = catholic }
-	PLC = { in_league = catholic }
-	RUS = { in_league = catholic }
-	MOS = { in_league = catholic }
-	SWE = { in_league = catholic }
-	amount = 2	
-		}
-	}
-	effect = {
-	add_country_modifier = {
-	name = big_support
-	duration = 3000
-			}
-		}
-	}
-	
-	boh_the_flames = {
-	icon = mission_lutzen
-	required_missions = { boh_1_power }
-	trigger = {
-	is_in_league_war = yes
-	}
-	effect = {
-		add_country_modifier = {
-	name = has_man_gone_insane
-	duration = 3000
-			}
-		}
-	}
-	
-	boh_hre_saved = {
-	icon = mission_empire
-	required_missions = { boh_the_flames }
-	trigger = {
-	            custom_trigger_tooltip = {
-                tooltip = obj_religious_league_war_on_winning_side_tooltip
-                has_country_flag = religious_league_war_on_winning_side
-           }
-		 hre_religion = catholic
-		hre_religion_locked = yes  
-	}
-	effect = {
-	add_country_modifier = {
-	name = boh_hre_saved
-	duration = 3000
-			}
-		}
-	}
-}
-
-boh_30_years_war_protestant = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		tag = BOH
-	}
-	has_country_shield = yes
-	
-	boh_protestant_league = {
-	icon = mission_league
-	required_missions = { boh_prepare_for_flames }
-	position = 22
-	trigger = {
-	calc_true_if = {
-	all_country = {
-		in_league = protestant
-	}
-	amount = 20
-		}
-	}
-	effect = {
-	add_country_modifier = {
-	name = support
-	duration = 3000
-			}
-		}
-	}
-	
-	boh_2_power = {
-	icon = mission_kneel
-	required_missions = { boh_protestant_league }
-	trigger = {
-	calc_true_if = {
-	TUR = { in_league = protestant }
-	FRA = { in_league = protestant }
-	SPA = { in_league = protestant }
-	CAS = { in_league = protestant }
-	POL = { in_league = protestant }
-	PLC = { in_league = protestant }
-	RUS = { in_league = protestant }
-	MOS = { in_league = protestant }
-	SWE = { in_league = protestant }
-	amount = 2	
-		}
-	}
-	effect = {
-	add_country_modifier = {
-	name = big_support
-	duration = 3000
-			}
-		}
-	}
-	
-	boh_the_flames2 = {
-	icon = mission_lutzen
-	required_missions = { boh_2_power }
-	trigger = {
-	is_in_league_war = yes
-	}
-	effect = {
-	add_country_modifier = {
-	name = has_man_gone_insane
-	duration = 3000
-			}
-		}
-	}
-	
-		boh_hre_reformed = {
-		icon = mission_empire
-	required_missions = { boh_the_flames2 }
-	trigger = {
-	            custom_trigger_tooltip = {
-                tooltip = obj_religious_league_war_on_winning_side_tooltip
-                has_country_flag = religious_league_war_on_winning_side
-           }
-		 hre_religion = protestant
-		hre_religion_locked = yes  
-	}
-	effect = {
-	add_country_modifier = {
-	name = boh_hre_reformed
-	duration = 3000
-			}
-		}
-	}
-}
-
-
 boh_develop = {
 	slot = 4
 	generic = no
@@ -1528,7 +1496,7 @@ boh_reforms = {
 	boh_wagons = {
 	icon = mission_wagons
 	required_missions = { }
-	position = 13
+	position = 14
 	trigger = {
 	BOH_ideas = 3
 	mil = 6
@@ -1573,3 +1541,393 @@ duration = -1
 		}
 	}
 }
+
+boh_30_years_war = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	boh_league_1 = {
+	icon = mission_alliances
+	required_missions = { }
+	position = 20
+	trigger = {
+	OR = {
+	in_league = protestant
+	in_league = catholic
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = hre_flames
+	duration = 7300
+		}
+	}
+}
+
+boh_prepare_for_flames = {
+icon = mission_man
+required_missions = { boh_league_1 }
+trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.8
+			}
+effect = {
+add_mil_power = 50
+		}
+	}
+}
+
+boh_30_years_war_catholic = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	boh_catholic_league = {
+	icon = mission_pikes
+	required_missions = { boh_prepare_for_flames }
+	position = 22
+	trigger = {
+	calc_true_if = {
+	all_country = {
+		in_league = catholic
+	}
+	amount = 20
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = support
+	duration = 3000
+			}
+		}
+	}
+	
+	boh_1_power = {
+	icon = mission_ferd
+	required_missions = { boh_catholic_league }
+	trigger = {
+	calc_true_if = {
+	TUR = { in_league = catholic }
+	FRA = { in_league = catholic }
+	SPA = { in_league = catholic }
+	CAS = { in_league = catholic }
+	POL = { in_league = catholic }
+	PLC = { in_league = catholic }
+	RUS = { in_league = catholic }
+	MOS = { in_league = catholic }
+	SWE = { in_league = catholic }
+	amount = 2	
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = big_support
+	duration = 3000
+			}
+		}
+	}
+	
+	boh_the_flames = {
+	icon = mission_white
+	required_missions = { boh_1_power }
+	trigger = {
+	is_in_league_war = yes
+	}
+	effect = {
+		add_country_modifier = {
+	name = has_man_gone_insane
+	duration = 3000
+			}
+		}
+	}
+	
+	boh_hre_saved = {
+	icon = mission_imperial
+	required_missions = { boh_the_flames }
+	trigger = {
+	            custom_trigger_tooltip = {
+                tooltip = obj_religious_league_war_on_winning_side_tooltip
+                has_country_flag = religious_league_war_on_winning_side
+           }
+		 hre_religion = catholic
+		hre_religion_locked = yes  
+	}
+	effect = {
+	add_country_modifier = {
+	name = boh_hre_saved
+	duration = 3000
+			}
+		}
+	}
+}
+
+boh_30_years_war_protestant = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	boh_protestant_league = {
+	icon = mission_league
+	required_missions = { boh_prepare_for_flames }
+	position = 22
+	trigger = {
+	calc_true_if = {
+	all_country = {
+		in_league = protestant
+	}
+	amount = 20
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = support
+	duration = 3000
+			}
+		}
+	}
+	
+	boh_2_power = {
+	icon = mission_kneel
+	required_missions = { boh_protestant_league }
+	trigger = {
+	calc_true_if = {
+	TUR = { in_league = protestant }
+	FRA = { in_league = protestant }
+	SPA = { in_league = protestant }
+	CAS = { in_league = protestant }
+	POL = { in_league = protestant }
+	PLC = { in_league = protestant }
+	RUS = { in_league = protestant }
+	MOS = { in_league = protestant }
+	SWE = { in_league = protestant }
+	amount = 2	
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = big_support
+	duration = 3000
+			}
+		}
+	}
+	
+	boh_the_flames2 = {
+	icon = mission_lutzen
+	required_missions = { boh_2_power }
+	trigger = {
+	is_in_league_war = yes
+	}
+	effect = {
+	add_country_modifier = {
+	name = has_man_gone_insane
+	duration = 3000
+			}
+		}
+	}
+	
+		boh_hre_reformed = {
+		icon = mission_charl
+	required_missions = { boh_the_flames2 }
+	trigger = {
+	            custom_trigger_tooltip = {
+                tooltip = obj_religious_league_war_on_winning_side_tooltip
+                has_country_flag = religious_league_war_on_winning_side
+           }
+		 hre_religion = protestant
+		hre_religion_locked = yes  
+	}
+	effect = {
+	add_country_modifier = {
+	name = boh_hre_reformed
+	duration = 3000
+			}
+		}
+	}
+}
+
+boh_hussites = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	boh_hussite = {
+	icon = mission_alliances
+	required_missions = { }
+	trigger = {
+	religion = hussites
+	has_ruler_modifier = boh_hussite_king
+	}
+	effect = {
+	add_country_modifier = {
+	name = hus_zeal
+	duration = 7300
+				}
+			}
+		}
+	}
+
+	boh_hussites_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+		potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	hussite_convert_1 = {
+	icon = mission_alliances
+	required_missions = { boh_hussite }
+	position = 27
+	trigger = {
+	calc_true_if = {
+	all_country = {
+		religion = hussites
+	}
+	amount = 3
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = first_convert 
+	duration = 7300
+			}
+		}
+	}
+	
+	hus_convert_2 = {
+	icon = mission_alliances
+	required_missions = { hussite_convert_1 }
+	position = 28
+	trigger = {
+	calc_true_if = {
+	all_country = {
+		religion = hussites
+	}
+	amount = 7
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = not_isolation
+	duration = 7300
+				}
+			}
+		}
+		
+	hus_convert_3 = {
+	icon = mission_alliances
+	required_missions = { hus_convert_2 }
+	trigger = {
+	calc_true_if = {
+	all_country = {
+	religion = hussites
+	}
+	amount = 20
+		}
+	}
+	effect = {
+	add_country_modifier = {
+	name = hus_faith
+	duration = 7300
+				}
+			}
+		}
+	}
+	
+	
+	boh_hussites_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+		potential = {
+		tag = BOH
+	}
+	has_country_shield = yes
+	
+	boh_provinces_1 = {
+	icon = mission_alliances
+	required_missions = { boh_hussite }
+	position = 27
+	trigger = {
+	all_owned_province = {
+	religion = hussites
+	}
+	amount = 10
+		}
+	effect = {
+	add_country_modifier = {
+	name = hus_zeal
+	duration = 7300
+			}
+		}
+	}
+	
+	boh_provinces_2 = {
+	icon = mission_alliances
+	required_missions = { boh_provinces_1 }
+	trigger = {
+	all_owned_province = {
+	religion = hussites
+	}
+	amount = 20
+		}
+	effect = {
+	add_country_modifier = {
+	name = hus_zeal_2
+	duration = 7300
+			}
+		}
+	}
+	
+	boh_provinces_3 = {
+	icon = mission_alliances
+	required_missions = { boh_provinces_2 }
+	trigger = {
+	all_owned_province = {
+	religion = hussites
+	}
+	amount = 70
+		}
+	effect = {
+	add_country_modifier = {
+	name = hus_zeal_3
+	duration = 7300
+			}
+		}
+	}
+	
+	boh_provinces_4 = {
+	icon = mission_alliances
+	required_missions = { boh_provinces_3 }
+	trigger = {
+	all_owned_province = {
+	religion = hussites
+	}
+	amount = 9001
+		}
+	effect = {
+	add_country_modifier = {
+	name = over_9000
+	duration = 7300
+				}
+			}
+		}
+	}
