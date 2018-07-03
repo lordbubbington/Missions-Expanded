@@ -727,4 +727,17 @@ spriteTypes = {
 		name = "mission_ulm"
 		texturefile = "gfx//interface//missions//mission_ulm.dds"
 	}
+############### Austria #################
+	spriteType = {
+		name = "mission_bohemian_flag"
+		texturefile = "gfx//interface//missions//mission_bohemian_flag.dds"
+	}
+	spriteType = {
+		name = "mission_hungarian_flag"
+		texturefile = "gfx//interface//missions//mission_hungarian_flag.dds"
+	}
+	spriteType = {
+		name = "mission_manufactory_furnace"
+		texturefile = "gfx//interface//missions//mission_manufactory_furnace.dds"
+	}
 }	
