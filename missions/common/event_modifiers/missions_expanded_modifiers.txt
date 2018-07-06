@@ -2376,7 +2376,7 @@ yearly_legitimacy = 1
 
 
 erovring = {
-army_tradition = 0.3
+army_tradition = 1
 }
 
 
@@ -3085,4 +3085,71 @@ diplomatic_upkeep = 2
 
 big_support = {
 land_morale = 0.05
+}
+
+hus_freedom_to_preach = {
+stability_cost_modifier = -0.1
+}
+
+hus_clergy_poverty = {
+global_tax_modifier = 0.1
+}
+
+hus_sin_punishment = {
+global_unrest = -2
+}
+
+hus_communion_under_both = {
+infantry_power = 0.1
+}
+
+stability_hus = {
+stability_cost_modifier = 0.1
+}
+
+hus_morale = {
+land_morale = -0.05
+}
+
+hus_goods = {
+local_production_efficiency = -0.25
+}
+
+hus_tax = {
+local_tax_modifier = -0.2
+}
+
+converted_back = {
+global_unrest = 2
+stability_cost_modifier = 0.2
+}
+
+stayed_hussite = {
+diplomatic_reputation = -1
+}
+
+sca_legacy_of_vikings = {
+    land_morale = 0.05
+    manpower_recovery_speed = 0.2
+}
+sca_colonization = {
+    global_colonial_growth = 25
+}
+sca_expansionism = {
+    yearly_absolutism = 0.25
+    harsh_treatment_cost = -0.1
+    state_maintenance_modifier = -0.1
+}
+sca_dalaskogen = {
+    trade_goods_size_modifier = 0.05
+}
+sca_muscovite_expansion = {
+    global_heretic_missionary_strength = 0.03
+    tolerance_own = 1
+}
+sca_weak_spies = {
+    global_spy_defence = -1
+}
+sca_won_thirty_years = {
+    tolerance_own = 2
 }
