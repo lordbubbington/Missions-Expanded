@@ -1,0 +1,22 @@
+cologne_modifier = {
+	diplomatic_reputation = 1
+	advisor_cost = -0.2
+	prestige = 0.5
+	improve_relations_modifier = 0.15
+}
+cologne_modifier2 = {
+	mercenary_discipline = 0.1
+	possible_mercenaries = 0.25
+	mercenary_cost = -0.2
+}
+cologne_modifier3 = {
+	trade_efficiency = 0.1
+	build_cost = -0.2
+	advisor_cost -0.2
+}
+cologne_reformation = {
+	tolerance_own = 1
+	church_power_modifier = 0.5
+	monthly_fervor_increase = 1
+	global_heretic_missionary_strength = 0.02
+}
