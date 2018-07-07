@@ -1579,12 +1579,19 @@ austrian_mission_group_5 = {
 		required_missions = { austria_discover_america }
 		position = 10
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
-				continent = north_america
-				continent = south_america
-				continent = oceania
-				is_city = yes
+			OR = {
+				north_america = {
+					type = any
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				south_america = {
+					type = any
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				oceania = {
+					type = any
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 		effect = {
