@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  polish_renaissance_mod:0 "Polish Arts Influential"
  west_slavic_union:0 "West Slavic Unity"
  papal_sanction_poland:0 "Papal Approval" 
@@ -20,7 +20,6 @@ l_english:
  new_polish_mints:0 "New Polish Mints"
  polish_potato:0 "Potato Harvests"
  jewish_minorities_poland:0 "Jewish Communities"
-
  drive_out_teutons_title:0 "Legacy of Grunwald"
  drive_out_teutons_desc:0 "The Teutonic Order was founded to fight the pagans of the baltic, they have betrayed that mission and are now aggressing against us. This act of sacrilige must be vindicated."
  retake_corridor_title:0 "Prussian Confederation"
