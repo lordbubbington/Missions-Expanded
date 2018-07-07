@@ -1,4 +1,4 @@
-﻿country_decisions = {
+country_decisions = {
 
 	hannoverian_nation = {
 		major = yes
@@ -194,6 +194,7 @@
 				move_capital_effect = yes
 			}
 			change_tag = WES
+			swap_non_generic_missions = yes
 			set_country_flag = formed_westphalia_flag
 			if = {
 				limit = {
@@ -305,7 +306,6 @@
 		effect = {
 			change_tag = GRE
 			remove_non_electors_emperors_from_empire_effect = yes
-			swap_non_generic_missions = yes						
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -427,7 +427,6 @@
 					move_capital_effect = yes
 				}
 			}
-			swap_non_generic_missions = yes
 			hidden_effect = {
 				every_province = {
 					limit = {
