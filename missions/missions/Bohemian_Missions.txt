@@ -52,7 +52,12 @@ boh_1 = {
 	boh_saxony_1 = {
 	icon = mission_saxony
 		required_missions = { boh_hussite_one }
-		
+		provinces_to_highlight = {
+		area = south_saxony_area
+					NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 				south_saxony_area = {
 				type = all
@@ -74,7 +79,12 @@ boh_1 = {
 	boh_thuringia = {
 	icon = mission_unite_home_region
 		required_missions = { boh_saxony_1 }
-		
+		provinces_to_highlight = {
+		area = thuringia_area
+					NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		trigger = {
 				thuringia_area = {
 				type = all
@@ -96,7 +106,12 @@ boh_1 = {
 	boh_saxony_2 = {
 	icon = mission_have_two_subjects
 	required_missions = { boh_thuringia }
-	
+	provinces_to_highlight = {
+	area = northern_saxony_area
+				NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+	}
 	trigger = {
 	northern_saxony_area = {
 					type = all
@@ -116,7 +131,12 @@ boh_1 = {
 	boh_brandenburg = {
 	icon = mission_prussia
 	required_missions = { boh_saxony_2 }
-	
+	provinces_to_highlight = {
+	area = mittelmark_area
+				NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+	}
 	trigger = {
 	mittelmark_area = {
 						type = all
@@ -137,7 +157,12 @@ boh_1 = {
 	boh_neumark = {
 	icon = mission_conquer_50_development
 	required_missions = { boh_brandenburg }
-	
+	provinces_to_highlight = {
+	area = neumark_area
+				NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+	}
 	trigger = {
 	neumark_area = {
 						type = all
@@ -158,7 +183,12 @@ boh_1 = {
 	boh_pom = {
 	icon = mission_dominate_home_trade_node
 	required_missions = { boh_neumark }
-	
+	provinces_to_highlight = {
+	area = hinter_pommern_area
+				NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+	}
 	trigger = {
 	hinter_pommern_area = {
 							type = all
@@ -179,7 +209,9 @@ boh_1 = {
 	boh_prussia = {
 	icon = mission_assemble_an_army
 	required_missions = { boh_pom }
-	
+	provinces_to_highlight = {
+	area = west_prussia_area
+	}
 	trigger = {
 	west_prussia_area = {
 				type = all
@@ -195,7 +227,9 @@ boh_pskov = {
 icon = mission_cossack_cavalry
 required_missions = { boh_vilna }
 position = 12
-
+provinces_to_highlight = {
+area = pskov_area
+}
 trigger = {
 pskov_area = {
 				type = all
@@ -216,7 +250,9 @@ novgorod_area = {
 boh_novgorod = {
 icon = mission_cannons_firing
 required_missions = { boh_pskov }
-
+provinces_to_highlight = {
+area = novgorod_area
+}
 trigger = {
 	novgorod_area = {
 					type = all
@@ -237,7 +273,9 @@ tver_area = {
 boh_tver = {
 icon = mission_assemble_an_army
 required_missions = { boh_novgorod }
-
+provinces_to_highlight = {
+area = tver_area
+}
 trigger = {
 tver_area = {
 					type = all
@@ -258,7 +296,9 @@ moscow_area = {
 boh_moscow = {
 icon = mission_build_up_to_force_limit
 required_missions = { boh_tver }
-
+provinces_to_highlight = {
+area = moscow_area
+}
 trigger = {
 moscow_area = {
 					type = all
@@ -294,7 +334,13 @@ oka_area = {
 boh_rest_of_russia = {
 icon = mission_alliances
 required_missions = { boh_moscow }
-
+provinces_to_highlight = {
+OR = {
+area = vladimir_area
+area = yaroslavl_area
+area = oka_area
+	}
+}
 trigger = {
 	vladimir_area = {
 						type = all
@@ -358,7 +404,9 @@ boh_2 = {
 	poland_1 = {
 	icon = mission_conquer_5_states
 	required_missions = { become_hussite boh_hussite_one }
-	
+	provinces_to_highlight = {
+	area = wielkopolska_area
+	}
 	trigger = {
 		wielkopolska_area = {
 									type = all
@@ -379,7 +427,9 @@ boh_2 = {
 	poland_2 = {
 	icon = mission_conquer_5_states
 	required_missions = { poland_1 }
-	
+	provinces_to_highlight = {
+	area = malopolska_area
+	}
 	trigger = {
 	malopolska_area = {
 										type = all
@@ -400,7 +450,9 @@ boh_2 = {
 	boh_slovakia = {
 	icon = mission_non-western_cavalry_raid
 	required_missions = { poland_2 }
-	
+	provinces_to_highlight = {
+	area = slovakia_area
+	}
 	trigger = {
 	slovakia_area = {
 											type = all
@@ -421,7 +473,9 @@ boh_2 = {
 	boh_trans = {
 	icon = mission_non-western_cavalry_raid
 	required_missions = { boh_slovakia }
-	
+	provinces_to_highlight = {
+	area = transylvania_area
+	}
 	trigger = {
 	transylvania_area = {
 												type = all
@@ -442,7 +496,9 @@ boh_2 = {
 	boh_die_pol = {
 	icon = mission_poland
 	required_missions = { boh_trans }
-	
+	provinces_to_highlight = {
+	area = red_ruthenia_area
+	}
 	trigger = {
 	red_ruthenia_area = {
 													type = all
@@ -463,7 +519,9 @@ boh_2 = {
 	boh_mazovia = {
 	icon = mission_early_game_buildings
 	required_missions = { boh_die_pol }
-	
+	provinces_to_highlight = {
+	area = mazovia_area
+	}
 	trigger = {
 	mazovia_area = {
 				type = all
@@ -493,7 +551,12 @@ boh_baltic = {
 icon = mission_galleys_in_port
 required_missions = { boh_prussia boh_mazovia }
 position = 9
-
+provinces_to_highlight = {
+OR = {
+area east_prussia_area
+area = pomerelia_area
+	}
+}
 trigger = {
 east_prussia_area = {
 				type = all
@@ -522,7 +585,9 @@ duration = 7300
 boh_samogita = {
 icon = mission_unite_home_region
 required_missions = { boh_baltic }
-
+provinces_to_highlight = {
+area = samogitia_area
+}
 
 trigger = {
 samogitia_area = {
@@ -544,7 +609,9 @@ lithuania_area = {
 boh_vilna = {
 icon = mission_hands_praying
 required_missions = { boh_samogita }
-
+provinces_to_highlight = {
+area = lithuania_area
+}
 trigger = {
 lithuania_area = {	
 				type = all
@@ -578,7 +645,9 @@ curonia_area = {
 boh_curonia = {
 icon = mission_assemble_an_army
 required_missions = { boh_vilna }
-
+provinces_to_highlight = {
+area = curonia_area
+}
 trigger = {
 curonia_area = {
 				type = all
@@ -599,7 +668,9 @@ livonia_area = {
 boh_livonia = {
 icon = mission_livonia2
 required_missions = { boh_curonia }
-
+provinces_to_highlight = {
+area = livonia_area
+}
 trigger = {
 livonia_area = {
 				type = all
@@ -621,7 +692,6 @@ dip_power = 200
 }
 effect = {
 add_prestige = 50
-swap_non_generic_missions = yes	
 set_in_empire = no
 change_tag = ZCV
 set_government_rank = 3
@@ -640,6 +710,9 @@ set_government_rank = 3
 boh_germany_1 = {
 icon = mission_alliances
 required_missions = { boh_united }
+provinces_to_highlight = {
+area = braunschweig_area
+}
 trigger = {
 braunschweig_area = {
 				type = all
@@ -660,6 +733,9 @@ westphalia_area = {
 boh_germany_2 = {
 icon = mission_westphalia
 required_missions = { boh_germany_1 }
+provinces_to_highlight = {
+area = westphalia_area
+}
 trigger = {
 westphalia_area = {
 				type = all
@@ -688,6 +764,9 @@ westphalia_area = {
 boh_rhine = {
 icon = mission_alliances
 required_missions = { boh_germany_2 }
+provinces_to_highlight = {
+area = north_rhine_area
+}
 trigger = {
 north_rhine_area = {
 				type = all
@@ -708,6 +787,9 @@ effect = {
 boh_rhine_2 = {
 icon = mission_alliances
 required_missions = { boh_rhine }
+provinces_to_highlight = {
+area = lower_rhineland_area
+}
 trigger = {
 		lower_rhineland_area = {
 						type = all
@@ -728,6 +810,9 @@ wallonia_area = {
 boh_belgium = {
 icon = mission_alliances
 required_missions = { boh_rhine_2 }
+provinces_to_highlight = {
+area = wallonia_area
+}
 trigger = {
 wallonia_area = {
 						type = all
@@ -748,6 +833,9 @@ flanders_area = {
 	boh_flanders = {
 	icon = mission_alliances
 	required_missions = { boh_belgium }
+	provinces_to_highlight = {
+	area = flanders_area
+	}
 	trigger = {
 	flanders_area = {
 							type = all
@@ -768,6 +856,9 @@ flanders_area = {
 	boh_france_1 = {
 	icon = mission_alliances
 	required_missions = { boh_flanders }
+	provinces_to_highlight = {
+	area = picardy_area
+	}
 	trigger = {
 	picardy_area = {
 				type = all
@@ -833,7 +924,9 @@ boh_3 = {
 	icon = mission_cannons_firing
 	required_missions = { }
 	position = 3
-	
+	provinces_to_highlight = {
+	area = austria_proper_area
+	}
 	trigger = {
 	austria_proper_area = {
 					type = all
@@ -868,7 +961,13 @@ boh_3 = {
 	boh_austria_2 = {
 	icon = mission_habsburgs
 	required_missions = { boh_austria_1 }
-	
+	provinces_to_highlight = {
+	OR = {
+	area = inner_austria_area
+	area = carinthia_area
+	area = tirol_area
+		}
+	}
 	trigger = {
 	inner_austria_area = {
 					type = all
@@ -906,7 +1005,12 @@ boh_3 = {
 	boh_bavaria = {
 	icon = mission_bavaria
 	required_missions = { boh_austria_2 boh_saxony_2 }
-	
+	provinces_to_highlight = {
+	OR = {
+	area = upper_bavaria_area
+	area = lower_bavaria_area
+		}
+	}
 	trigger = {
 	upper_bavaria_area = {
 						type = all
@@ -945,7 +1049,13 @@ boh_3 = {
 	boh_pope_1 = {
 	icon = mission_religious
 	required_missions = { boh_bavaria }
-	
+	provinces_to_highlight = {
+	OR = {
+	area = venetia_area
+	area = lombardy_area
+	area = emilia_romagna_area
+		}
+	}
 	trigger = {
 	venetia_area = {
 				type = all
@@ -974,7 +1084,9 @@ boh_3 = {
 	boh_pope_2 = {
 	icon = mission_religious
 	required_missions = { boh_pope_1 }
-	
+	provinces_to_highlight = {
+	area = tuscany_area
+	}
 	trigger = {
 	tuscany_area = {
 				type = all
@@ -995,7 +1107,9 @@ boh_3 = {
 	boh_pope_final = {
 	icon = mission_rome
 	required_missions = { boh_pope_2 }
-	
+	provinces_to_highlight = {
+	province_id = 118
+	}
 	trigger = {
 	118 = {
 			owned_by = ROOT
@@ -1013,7 +1127,9 @@ boh_pripyat = {
 icon = mission_build_up_to_force_limit
 required_missions = { boh_vilna }
 position = 12
-
+provinces_to_highlight = {
+area = pripyat_area
+}
 trigger = {
 pripyat_area = {
 				type = all
@@ -1041,7 +1157,6 @@ west_dniepr_area = {
 boh_ruthenia = {
 icon = mission_unite_home_region
 required_missions = { boh_pripyat }
-
 trigger = {
 west_dniepr_area = {
 				type = all
@@ -1867,11 +1982,13 @@ boh_hussites = {
 	required_missions = { boh_hussite }
 	position = 27
 	trigger = {
+	calc_true_if = {
 	all_owned_province = {
 	religion = hussites
 	}
 	amount = 10
 		}
+	}
 	effect = {
 	add_country_modifier = {
 	name = hus_zeal
@@ -1884,11 +2001,13 @@ boh_hussites = {
 	icon = mission_alliances
 	required_missions = { boh_provinces_1 }
 	trigger = {
+	calc_true_if = {
 	all_owned_province = {
 	religion = hussites
 	}
 	amount = 20
 		}
+	}
 	effect = {
 	add_country_modifier = {
 	name = hus_zeal_2
@@ -1901,11 +2020,13 @@ boh_hussites = {
 	icon = mission_alliances
 	required_missions = { boh_provinces_2 }
 	trigger = {
+	calc_true_if = {
 	all_owned_province = {
 	religion = hussites
 	}
 	amount = 70
 		}
+	}
 	effect = {
 	add_country_modifier = {
 	name = hus_zeal_3
@@ -1918,11 +2039,13 @@ boh_hussites = {
 	icon = mission_alliances
 	required_missions = { boh_provinces_3 }
 	trigger = {
+	calc_true_if = {
 	all_owned_province = {
 	religion = hussites
 	}
 	amount = 9001
 		}
+	}
 	effect = {
 	add_country_modifier = {
 	name = over_9000
