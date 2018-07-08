@@ -1,0 +1,23 @@
+﻿l_english:
+ # Event Modifiers:
+ mainz_production_buildings: "Thriving economy"
+ mainz_army_buildings: "Improved military training"
+ mainz_army_modifier: "Increased amount of soldiers"
+ mainz_army_tradition_modifier: "High army tradition"
+ mainz_navy_tradition_modifier: "High navy tradition"
+ mainz_papal_controller: "Papal Controller"
+ mainz_one_country_one_faith_modifier: "One Country - One Faith"
+ mainz_fight_reformation_modifier: "Fought against the Reformation"
+ mainz_theocracy: "The German Theocracy"
+ mainz_development_modifier: "Important HRE power"
+ mainz_primas_germaniae_modifier: "Primas Germaniae"
+ mainz_supported_emperor: "Supported the emperor"
+ mainz_allied_emperor: "Alliance with the emperor"
+ mainz_catholic_league: "Catholic League member"
+ mainz_winner_of_league_war: "Winner of the League War"
+ mainz_kingdom: "Kingdom of Mainz"
+ mainz_baltic_sea_fleet_modifier: "Baltic Sea Fleet"
+ mainz_naval_buildings: "Thriving naval industry"
+ mainz_conquered_prussia: "Unified German lands"
+ mainz_free_city: "Imperial City of Mainz"
+ 
