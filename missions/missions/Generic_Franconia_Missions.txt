@@ -227,6 +227,18 @@ frc_three = {
 			}
 		}
 		effect = {
+			change_tag = FRC
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 50
+			set_country_flag = formed_franconia_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 			add_country_modifier = {
 				name = frc_united_franconia
 				duration = -1
