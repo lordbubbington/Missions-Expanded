@@ -1,0 +1,15 @@
+country_decisions = {
+
+the_fix = {
+potential = {
+always = yes
+}
+
+allow = {
+always = yes
+}
+
+effect = {
+swap_non_generic_missions = yes
+	}
+}
