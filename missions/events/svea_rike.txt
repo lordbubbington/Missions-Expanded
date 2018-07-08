@@ -356,3 +356,73 @@ country_event = {
 		name = swedishleaders.7.b
 	}
 }
+
+
+country_event = {
+	id = swedishleaders.8
+	title = swedishleaders.8.t
+	desc = swedishleaders.8.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	tag = SWE
+	age = age_of_reformation
+	is_year = 1540
+	}
+	
+		mean_time_to_happen = {
+		months = 60
+		}
+		
+		option = {
+		name = swedishleaders.8.a
+		
+				1 = {	# Stockholm
+				add_base_tax = 2
+				}
+				1 = {	# Stockholm
+				add_base_manpower = 2
+				}
+				1 = {	# Stockholm
+				add_base_production = 2
+				}
+				
+				add_country_modifier = {
+				name = immigrant_problem
+				duration = 7300
+				}
+			}
+		option = {
+		name = swedishleaders.8.b
+		
+		add_country_modifier = {
+		name = swedish_pride
+		duration = 7300
+				}
+			}	
+		}
+		
+	country_event = {
+	id = swedishleaders.9
+	title = swedishleaders.9.t
+	desc = swedishleaders.9.d
+	picture = NEW_HEIR_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = swedishleaders.9.a
+	add_country_modifier = {
+	name = caroleans
+	duration = -1
+		}
+	}
+	
+	option = {
+	name = swedishleaders.9.b
+	add_mil_power = 100
+		}
+	}
