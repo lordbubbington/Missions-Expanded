@@ -2763,10 +2763,10 @@ HRE_missions_4 = {
 		position = 9
 		trigger = {
 			all_province = {
-				limit = {
-					culture_group = german
+				OR = {
+					NOT = { culture_group = german }
+					country_or_non_sovereign_subject_holds = ROOT
 				}
-				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
