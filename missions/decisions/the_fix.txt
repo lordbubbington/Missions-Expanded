@@ -2,7 +2,7 @@ country_decisions = {
 
 the_fix = {
 potential = {
-always = yes
+ai = no
 }
 
 allow = {
