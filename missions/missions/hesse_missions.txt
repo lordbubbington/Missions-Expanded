@@ -148,7 +148,7 @@ potential = {
 		
 	effect = {
 	add_country_modifier = {
-	name = north_german_confederation
+	name = North_German_confederation
 	duration = 7300
 			}
 		}	
