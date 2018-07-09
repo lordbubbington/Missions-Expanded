@@ -404,8 +404,8 @@ HRE_missions_1 = {
 		position = 14
 		trigger = {
 			OR = {
-				num_of_galleys = 40
-				num_of_heavy_ships = 40
+				num_of_galley = 40
+				num_of_heavy_ship = 40
 			}
 		}
 		effect = {
