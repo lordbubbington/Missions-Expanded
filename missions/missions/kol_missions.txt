@@ -154,9 +154,7 @@ kol_group_2 = {
             adm_power = 100
             dip_power = 50
             treasury = 150
-            82 = {
-                owns_core_province = ROOT
-            }
+            owns_core_province = 82
         }
         effect = {
             custom_tooltip = cologne_tooltip2
