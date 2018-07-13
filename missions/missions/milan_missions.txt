@@ -1563,12 +1563,13 @@ lombard_mission_group_5 = {
 			104 = {
 				has_building = university
 			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 3
-				OR = {
-					region = italy_region
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = university
+					}
 				}
-				university = 4
+				amount = 5
 			}
 		}
 		effect = {
