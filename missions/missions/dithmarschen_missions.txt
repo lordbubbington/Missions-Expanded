@@ -254,6 +254,40 @@ dithmarschen_mission_group_2 = {
 			}
 		}
 	}
+	
+	dithmarschen_germanize_schleswig = {
+		icon = mission_have_two_subjects
+		required_missions = { dithmarschen_unite_schleswig_holstein }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 13
+			}
+		}
+		position = 9
+		trigger = {
+			holstein_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			13 = {
+				culture_group = germanic
+			}
+		}
+		effect = {
+			holstein_area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = "dithmarschen_holstein_united"
+					duration = 9125
+				}
+			}
+			13 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
 }
 
 dithmarschen_mission_group_3 = {
@@ -376,4 +410,44 @@ dithmarschen_mission_group_4 = {
 			}
 		}
 	}
-}	
+}
+
+dithmarschen_mission_group_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DTT
+		}
+	}
+	has_country_shield = yes
+	
+	dithmarschen_enlighten_the_lands = {
+		icon = mission_generic_old_university
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = holstein_area
+			}
+		}
+		position = 7
+		trigger = {
+			holstein_area = {
+				type = all
+				has_building = university
+			}
+			calc_true_if = {
+				all_owned_province = {
+					OR = {
+						has_building = university
+					}
+				}
+				amount = 5
+			}
+		}
+		effect = {
+			change_innovativeness = 5
+		}
+	}
+}
