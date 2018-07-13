@@ -78,7 +78,7 @@ dithmarschen_mission_group = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 5
+		position = 6
 		trigger = {
 			1931 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -105,7 +105,7 @@ dithmarschen_mission_group = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 6
+		position = 7
 		trigger = {
 			frisia_area = {
 				type = all
@@ -155,7 +155,7 @@ dithmarschen_mission_group = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 7
+		position = 8
 		trigger = {
 			56 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -199,7 +199,7 @@ dithmarschen_mission_group_2 = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 6
+		position = 7
 		trigger = {
 			1874 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -240,7 +240,7 @@ dithmarschen_mission_group_2 = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 7
+		position = 8
 		trigger = {
 			holland_area = {
 				type = all
@@ -276,7 +276,7 @@ dithmarschen_mission_group_3 = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 7
+		position = 8
 		trigger = {
 			holstein_area = {
 				type = all
@@ -315,7 +315,7 @@ dithmarschen_mission_group_3 = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 8
+		position = 9
 		trigger = {
 			jutland_area = {
 				type = all
@@ -359,7 +359,7 @@ dithmarschen_mission_group_4 = {
 			}
 			NOT = { owned_by = ROOT }
 		}
-		position = 7
+		position = 8
 		trigger = {
 			lower_saxony_area = {
 				type = all
