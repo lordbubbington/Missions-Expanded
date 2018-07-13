@@ -6,3 +6,9 @@ dithmarschen_unification_of_holstein = {
 	ae_impact = -0.15
 	global_autonomy = -0.05
 }
+
+dithmarschen_holstein_united = {
+	development_cost = -0.1
+	state_maintenance_modifier = -0.2
+	local_unrest = -2
+}
