@@ -308,6 +308,7 @@ catholic_rome = {
 		NOT = { tag = ITA }
 		NOT = { tag = ROM }
 		NOT = { tag = LOM }
+		NOT = { tag = AVI }
 	}
 
 	papal_influence = -10
