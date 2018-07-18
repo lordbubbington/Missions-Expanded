@@ -1449,6 +1449,7 @@ saxony_missions_slot_5 = {
 			}
 			if = {
 				limit = {
+					NOT = { religion = anglican }
 					NOT = { religion = protestant }
 					NOT = { religion = reformed }
 				}
