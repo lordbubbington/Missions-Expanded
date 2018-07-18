@@ -149,7 +149,7 @@ bos_5 = {
 			}
 		}
 		effect = {
-			change_religion = hanafi_school
+			change_religion = sunni
 			3002 = { 
 				change_religion = sunni
 			}
