@@ -20,7 +20,7 @@ country_event = {
 	option = {
 		name = milan_events_event.1.a
 			ai_chance = {
-			factor = 100
+			factor = 90
 		}
 		change_government = feudal_monarchy
 		define_ruler = {
@@ -30,6 +30,16 @@ country_event = {
 			mil = 1
 			age = 20
 			claim = 80
+		}
+	}
+	
+	option = {
+		name = milan_events_event.1.b
+			ai_chance = {
+			factor = 10
+		}
+		custom_trigger_tooltip = {
+				tooltip = milan_events_event.tooltip
 		}
 	}
 }
