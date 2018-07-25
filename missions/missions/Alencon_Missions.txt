@@ -139,6 +139,7 @@ Alencon_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+	}
 	Alencon_Bourbonnais	= {
 		icon = mission_conquer_50_development
 		required_missions = { Alencon_Berry }
@@ -153,6 +154,7 @@ Alencon_missions_1 = {
 		}
 	}
 }
+
 Alencon_missions_2 = {
 	slot = 2
 	generic = no

@@ -1,26 +1,26 @@
 bos_1 = {
-slot = 1
-ai = yes
+	slot = 1
+	ai = yes
 	potential = {
 		tag = BOS
-		}
+	}
 	has_country_shield = yes
 	
 	bos_dalmatia = {
-	icon = mission_assemble_an_army
-	required_missions = { }
+		icon = mission_assemble_an_army
+		required_missions = { }
 		provinces_to_highlight = {
-		province_id = 137
+			province_id = 137
 		}
-	trigger = {
-		137 = {
-		country_or_non_sovereign_subject_holds = ROOT
+		trigger = {
+			137 = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
-	effect = {
-		croatia_area = {
-	limit = {
+		effect = {
+			croatia_area = {
+				limit = {
 					NOT = { is_core = ROOT 
 					 owned_by = ROOT }
 				}
@@ -30,92 +30,92 @@ ai = yes
 	}
 	
 	bos_croatia = {
-	icon = mission_assemble_an_army
-	required_missions = { bos_dalmatia }
-	provinces_to_highlight = {
-	area = croatia_area
-	}
-	trigger = {
-		croatia_area = {
-		type = all
-		country_or_non_sovereign_subject_holds = ROOT
+		icon = mission_assemble_an_army
+		required_missions = { bos_dalmatia }
+		provinces_to_highlight = {
+			area = croatia_area
+		}
+		trigger = {
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-	effect = {
-	serbia_area = {
-	limit = {
+		effect = {
+			serbia_area = {
+				limit = {
 					NOT = { is_core = ROOT 
 					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
 		}
 	}
-}
 
 	bos_serbia = {
-	icon = mission_assemble_an_army
-	required_missions = { bos_croatia }
-	provinces_to_highlight = {
-		area = serbia_area
-	}
+		icon = mission_assemble_an_army
+		required_missions = { bos_croatia }
+		provinces_to_highlight = {
+			area = serbia_area
+		}
 	
-	trigger = {
-		serbia_area = {
-		type = all
-		country_or_non_sovereign_subject_holds = ROOT
+		trigger = {
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-	effect = {
-	rascia_area = {
-		limit = {
+		effect = {
+			rascia_area = {
+				limit = {
 					NOT = { is_core = ROOT 
 					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
 		}
 	}
-}
 
-bos_serbia_2 = {
-icon = mission_assemble_an_army
-required_missions = { bos_serbia }
-provinces_to_highlight = {
-area = rascia_area
-}
+	bos_serbia_2 = {
+		icon = mission_assemble_an_army
+		required_missions = { bos_serbia }
+		provinces_to_highlight = {
+			area = rascia_area
+		}
 
-	trigger = {
-		rascia_area = {
-		type = all
-		country_or_non_sovereign_subject_holds = ROOT
+		trigger = {
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
-	effect = {
-	bulgaria_area = {
-			limit = {
+		effect = {
+			bulgaria_area = {
+				limit = {
 					NOT = { is_core = ROOT 
 					 owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
-		}
-	}
-}
-
-bos_bulgaria = {
-icon = mission_assemble_an_army
-required_missions = { bos_serbia_2 }
-provinces_to_highlight = {
-area = bulgaria_area
-}
-
-trigger = {
-		bulgaria_area = {
-		type = all
-		country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-effect = {
-add_adm_power = 100
+	}
+
+	bos_bulgaria = {
+		icon = mission_assemble_an_army
+		required_missions = { bos_serbia_2 }
+		provinces_to_highlight = {
+			area = bulgaria_area
+		}
+
+		trigger = {
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
 		}
 	}
 }
@@ -207,4 +207,5 @@ bos_5 = {
 				}
 			}
 		}
+	}
 }

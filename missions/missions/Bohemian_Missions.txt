@@ -553,7 +553,7 @@ required_missions = { boh_prussia boh_mazovia }
 position = 9
 provinces_to_highlight = {
 OR = {
-area east_prussia_area
+area = east_prussia_area
 area = pomerelia_area
 	}
 }
