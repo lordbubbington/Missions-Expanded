@@ -8,9 +8,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -63,9 +61,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -118,9 +114,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -173,9 +167,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -228,9 +220,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -314,9 +304,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		OR = {
 		tag = SWE
-		}
 		government = monarchy
 		NOT = { government = elective_monarchy }
 		NOT = { government = ottoman_government }
@@ -368,7 +356,7 @@ country_event = {
 	
 	trigger = {
 	tag = SWE
-	age = age_of_reformation
+	current_age = age_of_reformation
 	is_year = 1540
 	}
 	

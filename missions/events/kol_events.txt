@@ -10,7 +10,7 @@ country_event = {
 
 	trigger = {
 		tag = KOL
-		completed_mission = kol_capital
+		mission_completed = kol_capital
 		82 = { owned_by = KOL }
 	}
 
@@ -75,7 +75,7 @@ country_event = {
 	picture = REVOLUTION_eventPicture
 
 	trigger = {
-		completed_mission = kol_capital
+		mission_completed = kol_capital
 		tag = KOL
 	}
 

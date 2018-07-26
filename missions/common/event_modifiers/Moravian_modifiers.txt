@@ -1,4 +1,4 @@
-﻿mva_cathedral = {
+mva_cathedral = {
 	prestige = 1
 	papal_influence = 0.5
 }

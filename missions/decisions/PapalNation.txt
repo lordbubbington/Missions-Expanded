@@ -11,9 +11,7 @@ country_decisions = {
 			tag = AVI
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 118
-			}
+			province_id = 118
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }

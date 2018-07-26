@@ -249,87 +249,19 @@ country_event = {
 	
 	option = {
 		name = "POR_flav.8.b"
-		add_base_production = -1
+		1099 = {
+			if = {
+				limit = {
+					base_production = 2
+				}
+				add_base_production = -1
+			}
+		}
 		add_prestige = -5
 	}
 }
 
-# The Portuguese Crown in a Union
-country_event = {
-	id = flavor_POR.9	
-	title = "flavor_spa.EVTNAME3162"
-	desc = "flavor_spa.EVTDESC3162"
-	picture = COURT_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = SPA
-		marriage_with = POR
-		is_subject = no
-		POR = {
-			exists = yes
-			#ai = yes
-			#was_player = no
-			is_subject = no
-			has_regency = yes
-			religion = ROOT
-			NOT = { is_rival = SPA }
-			has_opinion = { who = ROOT value = 150 }
-		}
-		is_year = 1550
-		NOT = { is_year = 1650 }
-	}
-
-	### THIS MTTH should proc the union in the above triggercase 75%
-	mean_time_to_happen = {
-		months = 24
-	}
-	
-
-	option = {		# One King, Two Kingdoms
-		name = "flavor_spa.EVTOPTB3162"
-		ai_chance = { factor = 90 }
-		POR = {country_event = { id = POR_flav.10 }}
-		#create_union = POR # is now done by the next event
-	}
-	option = {		# The extra burden is not worth it
-		name = "flavor_spa.EVTOPTC3162"
-		ai_chance = { factor = 10 }
-		add_prestige = 1
-	}
-}
-
 ##Portuguese side of the union
-country_event = {
-	id = POR_flav.10
-	title = "POR_flav.10.t"
-	desc = "POR_flav.10.d"
-	picture = DIPLOMACY_eventPicture
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "POR_flav.10.a" #accept union
-		ai_chance = {
-			factor = 95
-		}
-		tooltip = {
-			SPA = {create_union = POR}
-		}
-		SPA = {create_union = POR}
-	}
-	option = { #refuse
-		name = "POR_flav.10.b"
-		ai_chance = {
-			factor = 5
-		}
-		add_stability = -3
-	}
-}
-
 country_event = {
 	id = POR_flav.10
 	title = "POR_flav.10.t"
@@ -545,5 +477,53 @@ country_event = {
 	option = {
 		name = "POR_flav.14.b"
 		add_prestige = -5
+	}
+}
+
+namespace = flavor_POR
+
+# The Portuguese Crown in a Union
+country_event = {
+	id = flavor_POR.9	
+	title = "flavor_spa.EVTNAME3162"
+	desc = "flavor_spa.EVTDESC3162"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPA
+		marriage_with = POR
+		is_subject = no
+		POR = {
+			exists = yes
+			#ai = yes
+			#was_player = no
+			is_subject = no
+			has_regency = yes
+			religion = ROOT
+			NOT = { is_rival = SPA }
+			has_opinion = { who = ROOT value = 150 }
+		}
+		is_year = 1550
+		NOT = { is_year = 1650 }
+	}
+
+	### THIS MTTH should proc the union in the above triggercase 75%
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+
+	option = {		# One King, Two Kingdoms
+		name = "flavor_spa.EVTOPTB3162"
+		ai_chance = { factor = 90 }
+		POR = {country_event = { id = POR_flav.10 }}
+		#create_union = POR # is now done by the next event
+	}
+	option = {		# The extra burden is not worth it
+		name = "flavor_spa.EVTOPTC3162"
+		ai_chance = { factor = 10 }
+		add_prestige = 1
 	}
 }

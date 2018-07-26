@@ -14,7 +14,7 @@ uniting_the_low_countries = {
 	
 hollands_indpendence = { 
 	global_unrest = -1 
-	war_exhaustion -0.05
+	war_exhaustion = -0.05
 	}
 	
 amsterdams_canal_system = {

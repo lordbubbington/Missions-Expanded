@@ -37,7 +37,7 @@ country_event = {
 	option = {
 		name = "geo_events.1.b"
 		add_casus_belli = {
-			who = SME
+			target = SME
 			type = cb_vassalize_mission
 			duration = 365
 		}
@@ -252,18 +252,22 @@ country_event = {
 	option = {
 		name = "geo_events.4.a"
 		if = {
-			has_country_flag = geo_flag_ven_2
+			limit = {
+				has_country_flag = geo_flag_ven_2
+			}
+			add_treasury = 200
+			add_dip_power = 50
 		}
-		add_treasury = 200
-		add_dip_power = 50
 	}
 	
 	option = {
 		name = "geo_events.4.a"
 		if = {
-			has_country_flag = geo_flag_ven_3
+			limit = {
+				has_country_flag = geo_flag_ven_3
+			}
+			add_treasury = 100
 		}
-		add_treasury = 100
 	}
 }
 
@@ -289,17 +293,21 @@ country_event = {
 	option = {
 		name = "geo_events.4.a"
 		if = {
-			has_country_flag = geo_flag_gen_2
+			limit = {
+				has_country_flag = geo_flag_gen_2
+			}
+			add_treasury = 200
+			add_dip_power = 50
 		}
-		add_treasury = 200
-		add_dip_power = 50
 	}
 	
 	option = {
 		name = "geo_events.4.a"
 		if = {
-			has_country_flag = geo_flag_gen_3
+			limit = {
+				has_country_flag = geo_flag_gen_3
+			}
+			add_treasury = 100
 		}
-		add_treasury = 100
 	}
 }

@@ -2,103 +2,63 @@ country_decisions = {
 	sicgov_decision = {
 		major = yes
 		potential = {
-			if = {
-				or = {
-					or = {
-					government = despotic_monarchy
-					}
-					or = {
-					government = feudal_monarchy
-					}
-					or = {
-					government = administrative_monarchy
-					}
-					or = {
-					government = constitutional_monarchy
-					}
-					or = {
-					government = enlightened_despotism
-					}
-					or = {
-					government = revolutionary_empire
-					}
-				}
-				or = {
-					or = {
-						tag = SIC
-					}
-					or = {
-						tag = TSC
-					}
-				}
+			OR = {
+				government = despotic_monarchy
+				government = feudal_monarchy
+				government = administrative_monarchy
+				government = constitutional_monarchy
+				government = enlightened_despotism
+				government = revolutionary_empire
+			}
+			OR = {
+				tag = SIC
+				tag = TSC
 			}
 		}
 		allow = {
-			or = {
-					or = {
-						tag = SIC
-					}
-					or = {
-						tag = TSC
-					}
-				}
+			OR = {
+				tag = SIC
+				tag = TSC
+			}
 		}
 		effect = {
 			change_government = sicilian_monarchy
 		}
 		ai_will_do = {
-			factor = 0
-				modifier = {
-					factor = 1
-						or = {
-							or = {
-								tag = SIC
-							}
-							or = {
-								tag = TSC
-							}
-						}				
-				}
+			factor = 1
 		}
 	}
 	maketsc_decision = {
 		major = yes
 		potential = {
-			if = {
-				or = {
-					tag = SIC
-					tag = NAP
-					}
-				}
+			OR = {
+				tag = SIC
+				tag = NAP
 			}
-		
+		}
 		allow = {
-			IF = {
 			NOT = { exists = TSC }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_tribal = no
-			IF = {
-				OR = {
-					tag = SIC
-					tag = NAP
-				}
-				owns_core_province = 123
-				owns_core_province = 2984
-				owns_core_province = 1934
-				owns_core_province = 122
-				owns_core_province = 1933
-				owns_core_province = 2983
-				owns_core_province = 2985
-				owns_core_province = 121 
-				owns_core_province = 120
-				owns_core_province = 124
-				owns_core_province = 125
-				owns_core_province = 126
-				owns_core_province = 2982	
-				}
+			OR = {
+				tag = SIC
+				tag = NAP
 			}
+			owns_core_province = 123
+			owns_core_province = 2984
+			owns_core_province = 1934
+			owns_core_province = 122
+			owns_core_province = 1933
+			owns_core_province = 2983
+			owns_core_province = 2985
+			owns_core_province = 121 
+			owns_core_province = 120
+			owns_core_province = 124
+			owns_core_province = 125
+			owns_core_province = 126
+			owns_core_province = 2982	
 		}
 		
 		effect = {
@@ -106,95 +66,67 @@ country_decisions = {
 			change_government = sicilian_monarchy
 		}
 		ai_will_do = {
-			factor = 0
-				modifier = {
-					factor = 1
-						or = {
-							or = {
-								tag = SIC
-								tag = NAP
-							}
-						}				
-				}
+			factor = 1
 		}
 	}
 	maketse_decision = {
 		major = yes
 		potential = {
-			if = {
-				or = {
-					tag = TSC
-					}
-				}
-			}
-		
+			tag = TSC
+		}
 		allow = {
-			IF = {
-			NOT = { 
-				exists = TSE 
-				exists = SIC 
-				exists = NAP
-				exists = TUN
-				}
+			NOT = { exists = TSE }
+			NOT = { exists = SIC }
+			NOT = { exists = NAP }
+			NOT = { exists = TUN }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			is_tribal = no
-			IF = {
-				owns_core_province = 341
-				owns_core_province = 353
-				owns_core_province = 354
-				owns_core_province = 2473
-				owns_core_province = 1882
-				owns_core_province = 2454
-				owns_core_province = 2453
-				owns_core_province = 2954
-				owns_core_province = 2452
-				owns_core_province = 2451
-				owns_core_province = 142
-				owns_core_province = 146
-				owns_core_province = 147
-				owns_core_province = 164
-				owns_core_province = 2348
-				owns_core_province = 320
-				owns_core_province = 4174
-				owns_core_province = 112
-				owns_core_province = 333
-				owns_core_province = 1247
-				owns_core_province = 163
-				owns_core_province = 321
-				owns_core_province = 1749
-				owns_core_province = 226
-				owns_core_province = 334
-				owns_core_province = 1751
-				owns_core_province = 340
-				owns_core_province = 2458
-				owns_core_province = 339
-				owns_core_province = 338
-				owns_core_province = 3003
-				owns_core_province = 145
-				owns_core_province = 1773
-				owns_core_province = 144
-				owns_core_province = 358
-				owns_core_province = 127
-				owns_core_province = 2986
-				}
-			}
+			owns_core_province = 341
+			owns_core_province = 353
+			owns_core_province = 354
+			owns_core_province = 2473
+			owns_core_province = 1882
+			owns_core_province = 2454
+			owns_core_province = 2453
+			owns_core_province = 2954
+			owns_core_province = 2452
+			owns_core_province = 2451
+			owns_core_province = 142
+			owns_core_province = 146
+			owns_core_province = 147
+			owns_core_province = 164
+			owns_core_province = 2348
+			owns_core_province = 320
+			owns_core_province = 4174
+			owns_core_province = 112
+			owns_core_province = 333
+			owns_core_province = 1247
+			owns_core_province = 163
+			owns_core_province = 321
+			owns_core_province = 1749
+			owns_core_province = 226
+			owns_core_province = 334
+			owns_core_province = 1751
+			owns_core_province = 340
+			owns_core_province = 2458
+			owns_core_province = 339
+			owns_core_province = 338
+			owns_core_province = 3003
+			owns_core_province = 145
+			owns_core_province = 1773
+			owns_core_province = 144
+			owns_core_province = 358
+			owns_core_province = 127
+			owns_core_province = 2986
 		}
 		
 		effect = {
 			change_tag = TSE
 		}
 		ai_will_do = {
-			factor = 0
-				modifier = {
-					factor = 1
-						or = {
-							or = {
-								tag = TSC
-							}
-						}				
-				}
+			factor = 1
 		}
 	}
 }

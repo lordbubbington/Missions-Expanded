@@ -557,10 +557,9 @@ swe_baltic = {
 		}
 	}
 	effect = {
-	add_country_modifier = {
-	name = swedish_colonies = {
-	duration = 7300
-				}
+		add_country_modifier = {
+				name = swedish_colonies
+				duration = 7300
 			}
 		}
 	}

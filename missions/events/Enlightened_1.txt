@@ -29,7 +29,7 @@ country_event = {
 		
 			modifier = {
 			factor = 0.9
-			has_country_modifier = { granada_library }
+			has_country_modifier = granada_library
 		}
 	}
 	

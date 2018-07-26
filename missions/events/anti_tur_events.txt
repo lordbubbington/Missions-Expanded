@@ -1,103 +1,99 @@
-country_event = {
-id = holy_league.1
-title = holy_league.1.t
-desc = holy_league.1.d
-picture = POPE_PREACHING_eventPicture
+namespace = holy_league
 
-is_triggered_only = yes
+country_event = {
+	id = holy_league.1
+	title = holy_league.1.t
+	desc = holy_league.1.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
 	
 	major = yes
 
 	option = {
 		name = holy_league.1.a
 		ai_chance = { factor = 70 }
-			if = {
-				TUR = {
-					exists = yes
-				}
-				}
-				ROOT = {
-					declare_war_with_cb = {
-						who = TUR
-						casus_belli = cb_annex
-						}
-						}
-			HAB = {
-			country_event = { id = holy_league.2 }
+		if = {
+			limit = {
+				exists = TUR
 			}
-			ARA = {
-			country_event = { id = holy_league.2 }
+			declare_war_with_cb = {
+				who = TUR
+				casus_belli = cb_annex
 			}
-			CAS = {
-			country_event = { id = holy_league.2 }
-			}
-			SPA = {
-			country_event = { id = holy_league.2 }
-			}
-			LIT = {
-			country_event = { id = holy_league.2 }
-			}
-			}
+		}
+		HAB = {
+		country_event = { id = holy_league.2 }
+		}
+		ARA = {
+		country_event = { id = holy_league.2 }
+		}
+		CAS = {
+		country_event = { id = holy_league.2 }
+		}
+		SPA = {
+		country_event = { id = holy_league.2 }
+		}
+		LIT = {
+		country_event = { id = holy_league.2 }
+		}
+	}
 	option = {
 		name = holy_league.1.b
 		ai_chance = { factor = 30 }
-		ROOT = {
 		add_prestige = -20
-		}
-		}
-		}
-		
-		country_event = {
-		id = holy_league.2
-		title = holy_league.2.t
-desc = holy_league.2.d
-picture = POPE_PREACHING_eventPicture
+	}
+}
 
-is_triggered_only = yes
+country_event = {
+	id = holy_league.2
+	title = holy_league.2.t
+	desc = holy_league.2.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
 	
 	major = yes
 
 	option = {
 		name = holy_league.2.a
 		ai_chance = { factor = 80 }
-			if = {
-				TUR = {
-					exists = yes
-				}
-				}
-				ROOT = {
-					declare_war_with_cb = {
-						who = TUR
-						casus_belli = cb_annex
-						}
-						}
-						}
-		option = {
+		if = {
+			limit = {
+				exists = TUR
+			}
+			declare_war_with_cb = {
+				who = TUR
+				casus_belli = cb_annex
+			}
+		}
+	}
+	option = {
 		name = holy_league.2.b
 		ai_chance = { factor = 20 }
-		ROOT = {
 		add_prestige = -20
-		}
-		}
-		}
-		
-country_event = {
-id = BYZ_RESTORED.1
-title = BYZ_RESTORED.1.t
-desc = BYZ_RESTORED.1.d
-picture = POPE_PREACHING_eventPicture
+	}
+}
 
-is_triggered_only = yes
+namespace = BYZ_RESTORED
+
+country_event = {
+	id = BYZ_RESTORED.1
+	title = BYZ_RESTORED.1.t
+	desc = BYZ_RESTORED.1.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
 	
 	major = yes
 
 	option = {
 		name = BYZ_RESTORED.1.a
 		ai_chance = { factor = 100 }
-			151 = {
+		151 = {
 			remove_core = ROOT
 			cede_province = BYZ
 			add_core = BYZ
 		}
-		}
-		}
+	}
+}

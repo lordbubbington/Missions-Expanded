@@ -5,20 +5,22 @@ country_event = {
 		desc = hussites.1.d
 		
 		trigger = {
-		religion = hussites
-		NOT = {
-		has_country_modifier = stability_hus
-		has_country_modifier = hus_morale
-		has_province_modifier = hus_tax
-		has_province_modifier = hus_goods
-			}
-		OR = {
-		NOT = {
-		has_country_modifier = communion_under_both_legit
-		has_country_modifier = freedom_to_preach_legit
-		has_country_modifier = sin_punishment_legit
-		has_country_modifier = clergy_poverty_legit
+			religion = hussites
+			NOT = {
+				has_country_modifier = stability_hus
+				has_country_modifier = hus_morale
+				any_owned_province = {
+					has_province_modifier = hus_tax
 				}
+				any_owned_province = {
+					has_province_modifier = hus_goods
+				}
+			}
+			NOT = {
+			has_country_modifier = communion_under_both_legit
+			has_country_modifier = freedom_to_preach_legit
+			has_country_modifier = sin_punishment_legit
+			has_country_modifier = clergy_poverty_legit
 			}
 		}
 		
@@ -57,26 +59,28 @@ country_event = {
 			}
 		}
 		
-		country_event = {
+	country_event = {
 		id = hussites.2
 		title = hussites.2.t
 		desc = hussites.2.d
 		
 		trigger = {
-		religion = hussites
-		NOT = {
-		has_country_modifier = stability_hus
-		has_country_modifier = hus_morale
-		has_province_modifier = hus_tax
-		has_province_modifier = hus_goods
-			}
-		OR = {
-		NOT = {
-		has_country_modifier = communion_under_both_legit
-		has_country_modifier = freedom_to_preach_legit
-		has_country_modifier = sin_punishment_legit
-		has_country_modifier = clergy_poverty_legit
+			religion = hussites
+			NOT = {
+				has_country_modifier = stability_hus
+				has_country_modifier = hus_morale
+				any_owned_province = {
+					has_province_modifier = hus_tax
 				}
+				any_owned_province = {
+					has_province_modifier = hus_goods
+				}
+			}
+			NOT = {
+				has_country_modifier = communion_under_both_legit
+				has_country_modifier = freedom_to_preach_legit
+				has_country_modifier = sin_punishment_legit
+				has_country_modifier = clergy_poverty_legit
 			}
 		}
 		
@@ -134,26 +138,28 @@ country_event = {
 			}
 		}
 		
-			country_event = {
+country_event = {
 		id = hussites.3
 		title = hussites.3.t
 		desc = hussites.3.d
 		
 		trigger = {
-		religion = hussites
-		NOT = {
-		has_country_modifier = stability_hus
-		has_country_modifier = hus_morale
-		has_province_modifier = hus_tax
-		has_province_modifier = hus_goods
-			}
-		OR = {
-		NOT = {
-		has_country_modifier = communion_under_both_legit
-		has_country_modifier = freedom_to_preach_legit
-		has_country_modifier = sin_punishment_legit
-		has_country_modifier = clergy_poverty_legit
+			religion = hussites
+			NOT = {
+				has_country_modifier = stability_hus
+				has_country_modifier = hus_morale
+				any_owned_province = {
+					has_province_modifier = hus_tax
 				}
+				any_owned_province = {
+					has_province_modifier = hus_goods
+				}
+			}
+			NOT = {
+				has_country_modifier = communion_under_both_legit
+				has_country_modifier = freedom_to_preach_legit
+				has_country_modifier = sin_punishment_legit
+				has_country_modifier = clergy_poverty_legit
 			}
 		}
 		

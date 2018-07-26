@@ -1,4 +1,4 @@
-﻿verden_catholic = {
+verden_catholic = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -458,7 +458,7 @@ ver_conquest_1 = {
 	
 	ver_lauenburg = {
 		icon = mission_assemble_an_army
-		required_missions = ( ver_luneburg }
+		required_missions = { ver_luneburg }
 		position = 3
 		trigger = {
 			1857 = {

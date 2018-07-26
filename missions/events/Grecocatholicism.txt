@@ -5,16 +5,14 @@ province_event = {
 	desc = grecocatholicism.1.d
 	picture = RELIGION_eventPicture
 	trigger = {
-		AND = {
-			owner = {
-				religion = catholic
-				has_country_flag = grecocatholicism
-			}
-			any_neighbor_province = {
-				religion = catholic
-			}
-			religion = orthodox
+		owner = {
+			religion = catholic
+			has_country_flag = grecocatholicism
 		}
+		any_neighbor_province = {
+			religion = catholic
+		}
+		religion = orthodox
 	}
 	mean_time_to_happen = {
 		months = 180
@@ -25,7 +23,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 0.8
-			has_building = church
+			has_building = temple
 		}
 		modifier = {
 			factor = 0.64

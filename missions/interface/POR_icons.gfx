@@ -1,7 +1,6 @@
 spriteTypes = {
-
 	spriteType = {
 		name = "GFX_icon_casa_da_india"
 		texturefile = "gfx//interface//ideas_EU4//GFX_icon_casa_da_india.dds"
 	}
-
+}

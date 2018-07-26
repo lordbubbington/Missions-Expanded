@@ -292,8 +292,7 @@ country_event = {
                 }                            
         add_base_tax = 1
         add_base_manpower = 1
-        add_base_production = 1                     
-        add_base_production = 1                     
+        add_base_production = 2               
 	    }
     }
 	option = {
@@ -425,7 +424,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-            personality = sinner_personality
+            ruler_has_personality = sinner_personality
 		}
 		modifier = {
 			factor = 0.5
@@ -447,11 +446,11 @@ country_event = {
 		}                         
 		modifier = {
 			factor = 0.8
-            personality = tolerant_personality
+            ruler_has_personality = tolerant_personality
 		}
 		modifier = {
 			factor = 0.8
-            personality = loose_lips_personality
+            ruler_has_personality = loose_lips_personality
 		}
 		modifier = {
 			factor = 0.8
@@ -459,15 +458,15 @@ country_event = {
 		}          
 		modifier = {
 			factor = 0.9
-            personality = indulgent_personality
+            ruler_has_personality = indulgent_personality
 		}        
 		modifier = {
 			factor = 2
-            personality = secretive_personality
+            ruler_has_personality = secretive_personality
 		}                  
 		modifier = {
 			factor = 2
-            personality = craven_personality
+            ruler_has_personality = craven_personality
 		}
 		modifier = {
 			factor = 2
@@ -491,11 +490,11 @@ country_event = {
 		}
 		modifier = {
 			factor = 20
-            personality = zealot_personality
+            ruler_has_personality = zealot_personality
 		}         
 		modifier = {
 			factor = 20
-            personality = pious_personality
+            ruler_has_personality = pious_personality
 		}                        
 		modifier = {
 			factor = 0.8
@@ -554,8 +553,10 @@ country_event = {
                 ruler_has_personality = sinner_personality
             }                      
         }
-        IF = {
-            NOT = { personality = sinner_personality }
+        if = {
+			limit = {
+				NOT = { ruler_has_personality = sinner_personality }
+			}
             add_ruler_personality = sinner_personality
             add_legitimacy = -5		
         }
@@ -596,9 +597,7 @@ country_event = {
             name = recent_conversion_to_norse
             duration = 3650
         }
-        remove_country_modifier = {
-            norse_allow_pagan_worship
-        }          
+        remove_country_modifier = norse_allow_pagan_worship        
         add_stability  = -2        
     }                           
     	option = {
@@ -614,8 +613,8 @@ country_event = {
                 religious_ideas = 1
             } 
         }
-        change_ruler_religion = OWN
-        change_heir_religion = OWN
+        set_ruler_religion = ROOT
+        set_heir_religion = ROOT
         add_country_modifier = {
             name = norse_removed_right_to_worship
             duration = 7300
@@ -624,9 +623,7 @@ country_event = {
             name = norse_stopped_persecution
             duration = -1
         }
-        remove_country_modifier = {
-            norse_allow_pagan_worship
-        }                                  
+        remove_country_modifier = norse_allow_pagan_worship    
 	}
 } 
 
@@ -673,7 +670,7 @@ country_event = {
 #		}
 #		modifier = {
 #			factor = 0.9
-#           personality = craven_personality
+#           ruler_has_personality = craven_personality
 #		}                        
 #		modifier = {
 #			factor = 0.8

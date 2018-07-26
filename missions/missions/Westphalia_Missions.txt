@@ -509,7 +509,7 @@ wes_four = {
 				is_core = ROOT
 			}
 		}
-		effect {
+		effect = {
 			add_country_modifier = {
 				name = wes_south_germany
 				duration = 10950
