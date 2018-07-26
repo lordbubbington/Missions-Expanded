@@ -9,7 +9,7 @@ meck_mission_slot_1 = {
 	
 	meck_trade_power_1 = {
 		icon = mission_monarch_in_throne_room
-		required_missions { }
+		required_missions = { }
 		
 		trigger = {
 			trade_income_percentage = 0.10
@@ -24,7 +24,7 @@ meck_mission_slot_1 = {
 	}
 	meck_trade_power_2 = {
 		icon = mission_monarch_in_throne_room
-		required_missions { meck_trade_power }
+		required_missions = { meck_trade_power }
 		
 		trigger = {
 			trade_income_percentage = 0.25
@@ -40,7 +40,7 @@ meck_mission_slot_1 = {
 	}
 	meck_trade_power_3 = {
 		icon = mission_monarch_in_throne_room
-		required_missions { meck_trade_power_2 }
+		required_missions = { meck_trade_power_2 }
 		
 		trigger = {	
 			OR = {

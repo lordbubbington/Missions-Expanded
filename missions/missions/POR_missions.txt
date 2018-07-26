@@ -13,7 +13,7 @@ CasaDaIndia_missions = {
 	POR_mission_first_feitoria = { 
 		##icon = mission_dominate_home_trade_node
 		icon = mission_ship_smallharbor
-		required_missions { } 
+		required_missions = { } 
 		position = 1
 		
 		provinces_to_highlight = {
@@ -138,7 +138,7 @@ CasaDaIndia_missions = {
 	POR_mission_fort_elmina = { 
 		#icon = mission_dominate_home_trade_node
 		icon = mission_base_flag
-		required_missions { Casa_da_India_mission } 
+		required_missions = { Casa_da_India_mission } 
 		position = 5
 		
 		provinces_to_highlight = {

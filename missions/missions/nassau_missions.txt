@@ -10,15 +10,15 @@ nassau_1 = {
 	nas_hesse = {
 	icon = mission_alliances
 	required_missions = { }
-	trigger = {
-		hesse_area = {
+		trigger = {
+			hesse_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
-	effect = {
-		lower_rhineland_area = {
-									limit = {
+		effect = {
+			lower_rhineland_area = {
+				limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
@@ -99,3 +99,4 @@ nassau_1 = {
 			}
 		}
 	}
+}

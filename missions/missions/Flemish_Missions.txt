@@ -1,4 +1,4 @@
-﻿fla_one = {
+fla_one = {
 	slot = 1
 	generic = no
 	ai = yes

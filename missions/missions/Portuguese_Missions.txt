@@ -45,7 +45,7 @@ por_african_ambitions = {
 	POR_mission_cape_verde = { 
 		#icon = mission_rb_increase_our_reach
 		icon = mission_ship_mountain
-		required_missions { por_discover_african_coast } 
+		required_missions = { por_discover_african_coast } 
 		position = 3
 		
 		provinces_to_highlight = {
@@ -429,7 +429,7 @@ por_brazilian_ambitions = {
 	
 	POR_mission_feitoria_malacca = { 
 		icon = mission_a_famosa
-		required_missions { por_discovers_indonesia } 
+		required_missions = { por_discovers_indonesia } 
 		position = 11
 		
 		provinces_to_highlight = {
@@ -881,7 +881,7 @@ por_zanzibar_hormuz_goadourada_missions = {
 	POR_mission_feitoria_goa = { 
 		icon = mission_goa_dourada
 		#icon = mission_market_place_with_asian_traders
-		required_missions { portugal_discovers_india } 
+		required_missions = { portugal_discovers_india } 
 		position = 10
 		
 		provinces_to_highlight = {

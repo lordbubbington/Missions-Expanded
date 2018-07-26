@@ -579,7 +579,7 @@ kol_group_5 = {
 	
 		ng_elections = {
 		icon = mission_alliances
-		required_missions { }
+		required_missions = { }
 		trigger = {
 		custom_trigger_tooltip = {
 				tooltip = gen_hre_electors.tooltip

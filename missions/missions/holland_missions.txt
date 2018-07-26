@@ -398,7 +398,7 @@ province_growth_missions = {
 	}
 	amsterdams_trading_port = { 
 		icon = mission_establish_high_seas_navy
-		required_missions { amsterdams_cannal_system } 
+		required_missions = { amsterdams_cannal_system } 
 		
 		trigger = {  
 			owns_core_province = 97 

@@ -137,7 +137,7 @@ man_mission_1 = {
                 country_or_non_sovereign_subject_holds = ROOT
             }
         }
-        effect {
+        effect = {
             liguria_area = {
                 limit = {
                     NOT = { is_core = ROOT }

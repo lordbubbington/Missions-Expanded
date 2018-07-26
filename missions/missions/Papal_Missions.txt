@@ -268,7 +268,7 @@ Papal_missions_2 = {
 			owns = 101
 			}
 		effect = {
-			add_country_modifier {
+			add_country_modifier = {
 			name = "Genoese_Fleets"
 			duration = 9125
 				}
@@ -329,3 +329,4 @@ Papal_missions_3 = {
 			}
 		}
 	}
+}

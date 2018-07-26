@@ -768,7 +768,7 @@ sami_mission_group_3 = {
 			owned_by = ROOT
 		}
 		position = 2
-		trigger {
+		trigger = {
 			OR = {
 				4114 = {
 					fort_level = 2
