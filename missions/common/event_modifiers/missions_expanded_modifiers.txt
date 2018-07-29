@@ -1,4 +1,4 @@
-hungary_ottomans_war_1 = {
+﻿hungary_ottomans_war_1 = {
 	land_morale = 0.15
 	recover_army_morale_speed = 0.15
 }
@@ -826,7 +826,6 @@ dan_spirit_of_viking_explorers = {
     range = 0.5
     colonists = 1	
     galley_power = 0.2
-}
 norse_stopped_persecution = {
     stability_cost_modifier = -0.1
 }
@@ -1322,7 +1321,7 @@ uniting_the_low_countries = {
 	
 hollands_indpendence = { 
 	global_unrest = -1 
-	war_exhaustion = -0.05
+	war_exhaustion -0.05
 	}
 	
 amsterdams_canal_system = {
@@ -2966,14 +2965,15 @@ oda_open = {
 		local_tax_modifier = 0.2
 }
 big_army = {
-		land_maintenance_modifier = -0.1
-		}
-		
+		land_morale = 0.05
+		movement_speed = 0.1
+		}	
 good_leader = {
 		army_tradition = 1
 		}
 military_mind = {
-		mil_tech_cost_modifier = -0.1
+		army_tradition_decay = -0.01
+		yearly_army_professionalism = 0.01
 		}
 growth = {
 		state_maintenance_modifier = -0.33
@@ -2985,6 +2985,10 @@ great_minds = {
 		advisor_cost = -0.1
 		prestige = 1
 		}
+the_reserves = {
+	manpower_recovery_speed = 0.2
+	land_forcelimit_modifier = 0.1
+	}
 legitimate = {
 		legitimacy = 0.5
 		}
@@ -3002,20 +3006,33 @@ settle_lands = {
 		global_colonial_growth = 20
 		}
 grow_in_colonies = {
-		global_colonial_growth = 40
+		global_tariffs = 0.10
+		global_colonial_growth = 10
+		}
+		fleeeeeeet = {
+		naval_morale = 0.1
+		naval_maintenance_modifier = -0.05
 		}
 overseas = {
 		global_tariffs = 0.1
 		}
+flow_the_market_trade = {
+trade_efficiency = 0.1
+global_trade_power = 0.1
+}
 rich = {
 		global_tax_modifier = 0.1
 		}
 workshops = {
-		production_efficiency = 0.05
+		production_efficiency = 0.1
 		}
-temples = {
-		build_cost = -0.1
-		build_time = -0.25
+income_good = {
+		global_tax_modifier = 0.05
+		global_autonomy = -0.05
+		global_unrest = -1
+		}
+temple = {
+		global_tax_modifier = 0.1
 		}
 trade_op = {
 		trade_efficiency = 0.2
@@ -3325,4 +3342,183 @@ caroleans = {
 	merchants = 1
 	global_ship_trade_power = 0.1
 	global_trade_power = 0.1
+	}
+	
+	fuck_england = {
+	land_morale = 0.1
+	}
+
+decentralization_fra = {
+min_autonomy = 30
+}
+
+less_decetralization_fra = {
+min_autonomy = 25
+}
+
+grand_armee = {
+global_manpower_modifier = 0.15
+land_forcelimit_modifier = 0.3
+land_maintenance_modifier = -0.2
+movement_speed = 0.15
+}
+
+fra_generals = {
+free_leader_pool = 5
+general_cost = -0.2
+army_tradition = 0.5
+army_tradition_decay = -0.01
+}
+
+fra_arty = {
+artillery_power = 0.15
+backrow_artillery_damage = 0.05
+siege_ability = 0.1
+}
+
+continental_thingy = {
+diplomatic_upkeep = 5
+vassal_forcelimit_bonus = 0.5
+ae_impact = -0.05
+}
+
+fra_africa = {
+years_of_nationalism = -5
+}
+
+french_india = {
+global_trade_power = 0.2
+}
+
+fuck_india = {
+naval_forcelimit_modifier = 0.1
+}
+
+to_louisiana = {
+global_colonial_growth = 20
+}
+
+coloniesmate = {
+native_assimilation = 0.25
+}
+
+CANADAAAAAAAAAA = {
+colonist_placement_chance = 0.10
+}
+
+french_genocide = {
+global_colonial_growth = 30
+}
+
+fra_colonial = {
+range = 0.5
+}
+
+fuck_italy = {
+prestige = 0.5
+}
+
+normandy_ftw = {
+manpower_recovery_speed = 0.1
+}
+
+calais_port = {
+province_trade_power_modifier = 0.1
+trade_value = 5
+}
+
+napoleon_bonaparte = {
+land_morale = 0.1
+}
+
+fra_religion = {
+tolerance_heretic = 1
+tolerance_heathen = 1
+}
+
+fra_years_30 = {
+possible_mercenaries = 0.2
+}
+
+valois_united = {
+heir_chance = 0.5
+}
+
+fra_let_us_kill_nobles = {
+global_autonomy = -0.05
+global_unrest = 1
+}
+
+egypt_fra = {
+land_attrition = -0.1
+}
+
+kill_russia = {
+movement_speed = 0.1
+}
+
+into_austria = {
+prestige_from_land = 0.5
+loot_amount = 0.1
+}
+
+immigrant_problem = {
+global_unrest = 1
+}
+
+swedish_pride = {
+land_morale = 0.1
+}
+
+caroleans = {
+	discipline = 0.025
+	drill_decay_modifier = -0.1
+	shock_damage = 0.1
+	tolerance_heretic = -2
+	tolerance_heathen = -2
+	}
+	
+	swedish_colonies = {
+	global_colonial_growth = 30
+	}
+		
+	swe_colony = {
+	global_colonial_growth = 40
+	colonist_placement_chance = 0.1
+	}
+	
+	swedish_empire = {
+	global_tariffs = 0.25
+	heavy_ship_power = 0.05
+	ship_durability = 0.05
+	naval_forcelimit_modifier = 0.2
+	}
+	
+	india = {
+	navy_tradition = 1
+	}
+	
+	dalaskogen_copper = {
+	local_production_efficiency = 0.2
+	local_development_cost = -0.2
+	local_regiment_cost = -0.20
+	}
+	
+	baltic_center_of_trade = {
+	local_trade_power = 0.20
+	local_development_cost = -0.05
+	province_trade_power_value = 10
+	province_trade_power_modifier = 0.15
+	picture = "province_trade_power_value"
+	}
+	
+	baltic_trade = {
+	merchants = 1
+	global_ship_trade_power = 0.1
+	global_trade_power = 0.1
+	}
+
+	empire = {
+	prestige = 1
+	ae_impact = -0.2
 	}
