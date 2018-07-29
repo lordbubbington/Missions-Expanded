@@ -3479,19 +3479,19 @@ caroleans = {
 	}
 	
 	swedish_colonies = {
-	global_colonial_growth = 30
+	global_colonial_growth = 20
 	}
 		
 	swe_colony = {
-	global_colonial_growth = 40
+	global_colonial_growth = 25
 	colonist_placement_chance = 0.1
 	}
 	
 	swedish_empire = {
-	global_tariffs = 0.25
+	global_tariffs = 0.1
 	heavy_ship_power = 0.05
 	ship_durability = 0.05
-	naval_forcelimit_modifier = 0.2
+	naval_forcelimit_modifier = 0.05
 	}
 	
 	india = {
@@ -3499,15 +3499,15 @@ caroleans = {
 	}
 	
 	dalaskogen_copper = {
-	local_production_efficiency = 0.2
-	local_development_cost = -0.2
+	local_production_efficiency = 0.1
+	local_development_cost = -0.1
 	local_regiment_cost = -0.20
 	}
 	
 	baltic_center_of_trade = {
 	local_trade_power = 0.20
 	local_development_cost = -0.05
-	province_trade_power_value = 10
+	province_trade_power_value = 5
 	province_trade_power_modifier = 0.15
 	picture = "province_trade_power_value"
 	}
@@ -3520,5 +3520,5 @@ caroleans = {
 
 	empire = {
 	prestige = 1
-	ae_impact = -0.2
+	ae_impact = -0.1
 	}
