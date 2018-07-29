@@ -47,9 +47,11 @@ Bourbonnais_missions_1 = {
 			}
 		}
 		effect = {
-			add_province_modifier = {
-				name = "Bourbon_Fort"
-				duration = -1
+			capital_scope = {
+				add_province_modifier = {
+					name = "Bourbon_Fort"
+					duration = -1
+				}
 			}
 		}
 	}

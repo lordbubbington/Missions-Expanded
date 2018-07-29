@@ -191,7 +191,7 @@ Champagne_missions_2 = {
 		}
 	}
 	Champagne_Normandy = {
-		icon = mission_build_up_to_forcelimit
+		icon = mission_build_up_to_force_limit
 		required_missions = { Champagne_Paris }
 		position = 11
 		trigger = {

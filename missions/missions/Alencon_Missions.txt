@@ -154,7 +154,6 @@ Alencon_missions_1 = {
 		}
 	}
 }
-
 Alencon_missions_2 = {
 	slot = 2
 	generic = no

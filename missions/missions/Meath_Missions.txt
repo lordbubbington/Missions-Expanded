@@ -31,7 +31,7 @@ Meath_Missions = {
 		effect = {
 			add_country_modifier = {
 				name = "Meath_Independence_modifier"
-				duration = 73000
+				duration = 7300
 			}
 			4121 = {
 				if = {

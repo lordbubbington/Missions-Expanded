@@ -18,7 +18,7 @@ Sligo_Missions = {
 		effect = {
 			add_country_modifier = {
 				name = "Sligo_Ireland"
-				duration = 10250
+				duration = 10950
 			}
 		}
 	}
@@ -27,9 +27,7 @@ Sligo_Missions = {
 		required_missions = { Sligo_Army }
 		position = 8
 		trigger = {
-			376 = {
-				is_claim = ROOT
-			}
+			is_claim = 376
 		}
 		effect = {
 			376 = {

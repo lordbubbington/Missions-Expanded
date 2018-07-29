@@ -27,7 +27,7 @@ Nevers_Missions = {
 			NOT = { is_subject = yes }
 		}
 		effect = {
-			burgundy_area = {
+			bourgogne_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -41,7 +41,7 @@ Nevers_Missions = {
 		required_missions = { Nev_declare }
 		position = 9
 		trigger = {
-			burgundy_area = {
+			bourgogne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

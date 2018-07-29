@@ -86,7 +86,7 @@ Dauphine_missions_1 = {
 			}
 		}
 		effect = {
-			burgundy_area = {
+			bourgogne_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -100,7 +100,7 @@ Dauphine_missions_1 = {
 		required_missions = { Dauphine_Swiss }
 		position = 6
 		trigger = {
-			burgundy_area = {
+			bourgogne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -116,7 +116,7 @@ Dauphine_missions_1 = {
 		required_missions = { Dauphine_Burgundy }
 		position = 7
 		trigger = {
-			burgundy_area = {
+			bourgogne_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

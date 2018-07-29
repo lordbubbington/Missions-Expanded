@@ -90,7 +90,6 @@ Bar_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
-	}
 	Bar_Burgundy = {
 		icon = mission_cannons_firing
 		required_missions = { Bar_Protect_From_Burgundy }

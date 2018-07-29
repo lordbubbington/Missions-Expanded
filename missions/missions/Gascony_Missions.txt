@@ -41,13 +41,8 @@ Gascony_missions_1 = {
 		required_missions = { Gascony_Indepedence }
 		position = 7
 		trigger = {
-			2753 = {
-				is_claim = ROOT
-			}
-			poitou_area = {
-				type = all
-				is_claim = ROOT
-			}
+				is_claim = 2753
+				is_claim = poitou_area
 		}
 		effect = {
 			poitou_area = {
@@ -231,12 +226,12 @@ Gascony_missions_2 = {
 		}
 		effect = {
 			205 = {
-				change_culture = occitan
+				change_culture = occitain
 			}
 			190 = {
-				change_culture = occitan
+				change_culture = occitain
 			}
-			add_accepted_culture = occitan
+			add_accepted_culture = occitain
 		}
 	}
 	Gascony_Wine = {

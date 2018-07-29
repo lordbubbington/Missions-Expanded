@@ -163,7 +163,7 @@ Ormond_Missions = {
 	}
 	Ormond_Ulster = {
 		icon = mission_assemble_an_army
-		required_missions = { Ormond_Munster }
+		required_missions = { Ormond_Connacht }
 		position = 12
 		trigger = {
 			ulster_area = {

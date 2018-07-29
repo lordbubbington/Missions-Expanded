@@ -15,9 +15,11 @@ Foix_missions_1 = {
 			NOT = { is_subject = yes }
 		}
 		effect = {
-			add_base_tax = 1
-			add_base_production = 1
-			add_base_manpower = 1
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 		}
 	}
 	Foix_Army = {
