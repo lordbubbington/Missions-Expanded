@@ -1,1 +1,1 @@
-﻿TTS =      "countries/TheTwoSicilies.txt"
+TTS =      "countries/TheTwoSicilies.txt"

@@ -292,10 +292,7 @@ Welsh_Section = {
 
 	A_New_Homeland = {
 		icon = mission_unite_home_region
-		required_missions { Ranged_Warfare }
-		required_missions { Irish_Monoculture }
-		required_missions { Breton_Maritime_Tradition }
-		required_missions { Celtic_Refuge }
+		required_missions = { Ranged_Warfare Irish_Monoculture Breton_Maritime_Tradition Celtic_Refuge }
 		position = 8
 		
 		trigger = {
@@ -419,7 +416,7 @@ Colonial_Section = {
 		position = 7
 		
 		trigger = { 
-			OR {
+			OR = {
 			custom_trigger_tooltip = {
 				tooltip = miss_colonize_eastern_america
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {

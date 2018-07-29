@@ -254,7 +254,7 @@ bre_navy = {
 	}
 	
 	bre_pirates = {
-	`	icon = mission_sea_battles
+		icon = mission_sea_battles
 		required_missions = { bre_prepare_navy }
 		position = 3
 		trigger = {
