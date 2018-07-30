@@ -4,10 +4,25 @@
 #########
 
 country_decisions = {
+	#for testing purposes
+	convert_to_hussite = {
+		potential = {
+			tag = BOH
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			change_religion = hussite
+			capital_scope = {
+				change_religion = hussite
+			}
+		}
+	}
 
 	hussite_freedom_to_preach = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			NOT = { has_country_flag = activated_freedom_to_preach }
 		}
 		allow = {
@@ -24,7 +39,7 @@ country_decisions = {
 	}
 	hussite_freedom_to_preach_disable = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			has_country_flag = activated_freedom_to_preach 
 		}
 		allow = {
@@ -41,7 +56,7 @@ country_decisions = {
 	
 	hussite_communion_under_both = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			NOT = { has_country_flag = activated_communion_under_both }
 		}
 		allow = {
@@ -58,7 +73,7 @@ country_decisions = {
 	}
 	hussite_communion_under_both_disable = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			has_country_flag = activated_communion_under_both 
 		}
 		allow = {
@@ -75,7 +90,7 @@ country_decisions = {
 	
 	hussite_clergy_poverty = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			NOT = { has_country_flag = activated_clergy_poverty }
 		}
 		allow = {
@@ -92,7 +107,7 @@ country_decisions = {
 	}
 	hussite_clergy_poverty_disable = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			has_country_flag = activated_clergy_poverty 
 		}
 		allow = {
@@ -109,7 +124,7 @@ country_decisions = {
 	
 	hussite_sin_punishment = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			NOT = { has_country_flag = activated_sin_punishment }
 		}
 		allow = {
@@ -126,7 +141,7 @@ country_decisions = {
 	}
 	hussite_sin_punishment_disable = {
 		potential = {
-			religion = hussites
+			religion = hussite
 			has_country_flag = activated_sin_punishment 
 		}
 		allow = {

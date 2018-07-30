@@ -65,6 +65,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = HAN
+			swap_non_generic_missions = yes
 			1758 = {
 				add_base_tax = 1
 			}
@@ -194,7 +195,6 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = WES
-			swap_non_generic_missions = yes
 			set_country_flag = formed_westphalia_flag
 			if = {
 				limit = {

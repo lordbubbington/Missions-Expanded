@@ -1,0 +1,7 @@
+#########
+#Made by claivin for Missions Extended Mod
+#########
+
+frisian_cta = {
+	manpower_recovery_speed = 0.50
+}
