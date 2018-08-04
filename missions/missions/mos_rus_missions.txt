@@ -1,0 +1,282 @@
+mos_mission_group_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = MOS
+		tag = RUS
+	}
+	has_country_shield = yes
+	
+	mos_novgorod_1 = {
+		icon = 
+		required_missions = { mos_build_army }
+		position = 2
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_novgorod_2 = {
+		icon = 
+		required_missions = { mos_novgorod_1 }
+		position = 4
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_smolensk = {
+		icon = 
+		required_missions = { mos_novgorod_2 mos_integrate }
+		position = 5
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_lithuania = {
+		icon = 
+		required_missions = { mos_smolensk }
+		position = 6
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_poland = {
+		icon = 
+		required_missions = { mos_lithuania }
+		position = 7
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
+
+mos_mission_group_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = MOS
+		tag = RUS
+	}
+	has_country_shield = yes
+	
+	mos_build_army = {
+		icon = 
+		required_missions = { }
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_principalities_tver = {
+		icon = 
+		required_missions = { mos_build_army }
+		position = 2
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_principalities_ryazan = {
+		icon = 
+		required_missions = { mos_principalities_tver }
+		position = 3
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_integrate = {
+		icon = 
+		required_missions = { mos_principalities_ryazan }
+		position = 4
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_baltics = {
+		icon = 
+		required_missions = { mos_novgorod_2 mos_integrate }
+		position = 5
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_finland = {
+		icon = 
+		required_missions = { mos_baltics }
+		position = 6
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
+
+mos_mission_group_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = MOS
+		tag = RUS
+	}
+	has_country_shield = yes
+	
+	mos_golden_horde = {
+		icon = 
+		required_missions = { mos_build_army }
+		position = 2
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_crimea = {
+		icon = 
+		required_missions = { mos_golden_horde }
+		position = 4
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_caucasus = {
+		icon = 
+		required_missions = { mos_crimea }
+		position = 5
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_nogai = {
+		icon = 
+		required_missions = { mos_uzbek }
+		position = 6
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
+
+mos_mission_group_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = MOS
+		tag = RUS
+	}
+	has_country_shield = yes
+	
+	mos_kazan = {
+		icon = 
+		required_missions = { mos_build_army }
+		position = 2
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_sibir = {
+		icon = 
+		required_missions = { mos_kazan mos_colonise_2 }
+		position = 3
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_uzbek = {
+		icon = 
+		required_missions = { mos_sibir }
+		position = 5
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_transoxiana = {
+		icon = 
+		required_missions = { mos_uzbek }
+		position = 6
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
+
+mos_mission_group_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = MOS
+		tag = RUS
+	}
+	has_country_shield = yes
+	
+	mos_colonise_1 = {
+		icon = 
+		required_missions = { } 
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_colonise_2 = {
+		icon = 
+		required_missions = { mos_colonise_1}
+		position = 2
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_colonise_3 = {
+		icon = 
+		required_missions = { mos_colonise_2 }
+		position = 3
+		trigger = {
+		}
+		effect = {
+		}
+	}
+	
+	mos_russian_america = {
+		icon = 
+		required_missions = { mos_colonise_3 }
+		position = 4
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
