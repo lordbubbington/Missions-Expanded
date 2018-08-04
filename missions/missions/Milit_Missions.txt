@@ -26,7 +26,7 @@ Military_Missions = {
 		}
 	}
 	Offensive_war_win = {
-		icon = mission_alliances
+		icon = mission_build_up_to_force_limit
 		required_missions = { Offensive_Leader }
 		position = 2
 		trigger = {
@@ -44,7 +44,7 @@ Military_Missions = {
 		}
 	}
 	Offensive_artillery = {
-		icon = mission_alliances
+		icon = mission_cannons_firing
 		required_missions = { Offensive_war_win }
 		position = 3
 		trigger = {
@@ -59,7 +59,7 @@ Military_Missions = {
 		}
 	}
 	Defensive_Fortified_border = {
-		icon = mission_alliances
+		icon = mission_conquer_50_development
 		required_missions = { }
 		position = 4
 		trigger = {
@@ -87,7 +87,7 @@ Military_Missions = {
 		}
 	}
 	Defensive_Scorched_Earth = {
-		icon = mission_alliances
+		icon = mission_have_two_subjects
 		required_missions = { Defensive_Fortified_border }
 		position = 5
 		trigger = {
@@ -107,7 +107,7 @@ Military_Missions = {
 		}
 	}
 	Defensive_bleed_enemies_out = {
-		icon = mission_alliances
+		icon = mission_assemble_an_army
 		required_missions = { Defensive_Scorched_Earth }
 		position = 6
 		trigger = {
@@ -127,7 +127,7 @@ Military_Missions = {
 		}
 	}
 	Quality_Discipline = {
-		icon = mission_alliances
+		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 7
 		trigger = {
@@ -145,7 +145,7 @@ Military_Missions = {
 		}
 	}
 	Quality_Professional_army = {
-		icon = mission_alliances
+		icon = mission_build_up_to_force_limit
 		required_missions = { Quality_Discipline }
 		position = 8
 		trigger = {
@@ -172,7 +172,7 @@ Military_Missions = {
 		}
 	}
 	Quantity_Manpower = {
-		icon = mission_alliances
+		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 10
 		trigger = {
@@ -187,7 +187,7 @@ Military_Missions = {
 		}
 	}
 	Quantity_Rival = {
-		icon = mission_alliances
+		icon = mission_empire
 		required_missions = { Quantity_Manpower }
 		position = 11
 		trigger = {
@@ -210,7 +210,7 @@ Military_Missions = {
 		}
 	}
 	Quantity_Force_limit = {
-		icon = mission_alliances
+		icon = mission_build_up_to_force_limit
 		required_missions = { Quantity_Rival }
 		position = 12
 		trigger = {
@@ -225,7 +225,7 @@ Military_Missions = {
 		}
 	}
 	Naval_war_fleet = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { }
 		position = 13
 		trigger = {
@@ -243,7 +243,7 @@ Military_Missions = {
 		}
 	}
 	Naval_Tradition = {
-		icon = mission_alliances
+		icon = mission_sea_battles
 		required_missions = { Naval_war_fleet }
 		position = 14
 		trigger = {
@@ -258,7 +258,7 @@ Military_Missions = {
 		}
 	}
 	Naval_Sailors = {
-		icon = mission_alliances
+		icon = mission_dominate_home_trade_node
 		required_missions = { Naval_Tradition }
 		position = 15
 		trigger = {
@@ -273,7 +273,7 @@ Military_Missions = {
 		}
 	}
 	Naval_Strongest = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { Naval_Sailors }
 		position = 16
 		trigger = {
@@ -292,7 +292,7 @@ Military_Missions = {
 		}
 	}
 	Aristocratic_cavalry = {
-		icon = mission_alliances
+		icon = mission_conquer_5_states
 		required_missions = { }
 		position = 17
 		trigger = {
@@ -307,7 +307,7 @@ Military_Missions = {
 		}
 	}
 	Aristocratic_Kingdom = {
-		icon = mission_alliances
+		icon = mission_empire
 		required_missions = { Aristocratic_cavalry }
 		position = 18
 		trigger = {
@@ -352,7 +352,7 @@ Military_Missions = {
 		}
 	}
 	Plutocratic_Courthouse = {
-		icon = mission_alliances
+		icon = mission_trade_company_region_abroad
 		required_missions = { Plutocratic_RT }
 		position = 21
 		trigger = {
@@ -369,7 +369,7 @@ Military_Missions = {
 		}
 	}
 	Plutocratic_stability = {
-		icon = mission_alliances
+		icon = mission_high_income
 		required_missions = { Plutocratic_Courthouse }
 		position = 22
 		trigger = {
