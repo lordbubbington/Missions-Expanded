@@ -56,11 +56,11 @@ Aristocratic_Integration = {
 	diplomatic_annexation_cost = -0.2
 }
 Plutocratic_RT_Boost = {
-	republican_tradition = 0.5
+	num_accepted_cultures = 1
 }
 Plutocratic_Just = {
 	global_unrest = -1
 }
 Plutocratic_Stability = {
-	stability_cost_modifier = -0.25
+	global_trade_goods_size_modifier = 0.1
 }

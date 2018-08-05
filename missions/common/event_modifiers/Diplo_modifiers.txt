@@ -20,7 +20,7 @@ Diplomatic_unsuspecting = {
 	ae_impact = -0.05
 }
 Trade_Domination = {
-	global_trade_power = 0.05
+	global_trade_power = 0.2
 }
 Trade_Goods = {
 	global_trade_goods_size_modifier = 0.05
@@ -49,10 +49,10 @@ Maritime_big_navy = {
 Maritime_durability = {
 	ship_durability = 0.25
 }
-Maritime_war = [
+Maritime_war = {
 	heavy_ship_power = 0.1
 	galley_power = 0.3
-]
+}
 Maritime_soldiers = {
 	land_morale = 0.10
 	naval_morale = 0.10
