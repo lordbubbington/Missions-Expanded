@@ -28,10 +28,7 @@ Administrative_Missions = {
 		position = 2
 		trigger = {
 			innovativeness_ideas = 3
-			has_global_modifier_value = {
-				which = technology
-				value = -0.2
-			}
+			philosopher = 1
 		}
 		effect = {
 			add_country_modifier = {

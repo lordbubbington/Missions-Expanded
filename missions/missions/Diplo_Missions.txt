@@ -36,11 +36,14 @@ Diplomatic_Missions = {
 		position = 2
 		trigger = {
 			spy_ideas = 2
-			all_neighbor_country = {
-				reverse_has_opinion = {
-					who = PREV
-					value = 50
+			calc_true_if = {
+				all_neighbor_country = {
+					reverse_has_opinion = {
+						who = PREV
+						value = 50
+					}
 				}
+				amount = 5
 			}
 		}
 		effect = {
@@ -57,8 +60,11 @@ Diplomatic_Missions = {
 		trigger = {
 			spy_ideas = 5
 			calc_true_if = {
-				all_neighbor_province = {
+				all_province = {
 					is_claim = ROOT
+					any_neighbor_province = {
+						owned_by = ROOT
+					}
 				}
 				amount = 10
 			}
@@ -71,7 +77,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Espionage_uncorruptible = {
-		icon = mission_alliances
+		icon = mission_have_two_subjects
 		required_missions = { Espionage_claims }
 		position = 4
 		trigger = {
@@ -91,12 +97,9 @@ Diplomatic_Missions = {
 		position = 5
 		trigger = {
 			diplomatic_ideas = 1
-			calc_true_if = {
-				all_neighbor_country = {
-					development = 300
-					alliance_with = ROOT
-				}
-				# amount = ?
+			any_country = {
+				total_development = 300
+				alliance_with = ROOT
 			}
 		}
 		effect = {
@@ -145,7 +148,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Trade_Our_home_node = {
-		icon = mission_alliances
+		icon = mission_dominate_home_trade_node
 		required_missions = { }
 		position = 8
 		trigger = {
@@ -165,7 +168,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Trade_Merchants = {
-		icon = mission_alliances
+		icon = mission_trade_company_region_abroad
 		required_missions = { Trade_Our_home_node }
 		position = 9
 		trigger = {
@@ -185,7 +188,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Trade_Fleet = {
-		icon = mission_alliances
+		icon = mission_galleys_in_port
 		required_missions = { Trade_Merchants }
 		position = 10
 		trigger = {
@@ -200,7 +203,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Exploration_speedy_explorer = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { }
 		position = 11
 		trigger = {
@@ -218,7 +221,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Exploration_colonies = {
-		icon = mission_alliances
+		icon = mission_colonial
 		required_missions = { Exploration_speedy_explorer }
 		position = 12
 		trigger = {
@@ -233,7 +236,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Exploration_Armada = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { Exploration_colonies }
 		position = 13
 		trigger = {
@@ -248,7 +251,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Exploration_discover_4_continents = {
-		icon = mission_alliances
+		icon = mission_unite_home_region
 		required_missions = { Exploration_Armada }
 		position = 14
 		trigger = {
@@ -263,7 +266,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Maritime_Strong_Fleet = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { }
 		position = 15
 		trigger = {
@@ -278,7 +281,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Maritime_bigger_than_rivals = {
-		icon = mission_alliances
+		icon = mission_sea_battles
 		required_missions = { Maritime_Strong_Fleet }
 		position = 16
 		trigger = {
@@ -298,14 +301,14 @@ Diplomatic_Missions = {
 		}
 	}
 	Maritime_Docks = {
-		icon = mission_alliances
+		icon = mission_dominate_home_trade_node
 		required_missions = { Maritime_bigger_than_rivals }
 		position = 17
 		trigger = {
 			maritime_ideas = 3
 			calc_true_if = {
 				all_owned_province = {
-					has_building = docks
+					has_building = dock
 				}
 				amount = 5
 			}
@@ -318,7 +321,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Maritime_Unbeatable = {
-		icon = mission_alliances
+		icon = mission_establish_high_seas_navy
 		required_missions = { Maritime_Docks }
 		position = 18
 		trigger = {
@@ -335,7 +338,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Maritime_Great_leader = {
-		icon = mission_alliances
+		icon = mission_galleys_in_port
 		required_missions = { Maritime_Unbeatable }
 		position = 19
 		trigger = {
@@ -354,7 +357,7 @@ Diplomatic_Missions = {
 		}
 	}
 	Influence_subjects = {
-		icon = mission_alliances
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 20
 		trigger = {
@@ -389,13 +392,13 @@ Diplomatic_Missions = {
 		}
 	}
 	Influence_strong_subject = {
-		icon = mission_alliances
+		icon = mission_have_two_subjects
 		required_missions = { Influence_subject_opinion }
 		position = 22
 		trigger = {
 			influence_ideas = 7
 			any_subject_country = {
-				development = 300
+				total_development = 300
 			}
 		}
 		effect = {
