@@ -263,7 +263,7 @@ Military_Missions = {
 		position = 15
 		trigger = {
 			naval_ideas = 5
-			sailor_percentage = 1
+			sailors_percentage = 1
 		}
 		effect = {
 			add_country_modifier = {

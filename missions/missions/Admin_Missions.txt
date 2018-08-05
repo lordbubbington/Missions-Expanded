@@ -28,10 +28,9 @@ Administrative_Missions = {
 		position = 2
 		trigger = {
 			innovativeness_ideas = 3
-			any_neighbor_country = {
-				ROOT = {
-					tech_difference = 2
-				}
+			has_global_modifier_value = {
+				which = technology
+				value = -0.2
 			}
 		}
 		effect = {
