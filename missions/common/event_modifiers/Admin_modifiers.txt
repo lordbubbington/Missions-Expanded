@@ -40,7 +40,7 @@ Economic_Loans = {
 Economic_Control = {
 	inflation_reduction = 0.05
 }
-Innovative_Innovative = {
+Innovative_Gain = {
 	innovativeness_gain = 0.2
 }
 Humanist_tolerance = {
