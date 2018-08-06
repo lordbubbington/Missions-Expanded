@@ -176,7 +176,7 @@ Diplomatic_Missions = {
 			home_trade_node = {
 				trade_share = {
 					country = ROOT
-					share = 100
+					share = 95
 				}
 			}
 		}
@@ -193,7 +193,7 @@ Diplomatic_Missions = {
 		position = 10
 		trigger = {
 			trade_ideas = 6
-			num_of_light_ship = 25
+			num_of_light_ship = 100
 		}
 		effect = {
 			add_country_modifier = {
