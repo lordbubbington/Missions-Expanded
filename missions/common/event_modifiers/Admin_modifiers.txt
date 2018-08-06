@@ -53,5 +53,5 @@ Humanist_Culture = {
 	num_accepted_cultures = 1
 }
 Humanist_convert = {
-	culture_conversion_cost = -0.25
+	global_unrest = -2
 }
